@@ -1,0 +1,196 @@
+{
+  "id": "modes/reg/log",
+  "title": "MODE 5-2: Log (Logarithmic Regression)",
+  "shortTitle": "Log",
+  "parent": "modes/reg",
+  "order": 2,
+  "aliases": [
+    "logarithmic regression",
+    "MODE 5 2",
+    "y=A+B ln x"
+  ],
+  "keywords": [
+    "ln",
+    "diminishing returns",
+    "DT",
+    "S-VAR"
+  ],
+  "formulas": [
+    "y = A + B ln x"
+  ],
+  "keySequence": [
+    "MODE",
+    "5",
+    "2"
+  ],
+  "summary": "Enter x , y DT pairs (≥2, all x > 0), AC, then recall A, B, and r. Fitted curve: y = A + B ln x.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Log fits y = A + B ln x — growth that is steep at first and then flattens. Typical uses: sensory response, learning curves, and other diminishing-returns trends."
+    },
+    {
+      "type": "formula",
+      "plain": "y = A + B \\ln x"
+    },
+    {
+      "type": "p",
+      "mark": "reg-graph",
+      "text": "Log regression fits y = A + B ln x. The curve rises quickly for small x, then bends and flattens — useful when extra units of x matter less and less (diminishing returns). All x values must be positive."
+    },
+    {
+      "type": "figure",
+      "mark": "reg-graph",
+      "svg": "img/reg/log.svg",
+      "caption": "Sample fit y = 2 + 3 ln x. Notice how the slope eases off as x increases — that is the hallmark log shape."
+    },
+    {
+      "type": "h2",
+      "text": "Input"
+    },
+    {
+      "type": "p",
+      "text": "Open Log regression, clear old data, enter at least two pairs as x , y DT. All x values must be greater than zero."
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "MODE",
+        "5",
+        "2"
+      ]
+    },
+    {
+      "type": "steps",
+      "title": "Enter data",
+      "items": [
+        "SHIFT 9 → 1 EXE if replacing an old list",
+        "For each point: x , y DT (x must be > 0)",
+        "AC when finished"
+      ]
+    },
+    {
+      "type": "lines",
+      "lead": "Example — three points on y = 2 + 3 ln x:",
+      "items": [
+        "1 , 2 DT",
+        "2 , 4.08 DT",
+        "5 , 6.82 DT",
+        "AC"
+      ]
+    },
+    {
+      "type": "note",
+      "text": "Minimum 2 pairs. x = 0 or negative x gives an error or invalid fit. y may be any value."
+    },
+    {
+      "type": "h2",
+      "text": "Output"
+    },
+    {
+      "type": "p",
+      "text": "After AC, recall A and B for y = A + B ln x, and r for goodness of fit (same S-VAR screen as Lin)."
+    },
+    {
+      "type": "lines",
+      "lead": "S-VAR recalls (after AC):",
+      "items": [
+        "A — SHIFT 2 → 1 → ▶ → ▶ → 1 EXE",
+        "B — SHIFT 2 → 1 → ▶ → ▶ → 2 EXE",
+        "r — SHIFT 2 → 1 → ▶ → ▶ → 3 EXE",
+        "ŷ for a given x (> 0): type x, SHIFT 2 → 1 → ◀ → 2 EXE",
+        "x̂ for a given y: type y, SHIFT 2 → 1 → ◀ → 1 EXE (x̂ must be > 0 for ln)"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Worked example"
+    },
+    {
+      "type": "steps",
+      "title": "Fit (1, 2) and (2, 4.08)",
+      "items": [
+        {
+          "keys": [
+            "MODE",
+            "5",
+            "2"
+          ]
+        },
+        {
+          "keys": [
+            "SHIFT",
+            "9",
+            "1",
+            "EXE"
+          ]
+        },
+        {
+          "keys": [
+            "1",
+            ",",
+            "2",
+            "DT"
+          ]
+        },
+        {
+          "keys": [
+            "2",
+            ",",
+            "4.08",
+            "DT"
+          ]
+        },
+        {
+          "keys": [
+            "AC"
+          ]
+        },
+        {
+          "keys": [
+            "SHIFT",
+            "2",
+            "1",
+            "▶",
+            "▶",
+            "1",
+            "EXE"
+          ],
+          "result": "A ≈ 2"
+        },
+        {
+          "keys": [
+            "SHIFT",
+            "2",
+            "1",
+            "▶",
+            "▶",
+            "2",
+            "EXE"
+          ],
+          "result": "B ≈ 3"
+        },
+        {
+          "keys": [
+            "SHIFT",
+            "2",
+            "1",
+            "▶",
+            "▶",
+            "3",
+            "EXE"
+          ],
+          "result": "r close to 1"
+        },
+        {
+          "text": "Fitted equation: $y = 2 + 3 \\ln x$"
+        }
+      ]
+    }
+  ],
+  "related": [
+    "modes/reg",
+    "modes/reg/lin",
+    "modes/reg/exp"
+  ]
+}

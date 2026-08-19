@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-labelledby="fmla21-title fmla21-desc">
+  <title id="fmla21-title">Fluid speeding up as a pipe narrows and drops</title>
+  <desc id="fmla21-desc">Bernoulli: where the pipe is lower and narrower, speed is higher and pressure is lower. The calculator reports C = v²/2 + gz + P/ρ.</desc>
+  
+  <path d="M80 90 L300 90 L300 110 L640 180 L640 230 L300 160 L300 180 L80 180 Z" fill="var(--accent)" fill-opacity="0.12" stroke="var(--accent)" stroke-width="2"/>
+  <polygon points="160,125 200,135 160,145" fill="var(--accent-soft)"/>
+  <polygon points="500,185 548,198 500,211" fill="var(--accent-soft)"/>
+  <text x="180" y="76">slow, high P</text>
+  <text x="500" y="168">fast, lower P</text>
+  <text x="110" y="204">z₁</text>
+  <text x="660" y="220">z₂</text>
+  <text x="360" y="300" text-anchor="middle">C = v²/2 + gz + P/ρ is constant</text>
+
+</svg>

@@ -1,0 +1,207 @@
+{
+  "id": "modes/reg/ab-exp",
+  "title": "MODE 5 ▶ 3: AB-Exp",
+  "shortTitle": "AB-Exp",
+  "parent": "modes/reg",
+  "order": 7,
+  "aliases": [
+    "AB exponential",
+    "MODE 5 ▶ 3",
+    "MODE 5 RIGHT 3",
+    "y=AB^x",
+    "A·B^x",
+    "ab exponential"
+  ],
+  "keywords": [
+    "base",
+    "geometric",
+    "discrete growth",
+    "DT",
+    "S-VAR"
+  ],
+  "formulas": [
+    "y = A B^x"
+  ],
+  "keySequence": [
+    "MODE",
+    "5",
+    "▶",
+    "3"
+  ],
+  "summary": "Enter x , y DT pairs (≥2, y > 0), AC, then recall A, B, and r. Fitted curve: y = A B^x. Distinct from Exp (y = A e^(Bx)).",
+  "body": [
+    {
+      "type": "p",
+      "text": "AB-Exp fits y = A B^x (same as y = A · B^x). Each equal step in x multiplies y by the same base B — geometric / discrete compound growth. This is a different parametrisation from Exp (y = A e^(Bx)): here B is the multiplier itself, not the coefficient in the exponent. The same curve family is related by B_AB = e^b if Exp’s coefficient is b."
+    },
+    {
+      "type": "formula",
+      "plain": "y = A B^{x}"
+    },
+    {
+      "type": "p",
+      "mark": "reg-graph",
+      "text": "AB-Exp fits y = A B^x. Each equal step in x multiplies y by the same base B — geometric growth. This is not the same recall as Exp (y = A e^(Bx)): here B is the multiplier itself. Same curve family: AB-Exp’s B equals e^b if Exp’s coefficient is b."
+    },
+    {
+      "type": "figure",
+      "mark": "reg-graph",
+      "svg": "img/reg/ab-exp.svg",
+      "caption": "Sample fit y = 2 × 1.5^x. Compare with Exp: here the multiplier is B itself, not e^B."
+    },
+    {
+      "type": "h2",
+      "text": "Input"
+    },
+    {
+      "type": "p",
+      "text": "Open AB-Exp regression (MODE 5, ▶, then 3), clear old data, enter at least two pairs as x , y DT. y values must be positive (the model uses ln y internally). The fitted base B is typically positive."
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "MODE",
+        "5",
+        "▶",
+        "3"
+      ]
+    },
+    {
+      "type": "steps",
+      "title": "Enter data",
+      "items": [
+        "SHIFT 9 → 1 EXE if replacing an old list",
+        "For each point: x , y DT",
+        "AC when finished"
+      ]
+    },
+    {
+      "type": "lines",
+      "lead": "Example — four points on y = 2 × 1.5^x:",
+      "items": [
+        "0 , 2 DT",
+        "1 , 3 DT",
+        "2 , 4.5 DT",
+        "3 , 6.75 DT",
+        "AC"
+      ]
+    },
+    {
+      "type": "note",
+      "text": "Minimum 2 pairs. All y values should be positive for a real fit. Do not confuse with MODE 5-3 Exp (y = A e^(Bx)), where recalled B is the growth rate in the exponent rather than the geometric base."
+    },
+    {
+      "type": "h2",
+      "text": "Output"
+    },
+    {
+      "type": "p",
+      "text": "After AC, recall A (initial scale), B (the base — each step in x multiplies y by B), and r. S-VAR layout matches Exp; the meaning of B is different."
+    },
+    {
+      "type": "lines",
+      "lead": "S-VAR recalls (after AC):",
+      "items": [
+        "A — SHIFT 2 → 1 → ▶ → ▶ → 1 EXE",
+        "B — SHIFT 2 → 1 → ▶ → ▶ → 2 EXE",
+        "r — SHIFT 2 → 1 → ▶ → ▶ → 3 EXE",
+        "ŷ for a given x: type x, SHIFT 2 → 1 → ◀ → 2 EXE",
+        "x̂ for a given y (> 0): type y, SHIFT 2 → 1 → ◀ → 1 EXE"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Worked example"
+    },
+    {
+      "type": "steps",
+      "title": "Points (0, 2) and (1, 3)",
+      "items": [
+        {
+          "keys": [
+            "MODE",
+            "5",
+            "▶",
+            "3"
+          ]
+        },
+        {
+          "keys": [
+            "SHIFT",
+            "9",
+            "1",
+            "EXE"
+          ]
+        },
+        {
+          "keys": [
+            "0",
+            ",",
+            "2",
+            "DT"
+          ]
+        },
+        {
+          "keys": [
+            "1",
+            ",",
+            "3",
+            "DT"
+          ]
+        },
+        {
+          "keys": [
+            "AC"
+          ]
+        },
+        {
+          "keys": [
+            "SHIFT",
+            "2",
+            "1",
+            "▶",
+            "▶",
+            "1",
+            "EXE"
+          ],
+          "result": "A ≈ 2"
+        },
+        {
+          "keys": [
+            "SHIFT",
+            "2",
+            "1",
+            "▶",
+            "▶",
+            "2",
+            "EXE"
+          ],
+          "result": "B ≈ 1.5"
+        },
+        {
+          "keys": [
+            "SHIFT",
+            "2",
+            "1",
+            "▶",
+            "▶",
+            "3",
+            "EXE"
+          ],
+          "result": "r close to 1"
+        },
+        {
+          "text": "Fitted equation: $y = 2 \\times 1.5^{x}$"
+        },
+        {
+          "text": "At $x = 2$: $y = 4.5$"
+        }
+      ]
+    }
+  ],
+  "related": [
+    "modes/reg",
+    "modes/reg/exp",
+    "modes/reg/pwr"
+  ]
+}

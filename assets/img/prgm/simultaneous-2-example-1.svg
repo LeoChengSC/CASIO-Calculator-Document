@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-labelledby="prgm-sim2-ex1-title prgm-sim2-ex1-desc">
+  <title id="prgm-sim2-ex1-title">Solve x+y=7 and x−y=1</title>
+  <desc id="prgm-sim2-ex1-desc">Unknown point (x,y) at the intersection, then solved as (4,3).</desc>
+  
+  <line x1="64" y1="231.2" x2="680" y2="231.2" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <line x1="132.44444444444446" y1="280" x2="132.44444444444446" y2="36" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <line x1="64" y1="36" x2="680" y2="255.6" stroke="var(--accent)" stroke-width="2.2"/>
+  <line x1="64" y1="280" x2="680" y2="60.400000000000006" stroke="var(--accent)" stroke-width="2.2"/>
+  <circle cx="406.22222222222223" cy="158" r="5" fill="var(--accent)" stroke="var(--bg)" stroke-width="1.5"/>
+  <text x="406.22222222222223" y="142" text-anchor="middle" fill="var(--text)">M(x, y) = ?</text>
+  <text x="406.22222222222223" y="182" text-anchor="middle" fill="var(--accent)">solution: M(4, 3)</text>
+  <text x="556.8" y="201.92000000000002" fill="var(--text)">x + y = 7</text>
+  <text x="488.35555555555555" y="94.56" fill="var(--text)">x − y = 1</text>
+
+</svg>

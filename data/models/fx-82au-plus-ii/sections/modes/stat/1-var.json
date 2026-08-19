@@ -1,0 +1,64 @@
+{
+  "id": "modes/stat/1-var",
+  "title": "MODE 2-1: 1-VAR",
+  "shortTitle": "1-VAR",
+  "parent": "modes/stat",
+  "order": 1,
+  "aliases": [
+    "single-variable",
+    "MODE 2 1",
+    "quartile",
+    "median"
+  ],
+  "keywords": [
+    "n",
+    "x̄",
+    "sx",
+    "σx",
+    "Q1",
+    "Q3",
+    "med"
+  ],
+  "formulas": [
+    "univariate summaries"
+  ],
+  "keySequence": [
+    "MODE",
+    "2",
+    "1"
+  ],
+  "summary": "Single-variable stats including n, mean, σx/sx, min/max, Q1, median, Q3.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Use for lists, test scores, and any one-column frequency analysis. Enable FREQ in SET UP when values repeat."
+    },
+    {
+      "type": "formula",
+      "plain": "\\text{univariate summaries}"
+    },
+    {
+      "type": "figure",
+      "svg": "img/fx82/1var-mean.svg",
+      "caption": "The STAT hub example 15, 18, 22, 25. After AC, SHIFT 1 → Var → x̄ gives 20."
+    },
+    {
+      "type": "figure",
+      "svg": "img/fx82/1var-box.svg",
+      "caption": "1-VAR also recalls quartiles from MinMax (Q1, med, Q3). That five-number picture is not available in fx-50FH II SD mode."
+    },
+    {
+      "type": "steps",
+      "title": "Open this type",
+      "items": [
+        "MODE → 2 → 1",
+        "Clear or edit data in the Statistics Editor as needed",
+        "AC, then SHIFT 1 (STAT) for Var / MinMax recalls"
+      ]
+    }
+  ],
+  "related": [
+    "statistics",
+    "modes/stat"
+  ]
+}

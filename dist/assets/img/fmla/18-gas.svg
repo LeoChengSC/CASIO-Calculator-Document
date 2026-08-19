@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-labelledby="fmla18-title fmla18-desc">
+  <title id="fmla18-title">Gas in a piston: P, V, T, n</title>
+  <desc id="fmla18-desc">Ideal gas law: squeeze the volume, raise the temperature, or add moles, and the pressure changes to keep PV = nRT.</desc>
+  
+  <rect x="220" y="80" width="280" height="180" fill="none" stroke="var(--accent)" stroke-width="2.2"/>
+  <rect x="220" y="80" width="280" height="36" fill="var(--accent-soft)" fill-opacity="0.25" stroke="var(--accent-soft)" stroke-width="2"/>
+  <line x1="360" y1="80" x2="360" y2="40" stroke="var(--text-muted)" stroke-width="1.6"/>
+  <text x="360" y="32" text-anchor="middle">piston</text>
+  <text x="360" y="175" text-anchor="middle" fill="var(--text)">n moles, T</text>
+  <text x="360" y="198" text-anchor="middle">V</text>
+  <text x="520" y="175">P</text>
+  <text x="360" y="300" text-anchor="middle">PV = nRT  (R from CONST)</text>
+
+</svg>

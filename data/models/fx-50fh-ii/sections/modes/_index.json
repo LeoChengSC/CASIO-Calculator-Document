@@ -1,0 +1,86 @@
+{
+  "id": "modes",
+  "title": "Calculation Modes (MODE)",
+  "shortTitle": "Modes",
+  "parent": "index",
+  "order": 2,
+  "aliases": [
+    "MODE key",
+    "mode menu",
+    "execution environments"
+  ],
+  "keywords": [
+    "COMP",
+    "CMPLX",
+    "BASE",
+    "SD",
+    "REG",
+    "PRGM"
+  ],
+  "formulas": [],
+  "keySequence": [
+    "MODE"
+  ],
+  "summary": "Six primary modes reconfigure evaluation logic, keyboard shortcuts, and memory behaviour. REG and PRGM open nested sub-menus.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Press MODE to open the mode list. Choosing a mode changes how expressions and data buffers are processed. Always confirm the mode indicator before entering statistics data or programs."
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Key",
+        "Mode",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "1",
+          "COMP",
+          "General arithmetic, trig, logs, fractions, transforms"
+        ],
+        [
+          "2",
+          "CMPLX",
+          "Rectangular / polar complex arithmetic"
+        ],
+        [
+          "3",
+          "BASE",
+          "BIN/OCT/DEC/HEX and bitwise logic"
+        ],
+        [
+          "4",
+          "SD",
+          "One-variable statistics"
+        ],
+        [
+          "5",
+          "REG",
+          "Paired-variable regression (7 models)"
+        ],
+        [
+          "6",
+          "PRGM",
+          "Edit, run, or delete programs"
+        ]
+      ]
+    },
+    {
+      "type": "children",
+      "title": "Mode pages",
+      "ids": [
+        "modes/comp",
+        "modes/cmplx",
+        "modes/base-n",
+        "modes/sd",
+        "modes/reg",
+        "modes/prgm"
+      ]
+    }
+  ],
+  "related": [
+    "setup"
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "id": "modes/prgm/example/sequences",
+  "title": "Arithmetic and Geometric Sequences",
+  "shortTitle": "AP / GP",
+  "parent": "modes/prgm/example",
+  "order": 7,
+  "aliases": [
+    "等差等比數列",
+    "AP",
+    "GP",
+    "infinite series"
+  ],
+  "keywords": [
+    "nth term",
+    "partial sum",
+    "infinite GP"
+  ],
+  "formulas": [
+    "Tn = A + (C−1)B",
+    "Sn = C(A+Tn)/2",
+    "Tn = A B^(C−1)"
+  ],
+  "keySequence": [
+    "MODE",
+    "6",
+    "2"
+  ],
+  "summary": "AP or GP nth term and sum; infinite GP when |r| < 1. 64 bytes.",
+  "body": [
+    {
+      "type": "p",
+      "text": "First prompt Y selects the family: 0 = arithmetic, 1 = geometric. Then A (first term), B (common difference or ratio), C (n). AP pauses: Tn, Sn. GP pauses: Tn, Sn, then S∞ = A/(1−B). tanh⁻¹(B) is a gate: if |B| ≥ 1 the infinite-sum step throws Math ERROR, which is the correct ‘no S∞’ signal."
+    },
+    {
+      "type": "note",
+      "label": "Memory / run mode",
+      "text": "64 bytes of the shared 680-byte pool. Create the slot in COMP. Type ? → : ◢ Goto Lbl If Then from SHIFT 3 (P-CMD)."
+    },
+    {
+      "type": "formula",
+      "plain": "Tn = A + (C−1)B"
+    },
+    {
+      "type": "figure",
+      "svg": "img/prgm/sequences.svg",
+      "caption": "AP 2, 5, 8, … (d = 3). T₂₀ = 59 and S₂₀ = 610."
+    },
+    {
+      "type": "h2",
+      "text": "Program (one line)"
+    },
+    {
+      "type": "program",
+      "code": "?→Y:?→A:?→B:?→C:If Y:Then AB^(C−1◢(A−B Ans)÷(1−B◢tanh⁻¹(B:A÷(1−B:Else A+BC−B◢C÷2(A+Ans"
+    },
+    {
+      "type": "h2",
+      "text": "Example 1: AP first term 2, difference 3, n = 20"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: AP first term 2, difference 3, n = 20."
+    },
+    {
+      "type": "p",
+      "text": "Given: Y = 0."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "0 【EXE】  2 【EXE】  3 【EXE】  20 【EXE】",
+        "T₂₀ = 59. 【EXE】 → S₂₀ = 610",
+        "AC — do not 【EXE】 into the GP branch"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 2: GP first term 1024, ratio 1/2, n = 10"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: GP first term 1024, ratio 1/2, n = 10."
+    },
+    {
+      "type": "p",
+      "text": "Given: Y = 1."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "1 【EXE】  1024 【EXE】  0.5 【EXE】  10 【EXE】",
+        "T₁₀ = 2. 【EXE】 → S₁₀ = 2046. 【EXE】 → S∞ = 2048"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 3 (edge): GP with |r| ≥ 1 (no infinite sum)"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: GP with |r| ≥ 1 (no infinite sum)."
+    },
+    {
+      "type": "p",
+      "text": "Given: A = 3, B = 2, C = 5. T₅ = 48, S₅ = 93, then Math ERROR on S∞."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "1 【EXE】  3 【EXE】  2 【EXE】  5 【EXE】",
+        "48, then 93, then Math ERROR on tanh⁻¹(2). That error means S∞ does not exist"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Pitfalls",
+      "text": "tanh⁻¹ is SHIFT hyp tan. For AP, AC after the two pauses. Sn for GP uses A(1−rⁿ)/(1−r); r = 1 is a separate Math ERROR (division by 0) — handle T = A, S = nA by hand."
+    }
+  ],
+  "related": [
+    "modes/prgm/example",
+    "modes/prgm/commands",
+    "modes/prgm/edit"
+  ]
+}

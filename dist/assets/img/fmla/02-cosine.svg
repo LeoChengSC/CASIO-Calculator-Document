@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="fmla02-title fmla02-desc">
+  <title id="fmla02-title">Triangle with included angle A = 60° and sides b = 5, c = 7</title>
+  <desc id="fmla02-desc">Law of cosines: side a opposite angle A is found from sides b and c and the included angle 60 degrees.</desc>
+  
+  <polygon points="150,292 444,292 255,110.13466520526791" fill="var(--accent)" fill-opacity="0.12" stroke="var(--accent)" stroke-width="2.2" stroke-linejoin="round"/>
+  <text x="132" y="298" fill="var(--text)">A</text>
+  <text x="454" y="298" fill="var(--text)">B</text>
+  <text x="249" y="100.13466520526791" fill="var(--text)">C</text>
+  <text x="297" y="314" text-anchor="middle">c = 7</text>
+  <text x="184.5" y="201.06733260263394" text-anchor="end">b = 5</text>
+  <text x="365.5" y="201.06733260263394" >a ≈ 6.24</text>
+  <text x="188" y="278" fill="var(--accent-soft)">60°</text>
+  <text x="360" y="36" text-anchor="middle" fill="var(--text)">Find side a opposite A</text>
+
+</svg>

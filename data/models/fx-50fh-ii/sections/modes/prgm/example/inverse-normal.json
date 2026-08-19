@@ -1,0 +1,127 @@
+{
+  "id": "modes/prgm/example/inverse-normal",
+  "title": "Inverse Standard Normal",
+  "shortTitle": "Inverse Normal",
+  "parent": "modes/prgm/example",
+  "order": 15,
+  "aliases": [
+    "反查標準常態",
+    "inverse Φ",
+    "z from p"
+  ],
+  "keywords": [
+    "linear interpolation",
+    "DSE table",
+    "Fix",
+    "Rnd"
+  ],
+  "formulas": [
+    "P(0 ≤ Z ≤ x) = p",
+    "x = Φ⁻¹(0.5 + p)"
+  ],
+  "keySequence": [
+    "MODE",
+    "6",
+    "2"
+  ],
+  "summary": "z from a central probability. FMLA 04/05 only go the other way. 156 bytes.",
+  "body": [
+    {
+      "type": "p",
+      "text": "FMLA 04/05 map z → probability. This WebCal DSE-accurate inverse listing maps p = P(0 ≤ Z ≤ x) → x using the exam table plus linear interpolation, so the digits match the HKEAA book. Prompt is p with 0 < p < 0.5. Table hits (two decimal z) print as a terminating two-decimal x. In-between values print the interpolated z; RCL A, B are the two table probabilities and RCL Y, M are the two z-grid points for the written working."
+    },
+    {
+      "type": "note",
+      "label": "Memory / run mode",
+      "text": "156 bytes of the shared 680-byte pool. Create the slot in COMP. Type ? → : ◢ Goto Lbl If Then from SHIFT 3 (P-CMD)."
+    },
+    {
+      "type": "formula",
+      "plain": "P(0 ≤ Z ≤ x) = p"
+    },
+    {
+      "type": "figure",
+      "svg": "img/prgm/inverse-normal.svg",
+      "caption": "P(0 ≤ Z ≤ 1.23) = 0.3907. Inverse of 0.3907 returns 1.23."
+    },
+    {
+      "type": "h2",
+      "text": "Program (one line)"
+    },
+    {
+      "type": "program",
+      "code": "?→C:ln(1−4C²:Fix 2:Rnd(√(−Ans−8+√(Ans²−9Ans+64→M:M→Y:Fix 4:Lbl 0:B→A:2÷(2+.4633M:Rnd(.5−E−4e^(−.5M²)Ans(1274−1422Ans+Ans²(7107−7266Ans+5307Ans²→B:(M=Y)+(A=B⇒.01−.02(B>C)M+⇒Goto 0:Norm 1:Y+(Y−M)(C−A)÷(A−B"
+    },
+    {
+      "type": "h2",
+      "text": "Example 1: P(0 ≤ Z ≤ x) = 0.3907"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: P(0 ≤ Z ≤ x) = 0.3907."
+    },
+    {
+      "type": "p",
+      "text": "Given: This p sits on the printed table, so x is exactly two decimals."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "0.3907 【EXE】",
+        "Display 1.23"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 2: P(0 ≤ Z ≤ x) = 0.3 (needs interpolation)"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: P(0 ≤ Z ≤ x) = 0.3 (needs interpolation)."
+    },
+    {
+      "type": "p",
+      "text": "Given: After the run, RCL A ≈ 0.2995, RCL B ≈ 0.3023, RCL Y = 0.84, RCL M = 0.85."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "0.3 【EXE】",
+        "Display ≈ 0.841785714",
+        "Those four recalls are the interpolation lines you write in the script"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 3 (edge): p outside (0, 0.5)"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: p outside (0, 0.5)."
+    },
+    {
+      "type": "p",
+      "text": "Given: Left tail, two-tail, or p ≥ 0.5 must be rewritten first."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "P(Z ≤ a) = 0.9 → central slab is 0.4, then run 0.4; the printed x is a",
+        "P(Z ≥ a) = 0.1 is the same 0.4 slab",
+        "p = 0 or p ≥ 0.5 → Math ERROR or a stuck loop. Do not enter 0.5"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Pitfalls",
+      "text": "Fix 2, Fix 4, Norm 1 and Rnd( are the display-format commands — enter them from SET UP (SHIFT MODE) while editing. E is EXP, so E−4 is 10⁻⁴. e^( is SHIFT eˣ. p > 0.4973 can hit a multi-z table clash; AC then RCL M is the fallback. Source: WebCal standardnormal_6 program I."
+    }
+  ],
+  "related": [
+    "modes/prgm/example",
+    "modes/prgm/commands",
+    "modes/prgm/edit",
+    "fmla/04-normal-p",
+    "fmla/05-normal-r"
+  ]
+}

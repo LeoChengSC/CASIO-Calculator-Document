@@ -1,0 +1,125 @@
+{
+  "id": "modes/prgm/example/freq-sd",
+  "title": "Frequency Table → SD",
+  "shortTitle": "Freq → SD",
+  "parent": "modes/prgm/example",
+  "order": 10,
+  "aliases": [
+    "方差標準差",
+    "frequency table",
+    "S-VAR"
+  ],
+  "keywords": [
+    "DT",
+    "FreqOn",
+    "mean",
+    "σx"
+  ],
+  "formulas": [
+    "x̄ = Σx / n",
+    "variance = σx²"
+  ],
+  "keySequence": [
+    "MODE",
+    "6",
+    "2"
+  ],
+  "summary": "SD-mode loop: enter (value, frequency) pairs, then S-VAR. 85 bytes.",
+  "body": [
+    {
+      "type": "p",
+      "text": "dse.best lists a frequency-entry helper because MODE 4 plus ; is easy to mistype under exam pressure. Create the slot in SD. The program turns FreqOn, clears old STAT data, then loops ? → X, ? → Y, X ; Y DT. AC when the table is finished, then SHIFT 2 (S-VAR) for x̄, σx, sx. Variance is σx² (population) or sx² (sample)."
+    },
+    {
+      "type": "note",
+      "label": "Memory / run mode",
+      "text": "85 bytes of the shared 680-byte pool. Create the slot in SD, FreqOn. Type ? → : ◢ Goto Lbl If Then from SHIFT 3 (P-CMD)."
+    },
+    {
+      "type": "formula",
+      "plain": "x̄ = Σx / n"
+    },
+    {
+      "type": "figure",
+      "svg": "img/prgm/freq-sd.svg",
+      "caption": "Classes 75×1, 80×2, 85×4. n = 7, mean pulled toward 85."
+    },
+    {
+      "type": "h2",
+      "text": "Program (one line)"
+    },
+    {
+      "type": "program",
+      "code": "FreqOn:ClrStat:Lbl 0:?→X:?→Y:X ; Y DT:Goto 0"
+    },
+    {
+      "type": "h2",
+      "text": "Example 1: 75 once, 80 twice, 85 four times"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: 75 once, 80 twice, 85 four times."
+    },
+    {
+      "type": "p",
+      "text": "Given: Same table as the SD page on this site."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "MODE → 6 → 2 → slot (program was created in SD)",
+        "75 【EXE】  1 【EXE】  80 【EXE】  2 【EXE】  85 【EXE】  4 【EXE】",
+        "AC to leave the loop",
+        "SHIFT 2 → 1 【EXE】 → x̄ ≈ 82.143. SHIFT 2 → 2 or 3 for σx / sx. Square it for variance"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 2: Five equal scores of 10"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: Five equal scores of 10."
+    },
+    {
+      "type": "p",
+      "text": "Given: One row: 10 ; 5."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "10 【EXE】  5 【EXE】, AC",
+        "n = 5, x̄ = 10, σx = 0, variance 0"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 3 (edge): FreqOff leftover"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: FreqOff leftover."
+    },
+    {
+      "type": "p",
+      "text": "Given: If you created the program in SD but FreqOff is still on, X ; Y DT is Syntax ERROR."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "The first statement FreqOn in the listing forces frequency on each run",
+        "If you still see Syntax ERROR, enter SD with MODE 4, SHIFT MODE ◀ ◀ 1, then run again"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Pitfalls",
+      "text": "ClrStat is SHIFT 9 1 while editing. DT is the M+ key in SD. Maximum 40 FreqOn records. This program does not print σ itself — it only loads the list."
+    }
+  ],
+  "related": [
+    "modes/prgm/example",
+    "modes/prgm/commands",
+    "modes/prgm/edit"
+  ]
+}

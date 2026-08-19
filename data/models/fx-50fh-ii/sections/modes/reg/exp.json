@@ -1,0 +1,201 @@
+{
+  "id": "modes/reg/exp",
+  "title": "MODE 5-3: Exp (Exponential Regression)",
+  "shortTitle": "Exp",
+  "parent": "modes/reg",
+  "order": 3,
+  "aliases": [
+    "exponential regression",
+    "MODE 5 3",
+    "y=Ae^(Bx)"
+  ],
+  "keywords": [
+    "growth",
+    "decay",
+    "radioactive",
+    "DT",
+    "S-VAR"
+  ],
+  "formulas": [
+    "y = A e^(Bx)"
+  ],
+  "keySequence": [
+    "MODE",
+    "5",
+    "3"
+  ],
+  "summary": "Enter x , y DT pairs (≥2), AC, then recall A, B, and r. Fitted curve: y = A e^(Bx).",
+  "body": [
+    {
+      "type": "p",
+      "text": "Exp fits y = A e^(Bx). Positive B gives growth that speeds up; negative B gives decay toward zero. Use when percentage change is roughly constant (population growth, radioactive decay)."
+    },
+    {
+      "type": "formula",
+      "plain": "y = A e^{Bx}"
+    },
+    {
+      "type": "p",
+      "mark": "reg-graph",
+      "text": "Exponential regression fits y = A e^(Bx). Positive B gives growth that speeds up; negative B gives decay toward zero. On semi-log paper (ln y vs x) the same data would look straight."
+    },
+    {
+      "type": "figure",
+      "mark": "reg-graph",
+      "svg": "img/reg/exp.svg",
+      "caption": "Sample fit y = 2 e^(0.5x). Each equal step in x multiplies y by about e^0.5 ≈ 1.65."
+    },
+    {
+      "type": "h2",
+      "text": "Input"
+    },
+    {
+      "type": "p",
+      "text": "Open Exp regression, clear old data, enter at least two pairs as x , y DT. For a decay model, y values are usually positive."
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "MODE",
+        "5",
+        "3"
+      ]
+    },
+    {
+      "type": "steps",
+      "title": "Enter data",
+      "items": [
+        "SHIFT 9 → 1 EXE if replacing an old list",
+        "For each point: x , y DT",
+        "AC when finished"
+      ]
+    },
+    {
+      "type": "lines",
+      "lead": "Example — four points on y = 2 e^(0.5x):",
+      "items": [
+        "0 , 2 DT",
+        "1 , 3.3 DT",
+        "2 , 5.44 DT",
+        "3 , 8.96 DT",
+        "AC"
+      ]
+    },
+    {
+      "type": "note",
+      "text": "Minimum 2 pairs. The model uses ln y internally; all y values should be positive for a real fit."
+    },
+    {
+      "type": "h2",
+      "text": "Output"
+    },
+    {
+      "type": "p",
+      "text": "After AC, recall A (initial scale), B (growth rate in the exponent), and r. The fitted equation is y = A e^(Bx)."
+    },
+    {
+      "type": "lines",
+      "lead": "S-VAR recalls (after AC):",
+      "items": [
+        "A — SHIFT 2 → 1 → ▶ → ▶ → 1 EXE",
+        "B — SHIFT 2 → 1 → ▶ → ▶ → 2 EXE",
+        "r — SHIFT 2 → 1 → ▶ → ▶ → 3 EXE",
+        "ŷ for a given x: type x, SHIFT 2 → 1 → ◀ → 2 EXE",
+        "x̂ for a given y (> 0): type y, SHIFT 2 → 1 → ◀ → 1 EXE"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Worked example"
+    },
+    {
+      "type": "steps",
+      "title": "Points (0, 2) and (1, 3.3)",
+      "items": [
+        {
+          "keys": [
+            "MODE",
+            "5",
+            "3"
+          ]
+        },
+        {
+          "keys": [
+            "SHIFT",
+            "9",
+            "1",
+            "EXE"
+          ]
+        },
+        {
+          "keys": [
+            "0",
+            ",",
+            "2",
+            "DT"
+          ]
+        },
+        {
+          "keys": [
+            "1",
+            ",",
+            "3.3",
+            "DT"
+          ]
+        },
+        {
+          "keys": [
+            "AC"
+          ]
+        },
+        {
+          "keys": [
+            "SHIFT",
+            "2",
+            "1",
+            "▶",
+            "▶",
+            "1",
+            "EXE"
+          ],
+          "result": "A ≈ 2"
+        },
+        {
+          "keys": [
+            "SHIFT",
+            "2",
+            "1",
+            "▶",
+            "▶",
+            "2",
+            "EXE"
+          ],
+          "result": "B ≈ 0.5"
+        },
+        {
+          "keys": [
+            "SHIFT",
+            "2",
+            "1",
+            "▶",
+            "▶",
+            "3",
+            "EXE"
+          ],
+          "result": "r close to 1"
+        },
+        {
+          "text": "Fitted equation: $y = 2 e^{0.5x}$"
+        },
+        {
+          "text": "At $x = 2$: $y \\approx 5.44$"
+        }
+      ]
+    }
+  ],
+  "related": [
+    "modes/reg",
+    "modes/reg/lin",
+    "modes/reg/log"
+  ]
+}

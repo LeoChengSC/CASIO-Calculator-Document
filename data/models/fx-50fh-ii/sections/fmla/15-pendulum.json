@@ -1,0 +1,92 @@
+{
+  "id": "fmla/15-pendulum",
+  "title": "[FMLA 15] SimpPendulum — Cycle of Simple Pendulum",
+  "shortTitle": "[FMLA 15] SimpPendulum",
+  "parent": "fmla",
+  "order": 15,
+  "aliases": [
+    "Cycle of Simple Pendulum",
+    "SimpPendulum",
+    "FMLA 15",
+    "formula 15",
+    "15",
+    "[FMLA 15] SimpPendulum"
+  ],
+  "keywords": [
+    "L",
+    "cycle",
+    "SimpPendulum",
+    "built-in"
+  ],
+  "formulas": [
+    "T = 2π √(L / g)"
+  ],
+  "keySequence": [
+    "FMLA",
+    "1",
+    "5"
+  ],
+  "summary": "Period of a simple pendulum for small angles.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Calculator scroll name: SimpPendulum. Period of a simple pendulum for small angles."
+    },
+    {
+      "type": "formula",
+      "plain": "T = 2\\pi \\sqrt{\\frac{L}{g}}"
+    },
+    {
+      "type": "p",
+      "mark": "fmla-graph",
+      "text": "A longer playground swing takes longer to come back. That is T = 2π √(L/g). The dashed positions are the ends of a small arc."
+    },
+    {
+      "type": "figure",
+      "mark": "fmla-graph",
+      "svg": "img/fmla/15-pendulum.svg",
+      "caption": "A bob on a string of length L. For small swings, only L and g set the period — the mass does not appear."
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "FMLA",
+        "1",
+        "5"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Primary inputs: L."
+    },
+    {
+      "type": "steps",
+      "title": "How to run",
+      "items": [
+        "Press FMLA, then 1, then 5 (or scroll to the name and EXE)",
+        "Enter each prompted value",
+        "Read the result"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "FMLA → 1 → 5",
+        "Enter length L",
+        "Pendulum period"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "CONST / g",
+      "text": "Small-angle period. Uses g from ROM. Enter length L in metres (L > 0); T is in seconds."
+    }
+  ],
+  "related": [
+    "fmla"
+  ]
+}

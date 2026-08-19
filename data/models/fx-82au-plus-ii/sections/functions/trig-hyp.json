@@ -1,0 +1,47 @@
+{
+  "id": "functions/trig-hyp",
+  "title": "Trigonometric and Hyperbolic",
+  "shortTitle": "Trig / Hyp",
+  "parent": "functions",
+  "order": 10,
+  "aliases": [
+    "sin",
+    "cos",
+    "tan",
+    "hyp",
+    "sinh",
+    "inverse"
+  ],
+  "keywords": [
+    "hyp",
+    "sin⁻¹",
+    "Deg"
+  ],
+  "formulas": [],
+  "keySequence": [
+    "hyp"
+  ],
+  "summary": "sin/cos/tan, inverses, and hyperbolic functions via hyp.",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Examples (Deg)"
+    },
+    {
+      "type": "lines",
+      "items": [
+        "sinh 1.2",
+        "cos⁻¹ 0.5 = 60°"
+      ]
+    },
+    {
+      "type": "figure",
+      "svg": "img/fx82/trig.svg",
+      "caption": "cos⁻¹ 0.5 is the angle whose cosine (x-coordinate on the unit circle) is 0.5. In Deg that angle is 60°."
+    }
+  ],
+  "related": [
+    "functions",
+    "modes/comp"
+  ]
+}

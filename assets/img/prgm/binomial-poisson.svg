@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-labelledby="prgm-bin-title prgm-bin-desc">
+  <title id="prgm-bin-title">Bin(9,0.5) with k=4,5,6 shaded</title>
+  <desc id="prgm-bin-desc">Binomial probabilities for n=9, p=0.5. Bars 4 to 6 are the cumulative range.</desc>
+  
+  <line x1="70" y1="268" x2="680" y2="268" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <rect x="88" y="266.3809523809524" width="46" height="1.619047619047619" fill="var(--accent)" fill-opacity="0.18" stroke="var(--accent)" stroke-width="1.2"/>
+  <text x="111" y="288" text-anchor="middle" fill="var(--text)">0</text>
+  <rect x="146" y="253.42857142857142" width="46" height="14.571428571428571" fill="var(--accent)" fill-opacity="0.18" stroke="var(--accent)" stroke-width="1.2"/>
+  <text x="169" y="288" text-anchor="middle" fill="var(--text)">1</text>
+  <rect x="204" y="209.71428571428572" width="46" height="58.285714285714285" fill="var(--accent)" fill-opacity="0.18" stroke="var(--accent)" stroke-width="1.2"/>
+  <text x="227" y="288" text-anchor="middle" fill="var(--text)">2</text>
+  <rect x="262" y="132" width="46" height="136" fill="var(--accent)" fill-opacity="0.18" stroke="var(--accent)" stroke-width="1.2"/>
+  <text x="285" y="288" text-anchor="middle" fill="var(--text)">3</text>
+  <rect x="320" y="64" width="46" height="204" fill="var(--accent)" fill-opacity="0.55" stroke="var(--accent)" stroke-width="1.2"/>
+  <text x="343" y="288" text-anchor="middle" fill="var(--text)">4</text>
+  <rect x="378" y="64" width="46" height="204" fill="var(--accent)" fill-opacity="0.55" stroke="var(--accent)" stroke-width="1.2"/>
+  <text x="401" y="288" text-anchor="middle" fill="var(--text)">5</text>
+  <rect x="436" y="132" width="46" height="136" fill="var(--accent)" fill-opacity="0.55" stroke="var(--accent)" stroke-width="1.2"/>
+  <text x="459" y="288" text-anchor="middle" fill="var(--text)">6</text>
+  <rect x="494" y="209.71428571428572" width="46" height="58.285714285714285" fill="var(--accent)" fill-opacity="0.18" stroke="var(--accent)" stroke-width="1.2"/>
+  <text x="517" y="288" text-anchor="middle" fill="var(--text)">7</text>
+  <rect x="552" y="253.42857142857142" width="46" height="14.571428571428571" fill="var(--accent)" fill-opacity="0.18" stroke="var(--accent)" stroke-width="1.2"/>
+  <text x="575" y="288" text-anchor="middle" fill="var(--text)">8</text>
+  <rect x="610" y="266.3809523809524" width="46" height="1.619047619047619" fill="var(--accent)" fill-opacity="0.18" stroke="var(--accent)" stroke-width="1.2"/>
+  <text x="633" y="288" text-anchor="middle" fill="var(--text)">9</text>
+  <text x="360" y="24" text-anchor="middle" fill="var(--text)">P(4 ≤ X ≤ 6) = 0.65625</text>
+
+</svg>

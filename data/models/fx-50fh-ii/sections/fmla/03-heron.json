@@ -1,0 +1,95 @@
+{
+  "id": "fmla/03-heron",
+  "title": "[FMLA 03] HeronFormula — Heron's Formula",
+  "shortTitle": "[FMLA 03] HeronFormula",
+  "parent": "fmla",
+  "order": 3,
+  "aliases": [
+    "Heron's Formula",
+    "HeronFormula",
+    "FMLA 03",
+    "formula 03",
+    "03",
+    "[FMLA 03] HeronFormula"
+  ],
+  "keywords": [
+    "a",
+    "b",
+    "c",
+    "heron's",
+    "HeronFormula",
+    "built-in"
+  ],
+  "formulas": [
+    "Area = √(s(s-a)(s-b)(s-c)), s = (a+b+c)/2"
+  ],
+  "keySequence": [
+    "FMLA",
+    "0",
+    "3"
+  ],
+  "summary": "Triangle area from three side lengths.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Calculator scroll name: HeronFormula. Triangle area from three side lengths."
+    },
+    {
+      "type": "formula",
+      "plain": "\\text{Area} = \\sqrt{s(s-a)(s-b)(s-c)}\ns = \\frac{a+b+c}{2}"
+    },
+    {
+      "type": "p",
+      "mark": "fmla-graph",
+      "text": "If you only have the three side lengths (no angle), Heron still gives the area. The picture is that filled-in triangle."
+    },
+    {
+      "type": "figure",
+      "mark": "fmla-graph",
+      "svg": "img/fmla/03-heron.svg",
+      "caption": "Example: sides 3, 4, 5. Semi-perimeter s = 6, so the shaded area is 6 — the well-known right triangle."
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "FMLA",
+        "0",
+        "3"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Primary inputs: a, b, c."
+    },
+    {
+      "type": "steps",
+      "title": "How to run",
+      "items": [
+        "Press FMLA, then 0, then 3 (or scroll to the name and EXE)",
+        "Enter each prompted value",
+        "Read the result"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "lines",
+      "mark": "fmla-graph",
+      "items": [
+        "a = 3, b = 4, c = 5",
+        "s = (3+4+5)/2 = 6",
+        "Area = {sqrt:6(6−3)(6−4)(6−5)} = {sqrt:36} = 6"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Triangle inequality",
+      "text": "Sides must satisfy a+b>c, b+c>a, and c+a>b (all > 0). Otherwise the area is not defined and the routine errors."
+    }
+  ],
+  "related": [
+    "fmla"
+  ]
+}

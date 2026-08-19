@@ -1,0 +1,76 @@
+{
+  "id": "modes/verif",
+  "title": "MODE 3: VERIF (Verify)",
+  "shortTitle": "VERIF",
+  "parent": "modes",
+  "order": 3,
+  "aliases": [
+    "VERIFY",
+    "MODE 3",
+    "TRUE",
+    "FALSE",
+    "inequality"
+  ],
+  "keywords": [
+    "=",
+    "≠",
+    ">",
+    "<",
+    "≥",
+    "≤",
+    "identity"
+  ],
+  "formulas": [
+    "sin²θ + cos²θ = 1"
+  ],
+  "keySequence": [
+    "MODE",
+    "3"
+  ],
+  "summary": "Test equalities and inequalities; result is TRUE or FALSE.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Build left expression, insert a relation from SHIFT 3 (VERIFY), then the right expression. One relation per statement. Missing terms or multiple relations cause Syntax ERROR."
+    },
+    {
+      "type": "h2",
+      "text": "Example: sin²30 + cos²30 = 1"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "MODE → 3",
+        "Enter (sin 30)² + (cos 30)²",
+        "SHIFT 3 (VERIFY) → 1 (=)",
+        "Enter 1",
+        "= → TRUE"
+      ]
+    },
+    {
+      "type": "figure",
+      "svg": "img/fx82/verif.svg",
+      "caption": "On the unit circle, the 30° right triangle has legs sin 30 and cos 30. VERIF confirms their squares add to 1 under the current angle unit."
+    },
+    {
+      "type": "h2",
+      "text": "Example: inequality"
+    },
+    {
+      "type": "lines",
+      "items": [
+        "2⁴ = 16",
+        "3³ = 27",
+        "16 < 27 → TRUE"
+      ]
+    },
+    {
+      "type": "note",
+      "text": "Confirm Deg/Rad before trig identities. VERIF checks numerical/logical truth under current settings, not algebraic proof steps for markers."
+    }
+  ],
+  "related": [
+    "modes/comp",
+    "setup"
+  ]
+}

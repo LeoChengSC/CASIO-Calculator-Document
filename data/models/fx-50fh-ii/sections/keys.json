@@ -1,0 +1,75 @@
+{
+  "id": "keys",
+  "title": "Primary Keyboard Shortcuts",
+  "shortTitle": "Keys",
+  "parent": "index",
+  "order": 7,
+  "aliases": [
+    "Pol",
+    "Rec",
+    "hyp",
+    "sexagesimal",
+    "DMS",
+    "hyperbolic"
+  ],
+  "keywords": [
+    "coordinate",
+    "sinh",
+    "degrees minutes seconds",
+    "ENG"
+  ],
+  "formulas": [
+    "Pol(x,y)",
+    "Rec(r,θ)"
+  ],
+  "keySequence": [],
+  "summary": "Coordinate transforms, hyperbolic functions, and sexagesimal conversions used across COMP/CMPLX.",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Pol / Rec"
+    },
+    {
+      "type": "p",
+      "text": "Pol converts rectangular (x, y) to polar (r, θ). Rec converts polar to rectangular. Pol is SHIFT +; Rec is SHIFT −. Angle unit SET UP affects θ. After Pol, r is on the display (and in X); θ is in Y. After Rec, x is on the display (and in X); y is in Y. Press RCL Y for the second value."
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "lines",
+      "lead": "In Deg mode, Pol(3, 4):",
+      "items": [
+        "SHIFT + (Pol) 3 , 4 EXE",
+        "Display r = 5 (also stored in X)",
+        "RCL Y → θ ≈ 53.13°"
+      ]
+    },
+    {
+      "type": "figure",
+      "svg": "img/keys/pol-rec.svg",
+      "caption": "Same example on the plane. The legs are x = 3 and y = 4; the hypotenuse is r = 5; the angle from the x-axis is θ ≈ 53.13°. Rec(5, 53.13) recovers (3, 4)."
+    },
+    {
+      "type": "h2",
+      "text": "Hyperbolic (hyp)"
+    },
+    {
+      "type": "p",
+      "text": "hyp then sin/cos/tan yields sinh, cosh, tanh. Inverse hyperbolics are SHIFT hyp, then sin/cos/tan (sinh⁻¹, cosh⁻¹, tanh⁻¹) — not hyp then SHIFT sin."
+    },
+    {
+      "type": "h2",
+      "text": "Sexagesimal (° ′ ″)"
+    },
+    {
+      "type": "p",
+      "text": "Convert decimal degrees to DMS and back with the ° ′ ″ key. Essential for surveying and navigation-style exam questions."
+    }
+  ],
+  "related": [
+    "setup",
+    "modes/cmplx"
+  ]
+}

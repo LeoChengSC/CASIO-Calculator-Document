@@ -1,0 +1,93 @@
+{
+  "id": "fmla/14-drop",
+  "title": "[FMLA 14] DropDistance — Distance of Drop",
+  "shortTitle": "[FMLA 14] DropDistance",
+  "parent": "fmla",
+  "order": 14,
+  "aliases": [
+    "Distance of Drop",
+    "DropDistance",
+    "FMLA 14",
+    "formula 14",
+    "14",
+    "[FMLA 14] DropDistance"
+  ],
+  "keywords": [
+    "v0",
+    "t",
+    "distance",
+    "DropDistance",
+    "built-in"
+  ],
+  "formulas": [
+    "s = v₀ t + (1/2) g t²"
+  ],
+  "keySequence": [
+    "FMLA",
+    "1",
+    "4"
+  ],
+  "summary": "Vertical displacement under constant g from ROM (CONST 9-3 = 9.80665).",
+  "body": [
+    {
+      "type": "p",
+      "text": "Calculator scroll name: DropDistance. Vertical displacement under constant g from ROM (not a typed 9.8)."
+    },
+    {
+      "type": "formula",
+      "plain": "s = v_{0} t + \\frac{1}{2} g t^{2}"
+    },
+    {
+      "type": "p",
+      "mark": "fmla-graph",
+      "text": "If you let go (no throw), v₀ is 0 and the formula collapses to s = ½ g t². Time has more effect than it first looks: double the time, four times the distance."
+    },
+    {
+      "type": "figure",
+      "mark": "fmla-graph",
+      "svg": "img/fmla/14-drop.svg",
+      "caption": "Dropped from rest (v₀ = 0), ROM g = 9.80665. Distance down grows with t². At 2 s the drop is about 19.61 m."
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "FMLA",
+        "1",
+        "4"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Primary inputs: v₁, t."
+    },
+    {
+      "type": "steps",
+      "title": "How to run",
+      "items": [
+        "Press FMLA, then 1, then 4 (or scroll to the name and EXE)",
+        "Enter each prompted value",
+        "Read the result"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "lines",
+      "mark": "fmla-graph",
+      "items": [
+        "v₁ = 2 m/s, t = 4 s (ROM g = 9.80665)",
+        "S = 2×4 + ½×9.80665×16 = 86.4532 m"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "CONST / g",
+      "text": "Uses gravitational acceleration g from ROM (not a rounded 9.8 you type yourself). v₀ in m/s, t in seconds (t > 0), s in m."
+    }
+  ],
+  "related": [
+    "fmla"
+  ]
+}

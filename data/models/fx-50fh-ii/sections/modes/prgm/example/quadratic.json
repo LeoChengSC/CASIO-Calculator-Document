@@ -1,0 +1,125 @@
+{
+  "id": "modes/prgm/example/quadratic",
+  "title": "Quadratic Equation",
+  "shortTitle": "Quadratic",
+  "parent": "modes/prgm/example",
+  "order": 2,
+  "aliases": [
+    "一元二次方程",
+    "vertex",
+    "enhanced quadratic"
+  ],
+  "keywords": [
+    "discriminant",
+    "roots",
+    "vertex",
+    "FMLA 01"
+  ],
+  "formulas": [
+    "Ax² + Bx + C = 0"
+  ],
+  "keySequence": [
+    "MODE",
+    "6",
+    "2"
+  ],
+  "summary": "Compact HK quadratic: both roots and the vertex. 42 bytes.",
+  "body": [
+    {
+      "type": "p",
+      "text": "FMLA 01 already solves real roots, so the stored program is the one that also keeps the vertex and works for complex roots in CMPLX. Prompts A, B, C. Displays the two roots. After the run, RCL C is vertex x = −B/(2A) and RCL M is vertex y."
+    },
+    {
+      "type": "note",
+      "label": "Memory / run mode",
+      "text": "42 bytes of the shared 680-byte pool. Create the slot in COMP; use CMPLX when the discriminant is negative. Type ? → : ◢ Goto Lbl If Then from SHIFT 3 (P-CMD)."
+    },
+    {
+      "type": "formula",
+      "plain": "Ax² + Bx + C = 0"
+    },
+    {
+      "type": "figure",
+      "svg": "img/prgm/quadratic.svg",
+      "caption": "x² − 7x + 12 = 0 crosses at 4 and 3. Vertex (3.5, −0.25)."
+    },
+    {
+      "type": "h2",
+      "text": "Program (one line)"
+    },
+    {
+      "type": "program",
+      "code": "?→A:?→B:?→M:−B÷(2A→C:AC²M−:C+√(−M÷A→A◢2C−Ans→B"
+    },
+    {
+      "type": "h2",
+      "text": "Example 1: x² − 7x + 12 = 0"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: x² − 7x + 12 = 0."
+    },
+    {
+      "type": "p",
+      "text": "Given: A = 1, B = −7, C = 12."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "1 【EXE】  −7 【EXE】  12 【EXE】",
+        "Display 4. 【EXE】 → 3",
+        "RCL C → 3.5 (vertex x). RCL M → −0.25 (vertex y)"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 2: x² + 6x + 25 = 0 (complex)"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: x² + 6x + 25 = 0 (complex)."
+    },
+    {
+      "type": "p",
+      "text": "Given: Create the slot in CMPLX. Discriminant 36 − 100 = −64."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "MODE → 6 → 1 → unused slot → 2 (CMPLX), paste the line, then Run",
+        "1 【EXE】  6 【EXE】  25 【EXE】",
+        "R<=>I appears. Display −3; SHIFT 【EXE】 (Re⇔Im) → 4i. 【EXE】 → −3; SHIFT 【EXE】 → −4i",
+        "Roots −3 ± 4i. Vertex still RCL C = −3, RCL M = 16"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 3 (edge): Double root (x − 3)² = 0"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: Double root (x − 3)² = 0."
+    },
+    {
+      "type": "p",
+      "text": "Given: A = 1, B = −6, C = 9. Both pauses show 3."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "1 【EXE】  −6 【EXE】  9 【EXE】",
+        "Display 3. 【EXE】 → 3. Vertex is the same point (3, 0)"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Pitfalls",
+      "text": "M− is SHIFT M+ (subtract from independent memory). Set d/c (SHIFT MODE ▶ ▶ 2) if you want improper fractions."
+    }
+  ],
+  "related": [
+    "modes/prgm/example",
+    "modes/prgm/commands",
+    "modes/prgm/edit"
+  ]
+}

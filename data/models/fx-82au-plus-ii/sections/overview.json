@@ -1,0 +1,53 @@
+{
+  "id": "index",
+  "title": "fx-82AU PLUS II Overview",
+  "shortTitle": "Overview",
+  "parent": "root",
+  "order": 0,
+  "aliases": [
+    "introduction",
+    "about",
+    "Natural-V.P.A.M.",
+    "2nd Edition"
+  ],
+  "keywords": [
+    "NESA",
+    "VCAA",
+    "NCEA",
+    "non-programmable",
+    "textbook display",
+    "VPAM"
+  ],
+  "formulas": [],
+  "keySequence": [],
+  "summary": "Non-programmable Natural-V.P.A.M. scientific calculator for Australian and New Zealand secondary curricula: exact surds/fractions, STAT with quartiles, VERIF mode, and exam-board approval.",
+  "body": [
+    {
+      "type": "p",
+      "text": "The CASIO fx-82AU PLUS II (2nd Edition, Natural-V.P.A.M.) is a non-programmable scientific calculator for secondary and tertiary education. A single AAA battery (R03) typically lasts about two years in classroom use. It intentionally omits programmable RAM, CAS, and graphing so it remains legal in major Oceania exam settings."
+    },
+    {
+      "type": "p",
+      "text": "Natural Textbook Display shows fractions, surds, exponents, and logs as in print. The engine uses ~15-digit internal precision with a 10+2 digit result display. Core strengths vs programmable models: exact surd arithmetic, FACT/GCD/LCM, quartile statistics, seven regression models, and VERIF (TRUE/FALSE) checking."
+    },
+    {
+      "type": "children",
+      "title": "Start here",
+      "ids": [
+        "hardware",
+        "modes",
+        "setup",
+        "functions",
+        "statistics",
+        "memory",
+        "exam",
+        "compare"
+      ]
+    }
+  ],
+  "related": [
+    "hardware",
+    "exam",
+    "compare"
+  ]
+}

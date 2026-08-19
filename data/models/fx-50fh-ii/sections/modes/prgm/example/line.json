@@ -1,0 +1,123 @@
+{
+  "id": "modes/prgm/example/line",
+  "title": "Two-Point Line",
+  "shortTitle": "Two-Point Line",
+  "parent": "modes/prgm/example",
+  "order": 8,
+  "aliases": [
+    "直線方程",
+    "slope intercept",
+    "two point form"
+  ],
+  "keywords": [
+    "distance",
+    "slope",
+    "y-intercept"
+  ],
+  "formulas": [
+    "y = mx + c",
+    "d = √((x1−x2)²+(y1−y2)²)"
+  ],
+  "keySequence": [
+    "MODE",
+    "6",
+    "2"
+  ],
+  "summary": "Distance, slope, and y-intercept from two points. 49 bytes.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Enter A,B = (x1,y1) and X,Y = (x2,y2). Pauses: distance, slope m, intercept c so the line is y = mx + c. After the run RCL D, RCL M, RCL C keep those three numbers."
+    },
+    {
+      "type": "note",
+      "label": "Memory / run mode",
+      "text": "49 bytes of the shared 680-byte pool. Create the slot in COMP. Type ? → : ◢ Goto Lbl If Then from SHIFT 3 (P-CMD)."
+    },
+    {
+      "type": "formula",
+      "plain": "y = mx + c"
+    },
+    {
+      "type": "figure",
+      "svg": "img/prgm/line.svg",
+      "caption": "(3, −2) and (4, 1) determine y = 3x − 11. Distance √10 ≈ 3.162."
+    },
+    {
+      "type": "h2",
+      "text": "Program (one line)"
+    },
+    {
+      "type": "program",
+      "code": "?→A:?→B:?→X:?→Y:A−X→X:B−Y→Y:√(X²+Y²→D◢Y÷X→M◢B−MA→C"
+    },
+    {
+      "type": "h2",
+      "text": "Example 1: A(3, −2), B(4, 1)"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: A(3, −2), B(4, 1)."
+    },
+    {
+      "type": "p",
+      "text": "Given: WebCal check example."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "3 【EXE】  −2 【EXE】  4 【EXE】  1 【EXE】",
+        "Distance ≈ 3.162. 【EXE】 → slope 3. 【EXE】 → intercept −11",
+        "Line y = 3x − 11"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 2: Horizontal line (1, 5) and (4, 5)"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: Horizontal line (1, 5) and (4, 5)."
+    },
+    {
+      "type": "p",
+      "text": "Given: Slope 0, intercept 5, distance 3."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "1 【EXE】  5 【EXE】  4 【EXE】  5 【EXE】",
+        "3, then 0, then 5. Equation y = 5"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 3 (edge): Vertical line (2, 1) and (2, 4)"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: Vertical line (2, 1) and (2, 4)."
+    },
+    {
+      "type": "p",
+      "text": "Given: Δx = 0 so slope is undefined."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "2 【EXE】  1 【EXE】  2 【EXE】  4 【EXE】",
+        "Distance 3, then Math ERROR on Y÷X. The line is x = 2; this program cannot print a y = mx + c form"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Pitfalls",
+      "text": "Last assignment uses original B (y1) and A (x1); X and Y have already become Δx and Δy. For a perpendicular bisector, slope is −1/M and the line passes through the midpoint."
+    }
+  ],
+  "related": [
+    "modes/prgm/example",
+    "modes/prgm/commands",
+    "modes/prgm/edit"
+  ]
+}

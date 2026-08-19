@@ -1,0 +1,128 @@
+{
+  "id": "modes/prgm/example/four-centres",
+  "title": "Triangle Four Centres",
+  "shortTitle": "Four Centres",
+  "parent": "modes/prgm/example",
+  "order": 3,
+  "aliases": [
+    "四心",
+    "incenter",
+    "circumcenter",
+    "orthocenter",
+    "centroid"
+  ],
+  "keywords": [
+    "triangle",
+    "G",
+    "O",
+    "H",
+    "I"
+  ],
+  "formulas": [
+    "G = (A+B+C)/3",
+    "H = 3G − 2O"
+  ],
+  "keySequence": [
+    "MODE",
+    "6",
+    "2"
+  ],
+  "summary": "Centroid and circumcentre from three vertices; orthocentre from Euler’s line. ~90 bytes.",
+  "body": [
+    {
+      "type": "p",
+      "text": "AfterSchool lists this as the other DSE must-enter program next to 2×2 linear systems. Enter vertices (A,B), (C,D), (X,Y). Four pauses: centroid Gx, Gy, then circumcentre Ox, Oy. Orthocentre is H = 3G − 2O (Euler: G divides OH in 2 : 1). Incentre is the side-length weighted average of the vertices."
+    },
+    {
+      "type": "note",
+      "label": "Memory / run mode",
+      "text": "~90 bytes of the shared 680-byte pool. Create the slot in COMP, Deg. Type ? → : ◢ Goto Lbl If Then from SHIFT 3 (P-CMD)."
+    },
+    {
+      "type": "formula",
+      "plain": "G = (A+B+C)/3"
+    },
+    {
+      "type": "figure",
+      "svg": "img/prgm/four-centres.svg",
+      "caption": "Right triangle (4,3), (0,0), (4,0): G (8/3, 1), H (4, 0), O (2, 3/2), I (3, 1)."
+    },
+    {
+      "type": "h2",
+      "text": "Program (one line)"
+    },
+    {
+      "type": "program",
+      "code": "?→A:?→B:?→C:?→D:?→X:?→Y:(A+C+X)÷3◢(B+D+Y)÷3◢2((C−A)(Y−B)−(X−A)(D−B→M:((C²+D²−A²−B²)(Y−B)−(X²+Y²−A²−B²)(D−B))÷M→M◢((X²+Y²−A²−B²)(C−A)−(C²+D²−A²−B²)(X−A))÷(2((C−A)(Y−B)−(X−A)(D−B)))"
+    },
+    {
+      "type": "h2",
+      "text": "Example 1: Vertices (4, 3), (0, 0), (4, 0)"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: Vertices (4, 3), (0, 0), (4, 0)."
+    },
+    {
+      "type": "p",
+      "text": "Given: Right-angled at (4, 0). Hypotenuse from (0, 0) to (4, 3)."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "4 【EXE】  3 【EXE】  0 【EXE】  0 【EXE】  4 【EXE】  0 【EXE】",
+        "Gx = 8/3. 【EXE】 → Gy = 1  (centroid)",
+        "【EXE】 → Ox = 2. 【EXE】 → Oy = 3/2  (circumcentre, midpoint of the hypotenuse)",
+        "Orthocentre H = 3G − 2O = (4, 0), the right-angle vertex. Incentre I = (3, 1)"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 2: Vertices (0, 0), (4, 0), (0, 3)"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: Vertices (0, 0), (4, 0), (0, 3)."
+    },
+    {
+      "type": "p",
+      "text": "Given: Right-angled at the origin."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "0 【EXE】  0 【EXE】  4 【EXE】  0 【EXE】  0 【EXE】  3 【EXE】",
+        "G = (4/3, 1). O = (2, 3/2). H = 3G − 2O = (0, 0)"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 3 (edge): Collinear points"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: Collinear points."
+    },
+    {
+      "type": "p",
+      "text": "Given: (0, 0), (2, 0), (5, 0) are not a triangle."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "0 【EXE】  0 【EXE】  2 【EXE】  0 【EXE】  5 【EXE】  0 【EXE】",
+        "G still prints (the average). Circumcentre hits Math ERROR (denominator 0). That is the ‘not a triangle’ signal"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Pitfalls",
+      "text": "If two points share a y-coordinate the circumcentre formula can hit Math ERROR — enter a point with a distinct y first. Long published listings (~227 bytes) also print incentre, circumradius, and the circumcircle equation using SD memories."
+    }
+  ],
+  "related": [
+    "modes/prgm/example",
+    "modes/prgm/commands",
+    "modes/prgm/edit"
+  ]
+}

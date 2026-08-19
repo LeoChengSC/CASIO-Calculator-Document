@@ -1,0 +1,156 @@
+{
+  "id": "modes/sd",
+  "title": "MODE 4: SD (Single-Variable Statistics)",
+  "shortTitle": "SD",
+  "parent": "modes",
+  "order": 4,
+  "aliases": [
+    "statistics",
+    "MODE 4",
+    "one-variable",
+    "S-SUM",
+    "S-VAR",
+    "FreqOn",
+    "STAT-data editor"
+  ],
+  "keywords": [
+    "DT",
+    "CL",
+    "STAT",
+    "minX",
+    "maxX",
+    "FreqOn",
+    "FreqOff",
+    "Data Full"
+  ],
+  "formulas": [],
+  "keySequence": [
+    "MODE",
+    "4"
+  ],
+  "summary": "Enter one-variable data with DT (optional frequencies), then recall n, Σx, Σx², x̄, σx, or sx.",
+  "body": [
+    {
+      "type": "p",
+      "text": "MODE 4 (SD) is one-variable statistics. An SD indicator appears. In this mode the M+ key becomes DT (register a sample) and SHIFT DT becomes CL (delete the displayed sample). After the list is entered, recall each result from its own page:"
+    },
+    {
+      "type": "children",
+      "title": "Results you can recall",
+      "ids": [
+        "modes/sd/n",
+        "modes/sd/sum",
+        "modes/sd/sumsq",
+        "modes/sd/mean",
+        "modes/sd/stdev"
+      ]
+    },
+    {
+      "type": "note",
+      "text": "Entering SD from another mode clears statistical memory. Pressing MODE 4 while you are already in SD does not clear it. For a new data set, use SHIFT 9 (CLR) → 1 (Stat) → EXE. Leaving SD/REG for COMP, CMPLX, BASE, or PRGM also clears STAT data."
+    },
+    {
+      "type": "h2",
+      "text": "Frequency setting (FreqOn / FreqOff)"
+    },
+    {
+      "type": "p",
+      "text": "Open SET UP with SHIFT MODE, then ◀ ◀ to the frequency screen. Factory default is FreqOn. FreqOff stores one list slot per observation; FreqOn lets you attach a count to each distinct x-value. SET UP pages use ◀ / ▶, not ▼."
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "SHIFT",
+        "MODE",
+        "◀",
+        "◀",
+        "1 FreqOn / 2 FreqOff"
+      ]
+    },
+    {
+      "type": "ul",
+      "items": [
+        "FreqOn (default): x DT  (frequency 1)  or  x ; f DT  using SHIFT , (;) then the count f",
+        "FreqOff: x DT for every observation. Typing ; f DT gives Syntax ERROR",
+        "Maximum stored records: FreqOn 40, FreqOff 80. Extra input shows Data Full"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Entering data (STAT-data editor)"
+    },
+    {
+      "type": "steps",
+      "title": "Basic workflow",
+      "items": [
+        "MODE → 4 to enter SD",
+        "If you were already in SD, SHIFT 9 (CLR) → 1 (Stat) → EXE",
+        "Type a value and press DT. The Line = n counter increases",
+        "Press DT again immediately to repeat the last x (same as entering it twice)",
+        "Press AC when the list is complete, then open the statistic you need"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "FreqOn shortcut: if a class appears once, x DT is enough. If it appears f times, x ; f DT."
+    },
+    {
+      "type": "lines",
+      "lead": "Example classes:",
+      "items": [
+        "75 once → 75 DT",
+        "80 twice → 80 DT DT",
+        "85 four times → 85 ; 4 DT"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "View, edit, delete"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "View: cursor ▲ / ▼ through stored samples. A $ mark means more data below; ` means more above",
+        "FreqOn order is x1, Freq1, x2, Freq2, …  FreqOff order is x1, x2, x3, …",
+        "Edit: display the sample, type the new number, EXE. Do not press DT or you will add a new point instead of replacing",
+        "Delete one sample: display it, then SHIFT DT (CL). With FreqOn, both that x and its frequency are removed",
+        "Undo last registration: SHIFT DT (CL) immediately after DT",
+        "Leave the list: AC, then recall S-SUM / S-VAR. Recalling stats while still browsing the list is a common source of wrong displays"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Also in S-VAR (not split out)"
+    },
+    {
+      "type": "p",
+      "text": "After AC, minX and maxX are on the second S-VAR screen (both need at least one sample):"
+    },
+    {
+      "type": "lines",
+      "items": [
+        "minX — SHIFT 2 → ▶ → 1 EXE",
+        "maxX — SHIFT 2 → ▶ → 2 EXE"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Limits"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Data Full at 40 records (FreqOn) or 80 (FreqOff): delete unused rows or collapse repeats with FreqOn",
+        "Independent memory M+ is the DT key in SD, so running totals with M+ are not available here",
+        "DT also overwrites Ans. Exit the list with AC before mixing ordinary arithmetic",
+        "SD has no quartile or median keys. MODE 1 when finished"
+      ]
+    }
+  ],
+  "related": [
+    "modes/sd/n",
+    "modes/sd/mean",
+    "modes/reg",
+    "setup"
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "id": "modes/sd/n",
+  "title": "SD: Number of data points (n)",
+  "shortTitle": "Number of data points (n)",
+  "parent": "modes/sd",
+  "order": 1,
+  "aliases": [
+    "n",
+    "sample size",
+    "number of observations",
+    "S-SUM 3",
+    "count"
+  ],
+  "keywords": [
+    "n",
+    "frequency",
+    "S-SUM",
+    "Line"
+  ],
+  "formulas": [
+    "n = Σ fi"
+  ],
+  "keySequence": [
+    "SHIFT",
+    "1",
+    "3"
+  ],
+  "summary": "Total number of observations. With FreqOn this is the sum of frequencies, not the number of distinct x-values.",
+  "body": [
+    {
+      "type": "p",
+      "text": "n is the sample size. Each DT with frequency 1 adds 1. With FreqOn, entering x ; f DT adds f to n. Line = on the editor is the number of stored records (pairs or points), which can be smaller than n when frequencies are greater than 1."
+    },
+    {
+      "type": "formula",
+      "plain": "n = \\sum f_i\n\\text{FreqOff: each point has } f_i = 1"
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "SHIFT",
+        "1",
+        "3",
+        "EXE"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "lines",
+      "items": [
+        "Data: 2, 4, 6, 8 (four numbers)",
+        "n = 4"
+      ]
+    },
+    {
+      "type": "steps",
+      "items": [
+        "MODE 4. If you were already in SD, SHIFT 9 → 1 (Stat) → EXE to clear the old list",
+        "2 DT",
+        "4 DT",
+        "6 DT",
+        "8 DT",
+        "then AC",
+        "SHIFT 1 → 3 EXE → n = 4"
+      ],
+      "title": "On the calculator"
+    },
+    {
+      "type": "h2",
+      "text": "Example with frequencies (FreqOn)"
+    },
+    {
+      "type": "lines",
+      "lead": "Three class rows (75, 80, 85):",
+      "items": [
+        "75 appears once",
+        "80 appears twice",
+        "85 appears four times",
+        "n = 1 + 2 + 4 = 7",
+        "not 3 (the number of rows)"
+      ]
+    },
+    {
+      "type": "steps",
+      "items": [
+        "Confirm FreqOn in SETUP, then MODE 4",
+        "75 DT",
+        "80 DT DT",
+        "85 ; 4 DT",
+        "then AC",
+        "SHIFT 1 → 3 EXE → n = 7"
+      ],
+      "title": "On the calculator"
+    },
+    {
+      "type": "note",
+      "text": "The calculator keeps n as it builds the list. [[modes/sd/mean]] and [[modes/sd/stdev]] are then worked out from n, Σx, and Σx². Sample standard deviation (sx) needs at least two data points."
+    }
+  ],
+  "related": [
+    "modes/sd/sum",
+    "modes/sd/mean",
+    "modes/sd"
+  ]
+}

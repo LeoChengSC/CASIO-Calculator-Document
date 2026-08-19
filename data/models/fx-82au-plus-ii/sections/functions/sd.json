@@ -1,0 +1,45 @@
+{
+  "id": "functions/sd",
+  "title": "Exact ↔ Decimal (S⇔D)",
+  "shortTitle": "S⇔D",
+  "parent": "functions",
+  "order": 3,
+  "aliases": [
+    "S⇔D",
+    "SD",
+    "fraction toggle",
+    "surd toggle"
+  ],
+  "keywords": [
+    "exact",
+    "decimal",
+    "mixed",
+    "improper"
+  ],
+  "formulas": [],
+  "keySequence": [
+    "S⇔D"
+  ],
+  "summary": "Toggle between exact forms (fractions, surds, π multiples) and decimal approximations.",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "√48 =  exact surd form",
+        "S⇔D → decimal"
+      ]
+    },
+    {
+      "type": "note",
+      "text": "Fraction style (ab/c vs d/c) is controlled in SET UP and affects how fractional exact results present."
+    }
+  ],
+  "related": [
+    "functions",
+    "modes/comp"
+  ]
+}

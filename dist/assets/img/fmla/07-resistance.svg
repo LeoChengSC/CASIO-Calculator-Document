@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-labelledby="fmla07-title fmla07-desc">
+  <title id="fmla07-title">A conductor of length ℓ and cross-section S</title>
+  <desc id="fmla07-desc">Resistance grows with length ℓ and shrinks when the cross-section S is wider. Resistivity ρ is a property of the material.</desc>
+  
+  <rect x="160" y="140" width="400" height="56" fill="var(--accent)" fill-opacity="0.12" stroke="var(--accent)" stroke-width="2"/>
+  <line x1="160" y1="214" x2="560" y2="214" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <line x1="160" y1="208" x2="160" y2="220" stroke="var(--text-muted)"/>
+  <line x1="560" y1="208" x2="560" y2="220" stroke="var(--text-muted)"/>
+  <text x="360" y="238" text-anchor="middle">ℓ</text>
+  <rect x="574" y="148" width="36" height="40" fill="none" stroke="var(--accent-soft)" stroke-width="1.6"/>
+  <text x="592" y="130" text-anchor="middle">S</text>
+  <text x="360" y="88" text-anchor="middle" fill="var(--text)">Longer wire → more R. Thicker wire → less R.</text>
+
+</svg>

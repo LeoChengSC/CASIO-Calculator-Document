@@ -1,0 +1,39 @@
+{
+  "id": "functions/eng",
+  "title": "Engineering Notation (ENG)",
+  "shortTitle": "ENG",
+  "parent": "functions",
+  "order": 11,
+  "aliases": [
+    "ENG",
+    "SI prefix",
+    "micro",
+    "kilo"
+  ],
+  "keywords": [
+    "×10³",
+    "engineering"
+  ],
+  "formulas": [],
+  "keySequence": [
+    "ENG"
+  ],
+  "summary": "Shift displayed exponent in multiples of 3 for SI-style magnitudes.",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "0.000045 =",
+        "ENG → 45×10⁻⁶ style display"
+      ]
+    }
+  ],
+  "related": [
+    "functions",
+    "modes/comp"
+  ]
+}

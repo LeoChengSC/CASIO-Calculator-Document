@@ -1,0 +1,124 @@
+{
+  "id": "modes/prgm/example/line-quad",
+  "title": "Line ∩ Quadratic",
+  "shortTitle": "Line ∩ Quad",
+  "parent": "modes/prgm/example",
+  "order": 11,
+  "aliases": [
+    "聯立二元一為一次及一為二次方程",
+    "line circle intersection",
+    "simultaneous5a"
+  ],
+  "keywords": [
+    "line",
+    "circle",
+    "parabola",
+    "substitution"
+  ],
+  "formulas": [
+    "Dx + Yy = C",
+    "M x² + B xy + A y² + X x + Y y = K"
+  ],
+  "keySequence": [
+    "MODE",
+    "6",
+    "2"
+  ],
+  "summary": "Compulsory DSE listing: intersections of a line with a circle or other conic. 219 bytes.",
+  "body": [
+    {
+      "type": "p",
+      "text": "FMLA 01 only solves the quadratic after you have already substituted. This WebCal / IceCreamTutor version II listing (no zero-coefficient trap) takes the line Dx + Yy = C, then the conic M x² + B xy + A y² + X x + Y y = K. It prints (x₁, y₁) then (x₂, y₂). The same run also solves a 2×2 linear system if you enter zeros for the quadratic terms. ┘ is the a b/c key, not ÷, so rational answers stay as fractions."
+    },
+    {
+      "type": "note",
+      "label": "Memory / run mode",
+      "text": "219 bytes (205 without storing both solution pairs) of the shared 680-byte pool. Create the slot in COMP; CMPLX if you need complex intersection points. Type ? → : ◢ Goto Lbl If Then from SHIFT 3 (P-CMD)."
+    },
+    {
+      "type": "formula",
+      "plain": "Dx + Yy = C"
+    },
+    {
+      "type": "figure",
+      "svg": "img/prgm/line-quad.svg",
+      "caption": "Vertical line x = 2 cuts x² + y² + 3x + 7y + 2 = 0 at (2, −3) and (2, −4)."
+    },
+    {
+      "type": "h2",
+      "text": "Program (one line)"
+    },
+    {
+      "type": "program",
+      "code": "?→D:?→Y:?→C:?→M:?→B:?→A:?→X:If Y:Then D┘Y→D:C┘Y→C:AD²-DBM+:?→Y:YD-CB+2CDA-X→B:?→X:AC²+YC-X→A:2M⇒(√(B²-4MA)+B)┘Ans→X◢M=0⇒A┘B→X◢C-DX→Y◢B┘M-X→A◢C-DAns→B:Else C┘D→D:?→Y:?→C:D²M+XD-C→M:-Y-DB→B:D→X◢A=0⇒M┘B→Y◢2A⇒(√(B²-4MA)+B)┘Ans→Y◢B┘A-Ans→B:D→A◢B"
+    },
+    {
+      "type": "h2",
+      "text": "Example 1: 3x + 5y = 8 and 3x² + 4xy + 5y² + 3x + 5y = 20"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: 3x + 5y = 8 and 3x² + 4xy + 5y² + 3x + 5y = 20."
+    },
+    {
+      "type": "p",
+      "text": "Given: Line 3, 5, 8 then conic 3, 4, 5, 3, 5, 20."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "3 【EXE】  5 【EXE】  8 【EXE】  3 【EXE】  4 【EXE】  5 【EXE】  3 【EXE】  5 【EXE】  20 【EXE】",
+        "First point (1, 1). 【EXE】 【EXE】 → second point (1/3, 7/5)",
+        "RCL X, RCL Y = first point. RCL A, RCL B = second point"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 2: x = 2 and x² + y² + 3x + 7y + 2 = 0"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: x = 2 and x² + y² + 3x + 7y + 2 = 0."
+    },
+    {
+      "type": "p",
+      "text": "Given: Rewrite as x + 0y = 2 and x² + y² + 3x + 7y = −2. Version I died on the 0; this listing does not."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "1 【EXE】  0 【EXE】  2 【EXE】  1 【EXE】  0 【EXE】  1 【EXE】  3 【EXE】  7 【EXE】  −2 【EXE】",
+        "Display (2, −3). 【EXE】 【EXE】 → (2, −4)"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 3 (edge): Falls back to 2×2 linear"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: Falls back to 2×2 linear."
+    },
+    {
+      "type": "p",
+      "text": "Given: x + y = 7 and x − y = 1. Quadratic coefficients all 0."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "1 【EXE】  1 【EXE】  7 【EXE】  0 【EXE】  0 【EXE】  0 【EXE】  1 【EXE】  −1 【EXE】  1 【EXE】",
+        "Display x = 4. 【EXE】 → y = 3. Equal pair ⇒ a ‘tangent’ with only one point"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Pitfalls",
+      "text": "If the two printed points coincide, the line is tangent. Math ERROR on the second point (and the points are not equal) means only one real intersection. SHIFT MODE → → 2 (improper d/c) keeps the fractions. Source: WebCal simultaneous5a / IceCreamTutor simultaneous5a."
+    }
+  ],
+  "related": [
+    "modes/prgm/example",
+    "modes/prgm/commands",
+    "modes/prgm/edit"
+  ]
+}

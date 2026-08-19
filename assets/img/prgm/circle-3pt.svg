@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-labelledby="prgm-c3-title prgm-c3-desc">
+  <title id="prgm-c3-title">Circumcircle of (2,0), (0,1), (0,4)</title>
+  <desc id="prgm-c3-desc">Three points on a circle centre (2, 2.5) radius 2.5.</desc>
+  
+  <circle cx="372" cy="149.58620689655172" r="240.625" fill="var(--accent)" fill-opacity="0.08" stroke="var(--accent)" stroke-width="2.2"/>
+  <line x1="64" y1="254.75862068965517" x2="680" y2="254.75862068965517" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <line x1="179.5" y1="280" x2="179.5" y2="36" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <circle cx="372" cy="254.75862068965517" r="5" fill="var(--accent)" stroke="var(--bg)" stroke-width="1.5"/>
+  <text x="372" y="270.7586206896552" text-anchor="middle" fill="var(--text)">(2, 0)</text>
+  <circle cx="179.5" cy="212.68965517241378" r="5" fill="var(--accent)" stroke="var(--bg)" stroke-width="1.5"/>
+  <text x="179.5" y="200.68965517241378" text-anchor="middle" fill="var(--text)">(0, 1)</text>
+  <circle cx="179.5" cy="86.48275862068968" r="5" fill="var(--accent)" stroke="var(--bg)" stroke-width="1.5"/>
+  <text x="179.5" y="74.48275862068968" text-anchor="middle" fill="var(--text)">(0, 4)</text>
+  <circle cx="372" cy="149.58620689655172" r="5" fill="var(--accent)" stroke="var(--bg)" stroke-width="1.5"/>
+  <text x="372" y="137.58620689655172" text-anchor="middle" fill="var(--text)">centre</text>
+
+</svg>

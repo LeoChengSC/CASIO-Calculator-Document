@@ -1,0 +1,97 @@
+{
+  "id": "constants",
+  "title": "Scientific Constants (CONST)",
+  "shortTitle": "Constants",
+  "parent": "index",
+  "order": 6,
+  "aliases": [
+    "CONST",
+    "Planck",
+    "Avogadro",
+    "speed of light",
+    "physical constants",
+    "SHIFT 7"
+  ],
+  "keywords": [
+    "SHIFT 7",
+    "40 constants",
+    "proton mass",
+    "elementary charge",
+    "g"
+  ],
+  "formulas": [
+    "E = hc / λ"
+  ],
+  "keySequence": [
+    "SHIFT",
+    "7"
+  ],
+  "summary": "Forty fundamental constants in ROM, recalled with SHIFT 7 (CONST), then page ◀/▶ and a key 1–4.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Press SHIFT 7 (CONST) to open page 1 of the constant menu (10 pages, four symbols each). Use ◀ / ▶ to reach the page you need, then press 1–4. This is not a two-digit 01–40 index. Constants work in every mode except BASE."
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Page-key",
+        "Symbol / name",
+        "Typical use"
+      ],
+      "rows": [
+        [
+          "1-1",
+          "mp proton mass",
+          "Nuclear / particle estimates"
+        ],
+        [
+          "2-2",
+          "h Planck constant",
+          "Quantum energy E = hf"
+        ],
+        [
+          "6-3",
+          "e elementary charge",
+          "Electrostatics, electrolysis"
+        ],
+        [
+          "6-4",
+          "NA Avogadro constant",
+          "Mole conversions"
+        ],
+        [
+          "7-4",
+          "c speed of light",
+          "EM / relativity scale"
+        ],
+        [
+          "9-3",
+          "g = 9.80665 m/s²",
+          "FMLA 14 / 15 / 21 (injected automatically)"
+        ]
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example: recall g"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "SHIFT 7 (CONST)",
+        "◀ ◀ 3 EXE → g = 9.80665 (page 9, key 3)",
+        "In COMP you can also combine h (2-2) and c (7-4) as E = hc/λ; keep λ in metres"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Full table",
+      "text": "The official fx-50FH / fx-50F family manuals list all 40 entries as page-key pairs (1-1 through 10-4). Treat ROM values as authoritative over printed approximations when checking calculator output."
+    }
+  ],
+  "related": [
+    "fmla",
+    "memory"
+  ]
+}

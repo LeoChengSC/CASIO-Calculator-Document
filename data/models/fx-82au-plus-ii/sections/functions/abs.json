@@ -1,0 +1,43 @@
+{
+  "id": "functions/abs",
+  "title": "Absolute Value (Abs)",
+  "shortTitle": "Abs",
+  "parent": "functions",
+  "order": 8,
+  "aliases": [
+    "Abs",
+    "absolute value",
+    "|x|"
+  ],
+  "keywords": [
+    "magnitude"
+  ],
+  "formulas": [],
+  "keySequence": [
+    "Abs"
+  ],
+  "summary": "Absolute magnitude of a value or sub-expression.",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "lines",
+      "items": [
+        "Abs(−5.5) = 5.5",
+        "Abs(3 − 8) = 5",
+        "5.5 + 5 = 10.5"
+      ]
+    },
+    {
+      "type": "figure",
+      "svg": "img/fx82/abs.svg",
+      "caption": "Abs folds the left side of the number line onto the right: −5.5 and +5.5 have the same height 5.5 on y = |x|."
+    }
+  ],
+  "related": [
+    "functions",
+    "modes/comp"
+  ]
+}

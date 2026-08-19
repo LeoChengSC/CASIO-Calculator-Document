@@ -1,0 +1,57 @@
+{
+  "id": "modes/stat/inv",
+  "title": "MODE 2-8: 1/X",
+  "shortTitle": "1/X",
+  "parent": "modes/stat",
+  "order": 8,
+  "aliases": [
+    "inverse regression",
+    "MODE 2 8",
+    "1/X"
+  ],
+  "keywords": [
+    "reciprocal",
+    "Boyle"
+  ],
+  "formulas": [
+    "y = A + B/x"
+  ],
+  "keySequence": [
+    "MODE",
+    "2",
+    "8"
+  ],
+  "summary": "Inverse regression y = A + B/x.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Reciprocal physical relationships."
+    },
+    {
+      "type": "formula",
+      "plain": "y = A + \\frac{B}{x}"
+    },
+    {
+      "type": "p",
+      "text": "A hyperbola: large when x is small, then levelling toward A. x must not be zero."
+    },
+    {
+      "type": "figure",
+      "svg": "img/reg/inv.svg",
+      "caption": "Sample fit y = 2 + 10/x. The curve drops quickly, then approaches the horizontal level A = 2."
+    },
+    {
+      "type": "steps",
+      "title": "Open this type",
+      "items": [
+        "MODE → 2 → 8",
+        "Clear or edit data in the Statistics Editor as needed",
+        "AC, then SHIFT 1 (STAT) for Var / Reg / MinMax recalls"
+      ]
+    }
+  ],
+  "related": [
+    "statistics",
+    "modes/stat"
+  ]
+}

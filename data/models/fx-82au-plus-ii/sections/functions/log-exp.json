@@ -1,0 +1,40 @@
+{
+  "id": "functions/log-exp",
+  "title": "Logarithms and Exponentials",
+  "shortTitle": "Log / Exp",
+  "parent": "functions",
+  "order": 9,
+  "aliases": [
+    "log",
+    "ln",
+    "e^x",
+    "10^x",
+    "log base"
+  ],
+  "keywords": [
+    "log□□",
+    "natural log"
+  ],
+  "formulas": [],
+  "keySequence": [
+    "log"
+  ],
+  "summary": "log with arbitrary base, log10, ln, 10^x, and e^x.",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Examples"
+    },
+    {
+      "type": "lines",
+      "items": [
+        "log₂ 32 = 5",
+        "e^2.5  (SHIFT ln)"
+      ]
+    }
+  ],
+  "related": [
+    "functions",
+    "modes/comp"
+  ]
+}

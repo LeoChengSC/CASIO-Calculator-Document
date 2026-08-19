@@ -1,0 +1,93 @@
+{
+  "id": "fmla/16-spring",
+  "title": "[FMLA 16] SprgPendulum — Cycle of Spring Pendulum",
+  "shortTitle": "[FMLA 16] SprgPendulum",
+  "parent": "fmla",
+  "order": 16,
+  "aliases": [
+    "Cycle of Spring Pendulum",
+    "SprgPendulum",
+    "FMLA 16",
+    "formula 16",
+    "16",
+    "[FMLA 16] SprgPendulum"
+  ],
+  "keywords": [
+    "m",
+    "k",
+    "cycle",
+    "SprgPendulum",
+    "built-in"
+  ],
+  "formulas": [
+    "T = 2π √(m / k)"
+  ],
+  "keySequence": [
+    "FMLA",
+    "1",
+    "6"
+  ],
+  "summary": "Period of a mass-spring oscillator.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Calculator scroll name: SprgPendulum. Period of a mass-spring oscillator."
+    },
+    {
+      "type": "formula",
+      "plain": "T = 2\\pi \\sqrt{\\frac{m}{k}}"
+    },
+    {
+      "type": "p",
+      "mark": "fmla-graph",
+      "text": "Same idea as the pendulum, but the “restoring” piece is the spring. T = 2π √(m/k)."
+    },
+    {
+      "type": "figure",
+      "mark": "fmla-graph",
+      "svg": "img/fmla/16-spring.svg",
+      "caption": "Mass m on a spring of stiffness k. Heavier mass → slower bobbing. Stiffer spring → faster bobbing."
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "FMLA",
+        "1",
+        "6"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Primary inputs: m, k."
+    },
+    {
+      "type": "steps",
+      "title": "How to run",
+      "items": [
+        "Press FMLA, then 1, then 6 (or scroll to the name and EXE)",
+        "Enter each prompted value",
+        "Read the result"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "FMLA → 1 → 6",
+        "Enter m, k",
+        "Spring-mass period"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Units",
+      "text": "SI: m in kg, k in N/m (both > 0); T in seconds."
+    }
+  ],
+  "related": [
+    "fmla"
+  ]
+}

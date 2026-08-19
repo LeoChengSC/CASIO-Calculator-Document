@@ -1,0 +1,304 @@
+{
+  "id": "modes/sd/stdev",
+  "title": "SD: Standard deviation (σx / sx)",
+  "shortTitle": "Standard deviation (σx / sx)",
+  "parent": "modes/sd",
+  "order": 5,
+  "aliases": [
+    "standard deviation",
+    "σx",
+    "σn",
+    "xσn",
+    "population standard deviation",
+    "S-VAR 2",
+    "sx",
+    "s_x",
+    "σn-1",
+    "xσn-1",
+    "sample standard deviation",
+    "S-VAR 3",
+    "nth deviation",
+    "n-th deviation",
+    "n sigma"
+  ],
+  "keywords": [
+    "σx",
+    "σn",
+    "sx",
+    "σn-1",
+    "population",
+    "sample",
+    "divide by n",
+    "n-1",
+    "S-VAR",
+    "spread",
+    "bell curve",
+    "deviation",
+    "SHIFT 2 2",
+    "SHIFT 2 3"
+  ],
+  "formulas": [
+    "σx = √(Σ(xi − x̄)² / n)",
+    "σx = √(Σx²/n − x̄²)",
+    "sx = √(Σ(xi − x̄)² / (n − 1))",
+    "sx = √( (Σx² − n·x̄²) / (n − 1) )",
+    "x = x̄ + n·σx"
+  ],
+  "keySequence": [
+    "SHIFT",
+    "2",
+    "2"
+  ],
+  "summary": "How spread out a list is. Population (σx) divides by n; sample (sx) divides by n − 1. Same list, two last steps.",
+  "redirects": [
+    "modes/sd/sigma",
+    "modes/sd/sx"
+  ],
+  "body": [
+    {
+      "type": "p",
+      "text": "Standard deviation is a single number that answers: “how mixed are these values?” If every score is close to the middle, the standard deviation is small. If some values are much lower and some much higher, it is large. You do not need to graph anything — the calculator turns the list into that one number."
+    },
+    {
+      "type": "p",
+      "text": "A useful picture is a hill (a bell curve) sitting on the number line. The peak of the hill is the mean — the everyday “average.” Standard deviation is the usual step size away from that peak. One step left or right still sits on the main part of the hill. Two or three steps land out on the thin tails, where values are unusual for that list."
+    },
+    {
+      "type": "p",
+      "text": "The fx-50FH II can give two versions. They start from the same list. The only difference is the last division:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Population (σx, also labelled xσn / σn): divide by n. Use this when the list is the whole group you care about (every student in the class, every item you measured).",
+        "Sample (sx, also labelled xσn-1 / σn-1): divide by n − 1. Use this when the list is only a sample from a larger group, or when the question says sample, sx, s, or σn-1."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Exam papers almost always say which one they want. If they only write “standard deviation” and treat the list as a sample, sx is the usual choice in HK DSE-style questions."
+    },
+    {
+      "type": "h2",
+      "text": "Example we will use"
+    },
+    {
+      "type": "p",
+      "text": "Four numbers: 2, 4, 6, 8. Their middle is 5. That is the mean x̄ — see [[modes/sd/mean]] if you want that step on its own."
+    },
+    {
+      "type": "lines",
+      "items": [
+        "Data: 2, 4, 6, 8",
+        "Sum = 2 + 4 + 6 + 8 = 20",
+        "Mean x̄ = 20 ÷ 4 = 5"
+      ]
+    },
+    {
+      "type": "figure",
+      "svg": "img/sd-bell-2-4-6-8.svg",
+      "caption": "Same four numbers. The hill is centred at the mean 5. One step of length σx ≈ 2.24 left or right lands at about 2.76 and 7.24 (the dashed lines). The four dots are the data values 2, 4, 6, 8."
+    },
+    {
+      "type": "p",
+      "text": "Read the picture left to right. 4 and 6 sit near the peak — they are close to 5. 2 and 8 sit further down the sides. The shaded band is one standard deviation either side of 5. For a typical bell-shaped list, most values (about two thirds) sit in that band."
+    },
+    {
+      "type": "h2",
+      "text": "Population standard deviation (σx)"
+    },
+    {
+      "type": "p",
+      "text": "Think of this as: find the mean, see how far each value is from that mean (that gap is a deviation), square those gaps so left and right both count as “away,” add them, divide by how many numbers you have, then take the square root so the answer is back in the original units — here, the same units as 2, 4, 6, 8."
+    },
+    {
+      "type": "formula",
+      "plain": "\\sigma x = \\sqrt{\\frac{\\sum(x_i - \\bar{x})^{2}}{n}}\n\\sigma x = \\sqrt{\\frac{\\sum x^{2}}{n} - \\bar{x}^{2}}"
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "SHIFT",
+        "2",
+        "2",
+        "EXE"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "On the calculator this is S-VAR item 2 (xσn)."
+    },
+    {
+      "type": "h3",
+      "text": "Worked example"
+    },
+    {
+      "type": "lines",
+      "lead": "Deviation means “how far is this value from the mean (5)”:",
+      "items": [
+        "2 − 5 = −3",
+        "4 − 5 = −1",
+        "6 − 5 = +1",
+        "8 − 5 = +3"
+      ]
+    },
+    {
+      "type": "lines",
+      "lead": "Square those four deviations (minus signs disappear):",
+      "items": [
+        "(−3)² = 9",
+        "(−1)² = 1",
+        "1² = 1",
+        "3² = 9",
+        "Add them: 9 + 1 + 1 + 9 = 20",
+        "$\\sigma x = \\sqrt{20 \\div 4} = \\sqrt{5} \\approx 2.236067977$"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "So the usual step size for this whole list is about 2.24. That is the width of one step in the picture above."
+    },
+    {
+      "type": "steps",
+      "title": "On the calculator",
+      "items": [
+        "MODE 4. If you were already in SD, SHIFT 9 → 1 (Stat) → EXE to clear the old list",
+        "2 DT",
+        "4 DT",
+        "6 DT",
+        "8 DT",
+        "then AC",
+        "SHIFT 2 → 2 EXE → about 2.236067977"
+      ]
+    },
+    {
+      "type": "note",
+      "text": "An empty list (n = 0) gives MATH ERROR. Leave the STAT-data editor with AC before you recall σx."
+    },
+    {
+      "type": "h2",
+      "text": "Sample standard deviation (sx)"
+    },
+    {
+      "type": "p",
+      "text": "Use sx when 2, 4, 6, 8 are only a sample from a larger group you did not type in. The calculator still uses the same squared deviations. It divides by one less than the count (n − 1) instead of by n. That slightly larger answer is the usual classroom estimate of the spread of the bigger group."
+    },
+    {
+      "type": "formula",
+      "plain": "sx = \\sqrt{\\frac{\\sum(x_i - \\bar{x})^{2}}{n - 1}}\nsx = \\sqrt{\\frac{\\sum x^{2} - n\\bar{x}^{2}}{n - 1}}"
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "SHIFT",
+        "2",
+        "3",
+        "EXE"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "On the calculator this is S-VAR item 3 (xσn-1)."
+    },
+    {
+      "type": "h3",
+      "text": "Worked example"
+    },
+    {
+      "type": "p",
+      "text": "Same four numbers, same mean 5, same squared deviations adding to 20. For a sample, divide by n − 1 = 3, not by 4."
+    },
+    {
+      "type": "lines",
+      "items": [
+        "$sx = \\sqrt{20 \\div 3} \\approx 2.581988897$"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "sx is a little larger than σx. That is expected: dividing by 3 instead of 4 makes the fraction bigger, so the square root is bigger. The picture on this page is drawn with σx; if a question used sx you would just draw the same hill with slightly wider steps."
+    },
+    {
+      "type": "steps",
+      "title": "On the calculator",
+      "items": [
+        "If the list 2, 4, 6, 8 is still in SD from the previous section, press AC then SHIFT 2 → 3 EXE",
+        "Otherwise enter MODE 4, clear with SHIFT 9 → 1 EXE if needed, then 2 DT / 4 DT / 6 DT / 8 DT / AC",
+        "SHIFT 2 → 3 EXE → about 2.581988897"
+      ]
+    },
+    {
+      "type": "note",
+      "text": "n = 1 → MATH ERROR (cannot divide by n − 1 = 0). n = 0 is also MATH ERROR. You need at least two data points for sx."
+    },
+    {
+      "type": "h2",
+      "text": "Tutorial: n-th deviation"
+    },
+    {
+      "type": "p",
+      "text": "Once you have the mean and a standard deviation, you can walk along the number line in steps of that size. The n-th deviation is the value you land on after n of those steps:"
+    },
+    {
+      "type": "formula",
+      "plain": "\\text{value} = \\bar{x} + (n \\times \\sigma x) \\quad \\text{(n steps to the right)}\n\\text{value} = \\bar{x} - (n \\times \\sigma x) \\quad \\text{(n steps to the left)}"
+    },
+    {
+      "type": "p",
+      "text": "Here n is how many steps, not the sample size. n = 1 is “one standard deviation above the mean.” n = 2 is two steps, and so on. n can be a decimal (0.5 is a half-step)."
+    },
+    {
+      "type": "p",
+      "text": "With our example, x̄ = 5 and σx ≈ 2.236:"
+    },
+    {
+      "type": "lines",
+      "lead": "First deviation (n = 1) — the dashed lines on the picture:",
+      "items": [
+        "Above: 5 + (1 × 2.236) ≈ 7.236",
+        "Below: 5 − (1 × 2.236) ≈ 2.764"
+      ]
+    },
+    {
+      "type": "lines",
+      "lead": "Second deviation (n = 2) — further out on the tails:",
+      "items": [
+        "Above: 5 + (2 × 2.236) ≈ 9.472",
+        "Below: 5 − (2 × 2.236) ≈ 0.528"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Check those against the data. 8 is a little past 7.236, so 8 sits just outside one step to the right. 2 is a little past 2.764, so 2 sits just outside one step to the left. 4 and 6 are inside the first step — they sit on the tall part of the hill, close to 5."
+    },
+    {
+      "type": "p",
+      "text": "You do not have to type 2.236 yourself. After the list is in SD, the calculator still holds x̄ and σx. Build the formula with those keys:"
+    },
+    {
+      "type": "steps",
+      "title": "On the calculator",
+      "items": [
+        "Enter 2 DT / 4 DT / 6 DT / 8 DT in MODE 4, then AC (skip this if the list is already there)",
+        "First above: SHIFT 2 → 1 + 1 × SHIFT 2 → 2 EXE → about 7.236",
+        "First below: SHIFT 2 → 1 − 1 × SHIFT 2 → 2 EXE → about 2.764",
+        "Second above: SHIFT 2 → 1 + 2 × SHIFT 2 → 2 EXE → about 9.472",
+        "Second below: SHIFT 2 → 1 − 2 × SHIFT 2 → 2 EXE → about 0.528"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "SHIFT 2 → 1 inserts x̄. SHIFT 2 → 2 inserts σx. The 1 or 2 you type in the middle is how many steps."
+    },
+    {
+      "type": "note",
+      "text": "If the question used the sample standard deviation, swap SHIFT 2 → 2 for SHIFT 2 → 3 so the step size is sx instead of σx. The same walking idea applies: value = x̄ ± (n × sx)."
+    }
+  ],
+  "related": [
+    "modes/sd/mean",
+    "modes/sd/n",
+    "modes/sd/sumsq",
+    "modes/sd"
+  ]
+}

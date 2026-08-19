@@ -1,0 +1,120 @@
+{
+  "id": "setup",
+  "title": "System SET UP",
+  "shortTitle": "SET UP",
+  "parent": "index",
+  "order": 3,
+  "aliases": [
+    "SHIFT MODE",
+    "SETUP",
+    "Fix",
+    "Sci",
+    "Norm",
+    "Deg",
+    "Rad",
+    "ab/c"
+  ],
+  "keywords": [
+    "angle",
+    "display",
+    "fraction",
+    "FreqOn",
+    "contrast"
+  ],
+  "formulas": [],
+  "keySequence": [
+    "SHIFT",
+    "MODE"
+  ],
+  "summary": "Angle unit, display digits, fractions, complex form, STAT frequency, and contrast/reset.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Open SET UP with SHIFT MODE (SETUP) only. Use ◀ / ▶ to move between the six SET UP screens. MODE itself picks COMP / CMPLX / BASE / SD / REG / PRGM and does not open SET UP. Wrong angle unit is the most common source of trig errors in exams."
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Group",
+        "Options",
+        "Default / notes"
+      ],
+      "rows": [
+        [
+          "Angle",
+          "1 Deg / 2 Rad / 3 Gra",
+          "Deg typical for secondary exams"
+        ],
+        [
+          "Display digits",
+          "Fix 0–9 / Sci 1–10 / Norm 1 / Norm 2",
+          "Norm 1 often default"
+        ],
+        [
+          "Fractions",
+          "ab/c mixed / d/c improper",
+          "ab/c common default"
+        ],
+        [
+          "Complex form",
+          "a+bi / r∠θ",
+          "a+bi default"
+        ],
+        [
+          "Statistics frequency",
+          "1 FreqOn / 2 FreqOff",
+          "SHIFT MODE ◀ ◀ then 1 or 2. FreqOn default; used in SD and REG"
+        ],
+        [
+          "Contrast / CLR",
+          "Cursor adjust / SHIFT 9 CLR",
+          "Reset setup via CLR menu"
+        ]
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Angle units"
+    },
+    {
+      "type": "lines",
+      "items": [
+        "Deg: full turn 360°",
+        "Rad: full turn 2π",
+        "Gra: full turn 400ᵍ",
+        "sin 30° = 0.5  (Deg)",
+        "sin(π/6) = 0.5  (Rad)"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Fix / Sci / Norm"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Fix n: show n decimal places (internal precision retained).",
+        "Sci n: scientific notation with n significant digits.",
+        "Norm 1: exponential when |x| < 10⁻² or large magnitude thresholds per manual.",
+        "Norm 2: exponential when |x| < 10⁻⁹ (stricter small-value threshold)."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Fractions"
+    },
+    {
+      "type": "p",
+      "text": "ab/c shows mixed numbers (e.g. 1⅗ style); d/c keeps improper fractions."
+    },
+    {
+      "type": "note",
+      "label": "ENG key",
+      "text": "Engineering notation is not a SETUP item. Press ENG (ENG/) or SHIFT ENG (ENG,) to shift the exponent to ×10⁰, ×10³, ×10⁶, … matching SI prefixes (k, M, m, μ)."
+    }
+  ],
+  "related": [
+    "modes/comp",
+    "keys"
+  ]
+}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-labelledby="prgm-lq-title prgm-lq-desc">
+  <title id="prgm-lq-title">x=2 cuts the circle at (2,−3) and (2,−4)</title>
+  <desc id="prgm-lq-desc">Vertical line x = 2 intersecting the circle x²+y²+3x+7y+2=0.</desc>
+  
+  <circle cx="316" cy="170.2" r="197.9898987322333" fill="var(--accent)" fill-opacity="0.08" stroke="var(--accent)" stroke-width="2.2"/>
+  <line x1="64" y1="84.79999999999998" x2="680" y2="84.79999999999998" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <line x1="400" y1="280" x2="400" y2="36" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <line x1="512" y1="270.24" x2="512" y2="50.639999999999986" stroke="var(--accent)" stroke-width="2.2"/>
+  <circle cx="512" cy="158" r="5" fill="var(--accent)" stroke="var(--bg)" stroke-width="1.5"/>
+  <text x="512" y="146" text-anchor="middle" fill="var(--text)">(2, −3)</text>
+  <circle cx="512" cy="182.39999999999998" r="5" fill="var(--accent)" stroke="var(--bg)" stroke-width="1.5"/>
+  <text x="512" y="198.39999999999998" text-anchor="middle" fill="var(--text)">(2, −4)</text>
+  <circle cx="316" cy="170.2" r="5" fill="var(--accent)" stroke="var(--bg)" stroke-width="1.5"/>
+  <text x="316" y="158.2" text-anchor="middle" fill="var(--text)">centre</text>
+
+</svg>

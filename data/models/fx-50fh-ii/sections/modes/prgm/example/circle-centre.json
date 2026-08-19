@@ -1,0 +1,122 @@
+{
+  "id": "modes/prgm/example/circle-centre",
+  "title": "Circle Centre and Radius",
+  "shortTitle": "Circle Centre",
+  "parent": "modes/prgm/example",
+  "order": 4,
+  "aliases": [
+    "圓心半徑",
+    "general circle equation"
+  ],
+  "keywords": [
+    "Ax²+Ay²",
+    "h",
+    "k",
+    "r"
+  ],
+  "formulas": [
+    "A(x² + y²) + Dx + Ey + F = 0"
+  ],
+  "keySequence": [
+    "MODE",
+    "6",
+    "2"
+  ],
+  "summary": "Centre and radius from the general circle equation. 42 bytes.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Prompts A (the common x² and y² coefficient), then D, E, F in Ax² + Ay² + Dx + Ey + F = 0. Pauses: h, k, r where centre is (−D/2A, −E/2A)."
+    },
+    {
+      "type": "note",
+      "label": "Memory / run mode",
+      "text": "42 bytes of the shared 680-byte pool. Create the slot in COMP. Type ? → : ◢ Goto Lbl If Then from SHIFT 3 (P-CMD)."
+    },
+    {
+      "type": "formula",
+      "plain": "A(x² + y²) + Dx + Ey + F = 0"
+    },
+    {
+      "type": "figure",
+      "svg": "img/prgm/circle-centre.svg",
+      "caption": "x² + y² − 4x + 6y − 12 = 0 is the circle centre (2, −3), radius 5."
+    },
+    {
+      "type": "h2",
+      "text": "Program (one line)"
+    },
+    {
+      "type": "program",
+      "code": "?→A:?→B:?→C:?→D:−B÷(2A→B◢−C÷(2A◢√(B²+Ans²−D÷A"
+    },
+    {
+      "type": "h2",
+      "text": "Example 1: x² + y² − 4x + 6y − 12 = 0"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: x² + y² − 4x + 6y − 12 = 0."
+    },
+    {
+      "type": "p",
+      "text": "Given: A = 1, D = −4, E = 6, F = −12."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "1 【EXE】  −4 【EXE】  6 【EXE】  −12 【EXE】",
+        "Display 2. 【EXE】 → −3  (centre (2, −3))",
+        "【EXE】 → 5  (radius)"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 2: 2x² + 2y² − 8x + 0y − 8 = 0"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: 2x² + 2y² − 8x + 0y − 8 = 0."
+    },
+    {
+      "type": "p",
+      "text": "Given: Same circle as (x−2)² + y² = 6, scaled by 2."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "2 【EXE】  −8 【EXE】  0 【EXE】  −8 【EXE】",
+        "Centre (2, 0). Radius √6 ≈ 2.449"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 3 (edge): Point ‘circle’ (radius 0)"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: Point ‘circle’ (radius 0)."
+    },
+    {
+      "type": "p",
+      "text": "Given: (x−1)² + (y−2)² = 0 → x² + y² − 2x − 4y + 5 = 0."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "1 【EXE】  −2 【EXE】  −4 【EXE】  5 【EXE】",
+        "Centre (1, 2). Radius 0 — a single point, not a curve"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Pitfalls",
+      "text": "If A = 0 this is a line, not a circle (Math ERROR on the last pause). Complete the square by hand to check."
+    }
+  ],
+  "related": [
+    "modes/prgm/example",
+    "modes/prgm/commands",
+    "modes/prgm/edit"
+  ]
+}

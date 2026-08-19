@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-labelledby="fx82-verif-title fx82-verif-desc">
+  <title id="fx82-verif-title">Unit circle identity sin²30 + cos²30 = 1</title>
+  <desc id="fx82-verif-desc">At 30 degrees the right triangle on the unit circle has legs cos 30 and sin 30. Their squares add to the hypotenuse squared, which is 1.</desc>
+  
+  <line x1="132.5" y1="175" x2="451.1" y2="175" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <line x1="280" y1="322.5" x2="280" y2="27.5" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <circle cx="280" cy="175" r="118" fill="none" stroke="var(--text-muted)" stroke-width="1.4"/>
+  
+  <path d="M280,175 L382.2,175 L382.2,116.0 Z" fill="var(--accent)" fill-opacity="0.18"/>
+  <line x1="280" y1="175" x2="382.2" y2="116.0" stroke="var(--accent)" stroke-width="2.4"/>
+  <circle cx="382.2" cy="116.0" r="5" fill="var(--accent)" stroke="var(--bg)" stroke-width="1.6"/>
+  <text x="331.1" y="195" text-anchor="middle" fill="var(--text)">cos 30</text>
+  <text x="392.1909976465638" y="145.5" fill="var(--text)">sin 30</text>
+  <text x="520" y="160" fill="var(--text)">sin²30 + cos²30</text>
+  <text x="520" y="184" fill="var(--accent)">= 1  →  TRUE</text>
+  <text x="520" y="220" fill="var(--accent-soft)">Deg mode</text>
+  <text x="447.6" y="197" text-anchor="end" fill="var(--text)">cos</text>
+  <text x="290" y="33.4" fill="var(--accent-soft)">sin</text>
+  <text x="520" y="28" text-anchor="middle" fill="var(--text)">VERIF: identity on the unit circle</text>
+
+</svg>

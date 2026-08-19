@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" role="img" aria-labelledby="prgm-example-card-title prgm-example-card-desc">
+  <title id="prgm-example-card-title">3x + 5y = 8 and 3x² + 4xy + 5y² + 3x + 5y = 20</title>
+  <desc id="prgm-example-card-desc">Case sketch for this worked example.</desc>
+  
+  <rect x="28" y="34" width="664" height="254" rx="14" fill="var(--accent)" fill-opacity="0.06" stroke="var(--accent)" stroke-width="1.2"/>
+  <text x="46" y="80" fill="var(--accent)" font-size="24">3x + 5y = 8 and 3x² + 4xy + 5y² + 3x + 5y = 20</text>
+  <text x="46" y="118" fill="var(--text)" font-size="20">Line 3, 5, 8 then conic 3, 4, 5, 3, 5, 20.</text>
+  <text x="46" y="148" fill="var(--text)" font-size="20">3 【EXE】  5 【EXE】  8 【EXE】  3 【EXE】  4 【EXE】  5 【EXE】  3 【EXE】  5 【EXE】  20 【EXE】</text>
+  <text x="46" y="178" fill="var(--text)" font-size="20">First point (1, 1). 【EXE】 【EXE】 → second point (1/3, 7/5)</text>
+
+</svg>

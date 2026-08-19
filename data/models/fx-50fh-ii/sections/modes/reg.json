@@ -1,0 +1,180 @@
+{
+  "id": "modes/reg",
+  "title": "MODE 5: REG (Paired-Variable Regression)",
+  "shortTitle": "REG",
+  "parent": "modes",
+  "order": 5,
+  "aliases": [
+    "regression",
+    "MODE 5",
+    "bivariate",
+    "correlation",
+    "DT",
+    "S-VAR"
+  ],
+  "keywords": [
+    "Lin",
+    "Log",
+    "Exp",
+    "Pwr",
+    "Inv",
+    "Quad",
+    "AB-Exp",
+    "r",
+    "x̂",
+    "ŷ",
+    "DT",
+    "M+"
+  ],
+  "formulas": [
+    "y = A + Bx"
+  ],
+  "keySequence": [
+    "MODE",
+    "5"
+  ],
+  "summary": "Enter (x, y) pairs with x , y DT, press AC, then recall coefficients A, B (and C for Quad) and r from S-VAR.",
+  "body": [
+    {
+      "type": "p",
+      "text": "MODE 5 (REG) stores paired samples and fits one regression model. A REG indicator appears. In REG the M+ key becomes DT (data register). You cannot use independent memory M+ here — every DT stores an (x, y) pair instead."
+    },
+    {
+      "type": "children",
+      "title": "Regression models (pick one before entering data)",
+      "ids": [
+        "modes/reg/lin",
+        "modes/reg/log",
+        "modes/reg/exp",
+        "modes/reg/pwr",
+        "modes/reg/inv",
+        "modes/reg/quad",
+        "modes/reg/ab-exp"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Clear old data"
+    },
+    {
+      "type": "p",
+      "text": "Switching into REG from another mode clears statistical memory automatically. If you are already in REG with an old list, clear before a new question:"
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "SHIFT",
+        "9",
+        "1",
+        "EXE"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "SHIFT 9 is CLR; item 1 is Stat. Leaving REG for COMP, CMPLX, BASE, or PRGM also clears the list."
+    },
+    {
+      "type": "h2",
+      "text": "Choose regression type (two menu screens)"
+    },
+    {
+      "type": "p",
+      "text": "After MODE 5, the calculator shows a regression menu. Only 1–4 appear on the first screen. Press ▶ (RIGHT) for a second screen with Inv, Quad, and AB-Exp."
+    },
+    {
+      "type": "lines",
+      "lead": "Screen 1 (after MODE 5):",
+      "items": [
+        "1 — Lin (linear)",
+        "2 — Log (logarithmic)",
+        "3 — Exp (exponential e)",
+        "4 — Pwr (power)"
+      ]
+    },
+    {
+      "type": "lines",
+      "lead": "Screen 2 (press ▶ from screen 1):",
+      "items": [
+        "1 — Inv (inverse) — MODE 5 ▶ 1",
+        "2 — Quad (quadratic) — MODE 5 ▶ 2",
+        "3 — AB-Exp (y = AB^x) — MODE 5 ▶ 3"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "You can also switch type later with SHIFT 2 → 3 (TYPE) while still in REG."
+    },
+    {
+      "type": "h2",
+      "text": "Input format — (x, y) then DT"
+    },
+    {
+      "type": "p",
+      "text": "After MODE 5 and your regression type, enter each pair as x , y DT. The comma is the key between 0 and EXP (same as SD frequency separator). DT is the blue M+ key in REG."
+    },
+    {
+      "type": "lines",
+      "lead": "Pattern for one point:",
+      "items": [
+        "x , y DT",
+        "Example: 1 , 2 DT registers (1, 2)"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Line = on the display counts stored pairs. Scroll with ▲ / ▼ to review. When every pair is entered, press AC once to leave the editor — then recall results with S-VAR. Recalling coefficients while still browsing the list often gives wrong values."
+    },
+    {
+      "type": "h3",
+      "text": "Frequency (FreqOn / FreqOff)"
+    },
+    {
+      "type": "p",
+      "text": "Same SETUP option as [[modes/sd]]. FreqOn (default): x , y DT counts once, or x , y ; f DT repeats that pair f times. FreqOff: only x , y DT — using ; gives Syntax ERROR."
+    },
+    {
+      "type": "h2",
+      "text": "Output — SHIFT 2 (S-VAR)"
+    },
+    {
+      "type": "p",
+      "text": "After AC, SHIFT 2 opens S-VAR. Press 1 for the VAR submenu, then ▶ to move to later screens. Each child page lists the recalls for its model. In general:"
+    },
+    {
+      "type": "lines",
+      "items": [
+        "SHIFT 2 → 1 (VAR), screen 1: x̄ (1), xσn (2), xσn−1 (3)",
+        "SHIFT 2 → 1 → ▶: ȳ (1), yσn (2), yσn−1 (3)",
+        "SHIFT 2 → 1 → ▶ → ▶: A (1), B (2), r or C (3) — on Quad, item 3 is C (no r)",
+        "Estimate ŷ from x: type x, then SHIFT 2 → 1 → ◀ item 2 (Lin/Log/Exp/Pwr/Inv/AB-Exp) or ◀ item 3 (Quad)",
+        "Estimate x from y: type y, then SHIFT 2 → 1 → ◀ item 1 (Lin/Log/Exp/Pwr/Inv/AB-Exp); Quad has two x̂ values on ◀ 1 and ◀ 2"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "SHIFT 1 (S-SUM) recalls Σx, Σy, n, Σx², Σxy, and other sums used internally. SHIFT 2 → 3 (TYPE) switches regression type without entering VAR."
+    },
+    {
+      "type": "h2",
+      "text": "Minimum pairs and limits"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Lin, Log, Exp, Pwr, Inv, AB-Exp: at least 2 (x, y) pairs",
+        "Quad: at least 3 (x, y) pairs (three coefficients A, B, C)",
+        "FreqOn: up to 26 stored records; FreqOff: up to 40",
+        "Data Full if you exceed the limit — delete rows or collapse repeats with FreqOn",
+        "Wrong model (e.g. Lin on curved data) can still show a moderate r — pick the shape that matches the scatter"
+      ]
+    },
+    {
+      "type": "note",
+      "text": "Viewing, editing, and deleting pairs matches [[modes/sd]]: ▲/▼ to browse, type a new value and EXE to replace (do not press DT), SHIFT DT (CL) to delete the displayed pair. Press MODE 1 when finished with statistics."
+    }
+  ],
+  "related": [
+    "modes/sd",
+    "setup"
+  ]
+}

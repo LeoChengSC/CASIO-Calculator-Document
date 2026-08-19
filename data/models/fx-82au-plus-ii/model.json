@@ -1,0 +1,143 @@
+{
+  "id": "fx-82au-plus-ii",
+  "name": "CASIO fx-82AU PLUS II",
+  "shortName": "fx-82AU PLUS II",
+  "aliases": [
+    "fx82au",
+    "82AU PLUS II",
+    "Natural-VPAM",
+    "fx-82AU PLUS II 2nd Edition"
+  ],
+  "nav": [
+    {
+      "id": "index",
+      "label": "Overview"
+    },
+    {
+      "id": "hardware",
+      "label": "Hardware"
+    },
+    {
+      "id": "modes",
+      "label": "Calculation Modes",
+      "children": [
+        {
+          "id": "modes/comp",
+          "label": "COMP"
+        },
+        {
+          "id": "modes/stat",
+          "label": "STAT",
+          "children": [
+            {
+              "id": "modes/stat/1-var",
+              "label": "1-VAR"
+            },
+            {
+              "id": "modes/stat/a-bx",
+              "label": "A+BX"
+            },
+            {
+              "id": "modes/stat/quad",
+              "label": "_+CX²"
+            },
+            {
+              "id": "modes/stat/ln",
+              "label": "ln X"
+            },
+            {
+              "id": "modes/stat/ex",
+              "label": "e^X"
+            },
+            {
+              "id": "modes/stat/abx",
+              "label": "A·B^X"
+            },
+            {
+              "id": "modes/stat/axb",
+              "label": "A·X^B"
+            },
+            {
+              "id": "modes/stat/inv",
+              "label": "1/X"
+            }
+          ]
+        },
+        {
+          "id": "modes/verif",
+          "label": "VERIF"
+        }
+      ]
+    },
+    {
+      "id": "setup",
+      "label": "SET UP"
+    },
+    {
+      "id": "functions",
+      "label": "Function Suite",
+      "children": [
+        {
+          "id": "functions/fact",
+          "label": "FACT"
+        },
+        {
+          "id": "functions/gcd-lcm",
+          "label": "GCD / LCM"
+        },
+        {
+          "id": "functions/sd",
+          "label": "S⇔D"
+        },
+        {
+          "id": "functions/dms",
+          "label": "° ′ ″"
+        },
+        {
+          "id": "functions/pol-rec",
+          "label": "Pol / Rec"
+        },
+        {
+          "id": "functions/combinatorics",
+          "label": "nPr / nCr / n!"
+        },
+        {
+          "id": "functions/random",
+          "label": "Ran# / RanInt#"
+        },
+        {
+          "id": "functions/abs",
+          "label": "Abs"
+        },
+        {
+          "id": "functions/log-exp",
+          "label": "Log / Exp"
+        },
+        {
+          "id": "functions/trig-hyp",
+          "label": "Trig / Hyp"
+        },
+        {
+          "id": "functions/eng",
+          "label": "ENG"
+        }
+      ]
+    },
+    {
+      "id": "statistics",
+      "label": "Statistics Editor"
+    },
+    {
+      "id": "memory",
+      "label": "Memory & Variables"
+    },
+    {
+      "id": "exam",
+      "label": "Exam Compliance"
+    },
+    {
+      "id": "compare",
+      "label": "vs fx-50FH II"
+    }
+  ]
+}

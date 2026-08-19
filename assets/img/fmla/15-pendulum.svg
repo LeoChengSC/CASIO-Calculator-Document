@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="fmla15-title fmla15-desc">
+  <title id="fmla15-title">Simple pendulum of length L</title>
+  <desc id="fmla15-desc">A small bob on a string of length L. For small swings the period depends only on L and g.</desc>
+  
+  <circle cx="360" cy="48" r="5" fill="var(--accent)"/>
+  <line x1="360" y1="48" x2="360" y2="250" stroke="var(--accent)" stroke-width="2"/>
+  <line x1="360" y1="48" x2="248" y2="230" stroke="var(--accent-soft)" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <line x1="360" y1="48" x2="472" y2="230" stroke="var(--accent-soft)" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <path d="M248 230 A160 160 0 0 0 472 230" fill="none" stroke="var(--text-muted)" stroke-width="1.1"/>
+  <circle cx="360" cy="250" r="16" fill="var(--accent)" fill-opacity="0.2" stroke="var(--accent)" stroke-width="2"/>
+  <text x="378" y="150">L</text>
+  <text x="360" y="300" text-anchor="middle">small angle → T = 2π √(L/g)</text>
+
+</svg>

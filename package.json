@@ -1,0 +1,11 @@
+{
+  "name": "casio-docs",
+  "private": true,
+  "description": "Offline Casio calculator documentation",
+  "scripts": {
+    "build": "node tools/build.js"
+  },
+  "dependencies": {
+    "katex": "^0.16.47"
+  }
+}

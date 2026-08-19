@@ -1,0 +1,93 @@
+{
+  "id": "fmla/20-elastic",
+  "title": "[FMLA 20] ElasticEnergy — Elastic Energy",
+  "shortTitle": "[FMLA 20] ElasticEnergy",
+  "parent": "fmla",
+  "order": 20,
+  "aliases": [
+    "Elastic Energy",
+    "ElasticEnergy",
+    "FMLA 20",
+    "formula 20",
+    "20",
+    "[FMLA 20] ElasticEnergy"
+  ],
+  "keywords": [
+    "K",
+    "x",
+    "elastic",
+    "ElasticEnergy",
+    "built-in"
+  ],
+  "formulas": [
+    "U = (1/2) K x²"
+  ],
+  "keySequence": [
+    "FMLA",
+    "2",
+    "0"
+  ],
+  "summary": "Potential energy stored in a stretched/compressed spring.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Calculator scroll name: ElasticEnergy. Potential energy stored in a stretched/compressed spring."
+    },
+    {
+      "type": "formula",
+      "plain": "U = \\frac{1}{2} K x^{2}"
+    },
+    {
+      "type": "p",
+      "mark": "fmla-graph",
+      "text": "A stretched or compressed spring holds energy you can get back. U = ½ K x². x = 0 (unstretched) holds nothing."
+    },
+    {
+      "type": "figure",
+      "mark": "fmla-graph",
+      "svg": "img/fmla/20-elastic.svg",
+      "caption": "Energy stored versus stretch x (example K = 1). The U-shape means twice the stretch stores four times the energy."
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "FMLA",
+        "2",
+        "0"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Primary inputs: K, x."
+    },
+    {
+      "type": "steps",
+      "title": "How to run",
+      "items": [
+        "Press FMLA, then 2, then 0 (or scroll to the name and EXE)",
+        "Enter each prompted value",
+        "Read the result"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "FMLA → 2 → 0",
+        "Enter K, x",
+        "Elastic energy U"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Units",
+      "text": "SI: K in N/m, x in m (both > 0); energy U in J."
+    }
+  ],
+  "related": [
+    "fmla"
+  ]
+}

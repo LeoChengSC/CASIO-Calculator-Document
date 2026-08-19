@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-labelledby="fmla19-title fmla19-desc">
+  <title id="fmla19-title">Mass moving in a circle of radius r</title>
+  <desc id="fmla19-desc">The force toward the centre has size m v² / r. Faster v or smaller r means a larger force.</desc>
+  
+  <circle cx="360" cy="160" r="110" fill="none" stroke="var(--accent)" stroke-width="2"/>
+  <circle cx="360" cy="50" r="12" fill="var(--accent)" fill-opacity="0.2" stroke="var(--accent)" stroke-width="2"/>
+  <line x1="360" y1="160" x2="360" y2="50" stroke="var(--text-muted)" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="372" y="112">r</text>
+  <text x="360" y="38" text-anchor="middle">m</text>
+  <polygon points="384,48 410,42 400,62" fill="var(--accent-soft)"/>
+  <text x="418" y="50" fill="var(--accent-soft)">v</text>
+  <path d="M360 50 L360 96" stroke="var(--accent)" stroke-width="2"/>
+  <polygon points="354,96 360,110 366,96" fill="var(--accent)"/>
+  <text x="372" y="90" fill="var(--text)">F</text>
+  <text x="360" y="310" text-anchor="middle">F = m v² / r</text>
+
+</svg>

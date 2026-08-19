@@ -1,0 +1,48 @@
+{
+  "id": "functions",
+  "title": "Comprehensive Function Suite",
+  "shortTitle": "Function Suite",
+  "parent": "index",
+  "order": 4,
+  "aliases": [
+    "features",
+    "special functions",
+    "catalog"
+  ],
+  "keywords": [
+    "FACT",
+    "GCD",
+    "S⇔D",
+    "Pol",
+    "RanInt"
+  ],
+  "formulas": [],
+  "keySequence": [],
+  "summary": "Prime factors, GCD/LCM, exact toggles, transforms, combinatorics, random, Abs, logs, trig/hyp, ENG.",
+  "body": [
+    {
+      "type": "p",
+      "text": "These COMP-mode tools replace the need for a formula ROM library on this model. Prefer Natural Display for surds and fractions, then S⇔D when a decimal is required."
+    },
+    {
+      "type": "children",
+      "title": "Functions",
+      "ids": [
+        "functions/fact",
+        "functions/gcd-lcm",
+        "functions/sd",
+        "functions/dms",
+        "functions/pol-rec",
+        "functions/combinatorics",
+        "functions/random",
+        "functions/abs",
+        "functions/log-exp",
+        "functions/trig-hyp",
+        "functions/eng"
+      ]
+    }
+  ],
+  "related": [
+    "modes/comp"
+  ]
+}

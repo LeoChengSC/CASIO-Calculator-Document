@@ -1,0 +1,139 @@
+{
+  "id": "modes/prgm/example/simultaneous-3",
+  "title": "Simultaneous Linear (3 Unknowns) / Det / Inverse",
+  "shortTitle": "Simultaneous 3",
+  "parent": "modes/prgm/example",
+  "order": 12,
+  "aliases": [
+    "聯立三元一次",
+    "3x3 determinant",
+    "adjoint inverse"
+  ],
+  "keywords": [
+    "Cramer",
+    "3x3",
+    "maxX",
+    "FreqOn",
+    "adjoint"
+  ],
+  "formulas": [
+    "a₁x + b₁y + c₁z = d₁",
+    "det A",
+    "A⁻¹ = (1/det A) adj A"
+  ],
+  "keySequence": [
+    "MODE",
+    "6",
+    "2"
+  ],
+  "summary": "3×3 linear system and determinant, plus a 112-byte adjoint for the inverse. REG Lin.",
+  "body": [
+    {
+      "type": "p",
+      "text": "No FMLA does a 3×3 system. WebCal version II is full Cramer’s rule in REG Lin (no b₁c₂ ≠ b₂c₁ trap). Prompts are row-wise a, b, c, d. First pause is det; then x, y, z. Skip each d with EXE to get only the determinant. Inverse: either solve three times with right-hand sides (1,0,0), (0,1,0), (0,0,1), or type the 112-byte adjoint listing and divide by det. ┘ is a b/c. maxX / maxY / n are S-VAR / S-SUM tokens, not letters."
+    },
+    {
+      "type": "note",
+      "label": "Memory / run mode",
+      "text": "153 bytes (Cramer) or 112 bytes (adjoint) of the shared 680-byte pool. Create the slot in REG Lin (MODE 6 → 1 → slot → 5 → 1). Type ? → : ◢ Goto Lbl If Then from SHIFT 3 (P-CMD)."
+    },
+    {
+      "type": "formula",
+      "plain": "a₁x + b₁y + c₁z = d₁"
+    },
+    {
+      "type": "figure",
+      "svg": "img/prgm/simultaneous-3.svg",
+      "caption": "x + y + z = 6, x − y + 2z = 5, x + 3y + z = 10 meet at (1, 2, 3)."
+    },
+    {
+      "type": "h2",
+      "text": "Program (one line)"
+    },
+    {
+      "type": "program",
+      "code": "FreqOn:?→A:?→B:?→C:?→D:?→X:?→Y:?→M:A:?→A:AnsY−BX,AnsA−XD;AnsM−XC DT:BM−YC→X:BA−YD→Y:CA−MD→M:?→A:?→B:?→C:?→D:AX+CmaxX−Bn◢(DX−CY+BM)┘Ans◢AX+CmaxX−Bn→X:(CmaxY−AM−Dn)┘X◢(AY+DmaxX−BmaxY)┘X"
+    },
+    {
+      "type": "h2",
+      "text": "Adjoint / inverse (112 bytes, REG Lin)"
+    },
+    {
+      "type": "p",
+      "text": "Row-major a11…a33. Pauses are adj entries, last pause is det. Inverse = each adjoint entry ÷ det."
+    },
+    {
+      "type": "program",
+      "code": "ClrStat:?→A:?→B:?→C:?→D:?→X:?→Y:?→M:A,X DT:?→A:?→X:XΣy−YA◢CA−BX◢BY−CΣy◢YM−DX◢ΣxX−CM◢CD−ΣxY◢DA−ΣyM◢AnsC→C:BM−ΣxA◢YAns→Y:Σxy−BD◢AnsX+C+Y"
+    },
+    {
+      "type": "h2",
+      "text": "Example 1: x + y + z = 6, x − y + 2z = 5, x + 3y + z = 10"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: x + y + z = 6, x − y + 2z = 5, x + 3y + z = 10."
+    },
+    {
+      "type": "p",
+      "text": "Given: Cramer listing. Rows (1,1,1,6), (1,−1,2,5), (1,3,1,10)."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "MODE → 6 → 2 → slot (created in REG Lin, FreqOn)",
+        "1 【EXE】  1 【EXE】  1 【EXE】  6 【EXE】  1 【EXE】  −1 【EXE】  2 【EXE】  5 【EXE】  1 【EXE】  3 【EXE】  1 【EXE】  10 【EXE】",
+        "det = −2. 【EXE】 → x = 1. 【EXE】 → y = 2. 【EXE】 → z = 3"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 2: Determinant only"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: Determinant only."
+    },
+    {
+      "type": "p",
+      "text": "Given: |1 2 3 ; 7 8 9 ; 6 5 2| = 12. EXE through each right-hand side."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "1 【EXE】  2 【EXE】  3 【EXE】  【EXE】  7 【EXE】  8 【EXE】  9 【EXE】  【EXE】  6 【EXE】  5 【EXE】  2 【EXE】  【EXE】",
+        "Display 12. AC. det is also in X"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 3 (edge): Inverse via adjoint"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: Inverse via adjoint."
+    },
+    {
+      "type": "p",
+      "text": "Given: [[2,1,3],[7,4,6],[8,9,7]], det = 40. Use the 112-byte listing."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "2 【EXE】  1 【EXE】  3 【EXE】  7 【EXE】  4 【EXE】  6 【EXE】  8 【EXE】  9 【EXE】  7 【EXE】",
+        "Adjoint row-major: −26, 20, −6, −1, −10, 9, 31, −10, 1, then det 40",
+        "Each inverse entry is adjoint ÷ 40. MODE 1 when finished with REG"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Pitfalls",
+      "text": "FreqOn is SHIFT MODE ◀ ◀ 1. n is SHIFT 1 3. maxX is SHIFT 2 2 2. maxY is SHIFT 2 2 → 2. Σx / Σy / Σxy are SHIFT 1 2, SHIFT 1 → 2, SHIFT 1 → 3. Comma between paired DT values. Math ERROR on Cramer means det = 0. Source: WebCal simultaneous8 and Abjont_1."
+    }
+  ],
+  "related": [
+    "modes/prgm/example",
+    "modes/prgm/commands",
+    "modes/prgm/edit"
+  ]
+}

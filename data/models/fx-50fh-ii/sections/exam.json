@@ -1,0 +1,43 @@
+{
+  "id": "exam",
+  "title": "Examination Compliance and Study Use",
+  "shortTitle": "Exam",
+  "parent": "index",
+  "order": 8,
+  "aliases": [
+    "HKEAA",
+    "SUPER-FX PLUS",
+    "DSE",
+    "exam approved"
+  ],
+  "keywords": [
+    "no CAS",
+    "no graphing",
+    "programmable",
+    "Simpson",
+    "Newton-Raphson"
+  ],
+  "formulas": [],
+  "keySequence": [],
+  "summary": "Why the fx-50FH II is exam-legal in designated HKEAA contexts, and how programming still supports advanced coursework.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Exam boards often ban graphing displays, CAS, and one-press numerical calculus. By omitting those, CASIO kept HKEAA SUPER-FX PLUS approval while retaining programmable RAM for student-written numerical methods (Simpson’s rule, Newton–Raphson, etc.)."
+    },
+    {
+      "type": "p",
+      "text": "The 23 FMLA routines and 40 CONST values live in ROM, so custom programs can use the full 680 bytes. Always verify the current year’s permitted calculator list before an exam sitting."
+    },
+    {
+      "type": "note",
+      "label": "Pedagogy",
+      "text": "Prefer understanding the formula before relying on FMLA or a stored program—markers may still require written method. Use the calculator to check arithmetic and explore parameters."
+    }
+  ],
+  "related": [
+    "hardware",
+    "modes/prgm",
+    "fmla"
+  ]
+}

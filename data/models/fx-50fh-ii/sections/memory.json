@@ -1,0 +1,74 @@
+{
+  "id": "memory",
+  "title": "Memory Architecture and Variables",
+  "shortTitle": "Memory",
+  "parent": "index",
+  "order": 5,
+  "aliases": [
+    "STO",
+    "RCL",
+    "Ans",
+    "M+",
+    "variables A B C D X Y"
+  ],
+  "keywords": [
+    "independent memory",
+    "registers",
+    "ALPHA"
+  ],
+  "formulas": [],
+  "keySequence": [
+    "SHIFT",
+    "RCL"
+  ],
+  "summary": "Seven user variables (A–D, X, Y, M), plus automatic Ans and the statistical buffer.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Standard variables A, B, C, D, X, Y store temporaries. There is no STO key: store with SHIFT RCL (STO) then the letter key (A–D, X, Y, M). Recall with RCL then the letter, or type ALPHA + letter inside an expression."
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "lines",
+      "items": [
+        "5 EXE, then SHIFT RCL (STO) A",
+        "ALPHA A × 3 EXE → 15"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Independent memory M"
+    },
+    {
+      "type": "p",
+      "text": "M+ adds the display to M; SHIFT M+ (M−) subtracts. Useful for running totals without overwriting A–D."
+    },
+    {
+      "type": "h2",
+      "text": "Ans"
+    },
+    {
+      "type": "p",
+      "text": "Ans holds the last evaluated result automatically. Start the next expression with an operator to chain."
+    },
+    {
+      "type": "lines",
+      "items": [
+        "15 × 3",
+        "÷ 2  continues from Ans"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Statistics modes",
+      "text": "Independent memory behaviour can differ in SD/REG; prefer dedicated STAT recalls while analyzing datasets."
+    }
+  ],
+  "related": [
+    "constants",
+    "modes/prgm/commands"
+  ]
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simultaneous Linear Equations (2 Unknowns) — fx-50FH II</title>
+  <link rel="stylesheet" href="../../../../../assets/css/site.css">
+  <link rel="stylesheet" href="../../../../../assets/vendor/katex/katex.min.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("casio-theme");
+        if (t === "light" || t === "dark" || t === "reading") {
+          document.documentElement.setAttribute("data-theme", t);
+        }
+      } catch (e) {}
+    })();
+  </script>
+<script>window.CASIO_ASSET_ROOT="../../../../../";</script>
+</head>
+<body class="layout-docs">
+  <header class="site-header">
+    <a class="site-brand" href="../../../../../index.html">
+      <span class="site-brand__name">CASIO Docs</span>
+      <span class="site-brand__tag">Calculator Reference</span>
+    </a>
+    <div class="header-search" role="search">
+      <label class="sr-only" for="site-search">Search documentation</label>
+      <input id="site-search" type="search" placeholder="Search names, keys, formulas… (/)" autocomplete="off" spellcheck="false">
+      <div id="search-results" class="search-results" hidden></div>
+    </div>
+    <div class="header-controls">
+      <label class="theme-label" for="theme-select">Theme</label>
+      <select id="theme-select" class="theme-select" aria-label="Color theme">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+        <option value="reading">Reading</option>
+      </select>
+    </div>
+  </header>
+
+  <div class="site-body">
+    <aside class="site-sidebar" aria-label="Table of contents">
+      <p class="toc-model-link"><a href="../../../index.html">fx-50FH II</a></p>
+<p class="toc-title">Contents</p>
+<ul class="toc" data-toc-root="1"><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../index.html">Overview</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../hardware.html">Hardware</a></div></li><li class="toc-item toc-item--branch is-expanded" data-toc-id="modes"><div class="toc-row"><button type="button" class="toc-toggle" aria-expanded="true" title="Expand or collapse"><span class="toc-toggle__icon" aria-hidden="true"></span></button><a class="" href="../../../modes.html">Calculation Modes</a></div><ul class="toc-children"><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../comp.html">COMP</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../cmplx.html">CMPLX</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../base-n.html">BASE</a></div></li><li class="toc-item toc-item--branch is-collapsed" data-toc-id="modes/sd"><div class="toc-row"><button type="button" class="toc-toggle" aria-expanded="false" title="Expand or collapse"><span class="toc-toggle__icon" aria-hidden="true"></span></button><a class="" href="../../sd.html">SD</a></div><ul class="toc-children"><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../sd/n.html">Number of data points (n)</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../sd/sum.html">Sum of values (Σx)</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../sd/sumsq.html">Sum of squares (Σx²)</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../sd/mean.html">Arithmetic mean (x̄)</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../sd/stdev.html">Standard deviation (σx / sx)</a></div></li></ul></li><li class="toc-item toc-item--branch is-collapsed" data-toc-id="modes/reg"><div class="toc-row"><button type="button" class="toc-toggle" aria-expanded="false" title="Expand or collapse"><span class="toc-toggle__icon" aria-hidden="true"></span></button><a class="" href="../../reg.html">REG</a></div><ul class="toc-children"><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../reg/lin.html">Lin</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../reg/log.html">Log</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../reg/exp.html">Exp</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../reg/pwr.html">Pwr</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../reg/inv.html">Inv</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../reg/quad.html">Quad</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../reg/ab-exp.html">AB-Exp</a></div></li></ul></li><li class="toc-item toc-item--branch is-expanded" data-toc-id="modes/prgm"><div class="toc-row"><button type="button" class="toc-toggle" aria-expanded="true" title="Expand or collapse"><span class="toc-toggle__icon" aria-hidden="true"></span></button><a class="" href="../../prgm.html">PRGM</a></div><ul class="toc-children"><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../edit.html">Edit</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../run.html">Run</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../clear.html">Clear</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../commands.html">Commands</a></div></li><li class="toc-item toc-item--branch is-expanded" data-toc-id="modes/prgm/example"><div class="toc-row"><button type="button" class="toc-toggle" aria-expanded="true" title="Expand or collapse"><span class="toc-toggle__icon" aria-hidden="true"></span></button><a class="" href="../example.html">Example Programs</a></div><ul class="toc-children"><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="is-current" href="./simultaneous-2.html">Simultaneous 2</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./line-quad.html">Line ∩ Quad</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./four-centres.html">Four Centres</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./circle-3pt.html">Circle 3 Points</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./cubic.html">Cubic</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./simultaneous-3.html">Simultaneous 3</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./newton.html">Newton</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./simpson.html">Simpson</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./inverse-normal.html">Inverse Normal</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./binomial-poisson.html">Bin / Poisson</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./quadratic.html">Quadratic</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./circle-centre.html">Circle Centre</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./sequences.html">AP / GP</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./line.html">Two-Point Line</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./polar.html">Pol / Rec</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./freq-sd.html">Freq → SD</a></div></li></ul></li></ul></li></ul></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../setup.html">SET UP</a></div></li><li class="toc-item toc-item--branch is-collapsed" data-toc-id="fmla"><div class="toc-row"><button type="button" class="toc-toggle" aria-expanded="false" title="Expand or collapse"><span class="toc-toggle__icon" aria-hidden="true"></span></button><a class="" href="../../../fmla.html">Built-in Formulas</a></div><ul class="toc-children"><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../fmla/01-quadratic.html">[FMLA 01] QuadEquation</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../fmla/02-cosine.html">[FMLA 02] CosineTheorem</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../fmla/03-heron.html">[FMLA 03] HeronFormula</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../fmla/04-normal-p.html">[FMLA 04] NormalP</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../fmla/05-normal-r.html">[FMLA 05] NormalQ</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../fmla/06-coulomb.html">[FMLA 06] CoulombLaw</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../fmla/07-resistance.html">[FMLA 07] Resistance</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../fmla/08-magnetic.html">[FMLA 08] MagneticForce</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../fmla/09-rc-voltage.html">[FMLA 09] RCVoltage</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../fmla/10-voltage-gain.html">[FMLA 10] VoltageGain</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../fmla/11-lrc-series.html">[FMLA 11] SeriesLRC</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../fmla/12-lrc-parallel.html">[FMLA 12] ParallelLRC</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../fmla/13-oscillation.html">[FMLA 13] Oscillation</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../fmla/14-drop.html">[FMLA 14] DropDistance</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../fmla/15-pendulum.html">[FMLA 15] SimpPendulum</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../fmla/16-spring.html">[FMLA 16] SprgPendulum</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../fmla/17-doppler.html">[FMLA 17] Doppler</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../fmla/18-gas.html">[FMLA 18] IdealGas</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../fmla/19-centrifugal.html">[FMLA 19] Centrifugal</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../fmla/20-elastic.html">[FMLA 20] ElasticEnergy</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../fmla/21-bernoulli.html">[FMLA 21] Bernoulli</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../fmla/22-stadia-h.html">[FMLA 22] StadiaHeight</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../fmla/23-stadia-d.html">[FMLA 23] StadiaDist</a></div></li></ul></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../memory.html">Memory &amp; Variables</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../constants.html">Scientific Constants</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../keys.html">Key Shortcuts</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../../../exam.html">Exam Compliance</a></div></li></ul>
+
+    </aside>
+    <main class="site-main">
+      <div class="page-sections-host" id="page-sections-host" aria-hidden="true">
+        <button type="button" class="page-sections-host__backdrop" id="page-sections-backdrop" tabindex="-1" aria-label="Close on this page"></button>
+        <div class="page-sections-host__panel">
+          <nav class="page-sections" aria-label="On this page"><p class="page-sections__title">On this page</p><ul class="page-sections__list"><li class="page-sections__item"><a class="page-sections__link" href="#program-one-line">Program (one line)</a></li><li class="page-sections__item"><a class="page-sections__link" href="#example-1-x-y-7-x-y-1">Example 1: x + y = 7, x − y = 1</a></li><li class="page-sections__item"><a class="page-sections__link" href="#example-2-2x-y-1-x-3y-11">Example 2: 2x − y = 1, x + 3y = 11</a></li><li class="page-sections__item"><a class="page-sections__link" href="#example-3-edge-parallel-lines-no-unique-solution">Example 3 (edge): Parallel lines (no unique solution)</a></li><li class="page-sections__item"><a class="page-sections__link" href="#related">Related</a></li></ul></nav>
+        </div>
+      </div>
+      <div class="mobile-nav-bar">
+        <button type="button" id="mobile-nav-back" class="mobile-nav-back" aria-label="Back to contents">← Contents</button>
+        <button type="button" id="mobile-nav-sections" class="mobile-nav-sections" aria-label="On this page" aria-expanded="false" aria-controls="page-sections-host" hidden>
+          <span class="mobile-nav-sections__icon" aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="site-content">
+        <div class="page-intro">
+          <nav aria-label="Breadcrumb"><ol class="breadcrumb">
+<li><a href="../../../../../index.html">Models</a></li>
+<li><a href="../../../index.html">fx-50FH II</a></li>
+<li><a href="../../../modes.html">Calculation Modes</a></li>
+<li><a href="../../prgm.html">PRGM</a></li>
+<li><a href="../example.html">Example Programs</a></li>
+<li><span aria-current="page">Simultaneous 2</span></li>
+</ol></nav>
+          <h1>Simultaneous Linear Equations (2 Unknowns)</h1>
+          <p class="page-summary">The DSE ‘must-enter’ solver for two linear equations. 53 bytes.</p>
+        </div>
+        <div class="doc-block keyseq-block" role="group" aria-label="Key sequence"><div class="doc-block__tag">keys</div><div class="doc-block__body"><span class="keyseq keyseq--inline"><kbd class="keycap">MODE</kbd><span class="keyseq__sep">→</span><kbd class="keycap">6</kbd><span class="keyseq__sep">→</span><kbd class="keycap">2</kbd></span></div></div><p>Hong Kong papers almost always include a 2×2 linear system. Rearrange each equation to Ax + By = C (right-hand side is the constant, not Ax+By+C=0). Prompts are A, B, C then D, X, Y for the second row Dx + Xy = Y. Displays x, then y. RCL M is the determinant AY−BX after a run of this listing.</p>
+<aside class="doc-block note-block"><div class="doc-block__tag">note</div><div class="doc-block__body"><p>53 bytes of the shared 680-byte pool. Create the slot in COMP (use CMPLX if coefficients are complex). Type ? → : ◢ Goto Lbl If Then from SHIFT 3 (P-CMD).</p></div></aside>
+<div class="doc-block formula-block" role="math"><div class="doc-block__tag">formula</div><div class="doc-block__body"><div class="formula-block__text"><div class="formula-line"><span class="katex-display"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">A</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mord mathnormal" style="margin-right:0.0359em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span></span></span></span></span></div></div></div></div>
+<figure class="doc-figure"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-labelledby="prgm-sim2-title prgm-sim2-desc">
+  <title id="prgm-sim2-title">x+y=7 and x−y=1 meet at (4,3)</title>
+  <desc id="prgm-sim2-desc">Two lines intersecting at the unique solution (4, 3).</desc>
+  
+  <line x1="64" y1="231.2" x2="680" y2="231.2" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <line x1="132.44444444444446" y1="280" x2="132.44444444444446" y2="36" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <line x1="64" y1="36" x2="680" y2="255.6" stroke="var(--accent)" stroke-width="2.2"/>
+  <line x1="64" y1="280" x2="680" y2="60.400000000000006" stroke="var(--accent)" stroke-width="2.2"/>
+  <circle cx="406.22222222222223" cy="158" r="5" fill="var(--accent)" stroke="var(--bg)" stroke-width="1.5"/>
+  <text x="406.22222222222223" y="146" text-anchor="middle" fill="var(--text)">(4, 3)</text>
+  <text x="556.8" y="201.92000000000002" fill="var(--text)">x + y = 7</text>
+  <text x="488.35555555555555" y="94.56" fill="var(--text)">x − y = 1</text>
+
+</svg>
+<figcaption>x + y = 7 and x − y = 1 meet at (4, 3).</figcaption></figure>
+<h2 id="program-one-line">Program (one line)</h2>
+<div class="doc-block program-block"><div class="doc-block__tag">basic</div><div class="doc-block__body"><pre class="program">?→A:?→B:?→C:?→D:?→X:?→Y:AY−BX→M:M⁻¹(CX−YB→X◢M⁻¹(AY−DC→Y</pre></div></div>
+<h2 id="example-1-x-y-7-x-y-1">Example 1: x + y = 7, x − y = 1</h2>
+<p>Question: Find the unknowns x and y that satisfy both equations x + y = 7 and x − y = 1.</p>
+<p>Given: Two straight lines intersect at point M(x, y).</p>
+<div class="work-lines"><div class="work-lines__row">Line 1: x + y = 7</div><div class="work-lines__row">Line 2: x − y = 1</div><div class="work-lines__row">For Ax + By = C input format:</div><div class="work-lines__row">Row 1 (A, B, C) = (1, 1, 7)</div><div class="work-lines__row">Row 2 (D, X, Y) = (1, −1, 1)</div></div>
+<p>Exam-style flow: convert each line to Ax + By = C, key in coefficients, read x then y, then verify by substitution.</p>
+<figure class="doc-figure"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-labelledby="prgm-sim2-ex1-title prgm-sim2-ex1-desc">
+  <title id="prgm-sim2-ex1-title">Solve x+y=7 and x−y=1</title>
+  <desc id="prgm-sim2-ex1-desc">Unknown point (x,y) at the intersection, then solved as (4,3).</desc>
+  
+  <line x1="64" y1="231.2" x2="680" y2="231.2" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <line x1="132.44444444444446" y1="280" x2="132.44444444444446" y2="36" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <line x1="64" y1="36" x2="680" y2="255.6" stroke="var(--accent)" stroke-width="2.2"/>
+  <line x1="64" y1="280" x2="680" y2="60.400000000000006" stroke="var(--accent)" stroke-width="2.2"/>
+  <circle cx="406.22222222222223" cy="158" r="5" fill="var(--accent)" stroke="var(--bg)" stroke-width="1.5"/>
+  <text x="406.22222222222223" y="142" text-anchor="middle" fill="var(--text)">M(x, y) = ?</text>
+  <text x="406.22222222222223" y="182" text-anchor="middle" fill="var(--accent)">solution: M(4, 3)</text>
+  <text x="556.8" y="201.92000000000002" fill="var(--text)">x + y = 7</text>
+  <text x="488.35555555555555" y="94.56" fill="var(--text)">x − y = 1</text>
+
+</svg>
+<figcaption>M(x, y) is unknown before calculation; calculator gives M(4, 3).</figcaption></figure>
+<ol><li>Enter Row 1 then Row 2 in order using the key sequence above.</li><li>Key sequence: MODE → 6 → 2 → slot, then 1 <kbd class="keycap">EXE</kbd> 1 <kbd class="keycap">EXE</kbd> 7 <kbd class="keycap">EXE</kbd> 1 <kbd class="keycap">EXE</kbd> −1 <kbd class="keycap">EXE</kbd> 1 <kbd class="keycap">EXE</kbd>.</li><li>Read outputs: first pause x = 4, <kbd class="keycap">EXE</kbd> gives y = 3, so M = (4, 3).</li><li>Exam check: 4 + 3 = 7 and 4 − 3 = 1, both true.</li></ol>
+<h2 id="example-2-2x-y-1-x-3y-11">Example 2: 2x − y = 1, x + 3y = 11</h2>
+<p>Question: Find x and y from the simultaneous equations 2x − y = 1 and x + 3y = 11.</p>
+<p>Given: Two straight lines intersect at point M(x, y).</p>
+<div class="work-lines"><div class="work-lines__row">Line 1: 2x − y = 1</div><div class="work-lines__row">Line 2: x + 3y = 11</div><div class="work-lines__row">For Ax + By = C input format:</div><div class="work-lines__row">Row 1 (A, B, C) = (2, −1, 1)</div><div class="work-lines__row">Row 2 (D, X, Y) = (1, 3, 11)</div></div>
+<p>Follow the same DSE flow: identify rows, key in values, read M, and verify in both lines.</p>
+<figure class="doc-figure"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-labelledby="prgm-sim2-ex2-title prgm-sim2-ex2-desc">
+  <title id="prgm-sim2-ex2-title">2x−y=1 and x+3y=11</title>
+  <desc id="prgm-sim2-ex2-desc">Second worked example with unique solution (2,3).</desc>
+  
+  <line x1="64" y1="219" x2="680" y2="219" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <line x1="141" y1="280" x2="141" y2="36" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <line x1="102.5" y1="280" x2="641.5" y2="-147" stroke="var(--accent)" stroke-width="2.2"/>
+  <line x1="64" y1="97" x2="680" y2="178.33333333333334" stroke="var(--accent)" stroke-width="2.2"/>
+  <circle cx="295" cy="127.5" r="5" fill="var(--accent)" stroke="var(--bg)" stroke-width="1.5"/>
+  <text x="295" y="115.5" text-anchor="middle" fill="var(--text)">(x, y) = (2, 3)</text>
+  <text x="518.3" y="109.20000000000002" fill="var(--text)">2x − y = 1</text>
+  <text x="510.59999999999997" y="161.05" fill="var(--text)">x + 3y = 11</text>
+
+</svg>
+<figcaption>Unknown point M is solved as M(2, 3).</figcaption></figure>
+<ol><li>Enter Row 1 then Row 2 in order.</li><li>Key sequence: 2 <kbd class="keycap">EXE</kbd> −1 <kbd class="keycap">EXE</kbd> 1 <kbd class="keycap">EXE</kbd> 1 <kbd class="keycap">EXE</kbd> 3 <kbd class="keycap">EXE</kbd> 11 <kbd class="keycap">EXE</kbd>.</li><li>Outputs: x = 2, then y = 3, so M = (2, 3).</li><li>Check: 2(2) − 3 = 1 and 2 + 3(3) = 11.</li></ol>
+<h2 id="example-3-edge-parallel-lines-no-unique-solution">Example 3 (edge): Parallel lines (no unique solution)</h2>
+<p>Question: Does a single pair (x, y) satisfy both x + y = 1 and 2x + 2y = 5?</p>
+<p>Given: Two lines are given. Test whether a common point M(x, y) exists.</p>
+<div class="work-lines"><div class="work-lines__row">Line 1: x + y = 1</div><div class="work-lines__row">Line 2: 2x + 2y = 5</div><div class="work-lines__row">For Ax + By = C input format:</div><div class="work-lines__row">Row 1 (A, B, C) = (1, 1, 1)</div><div class="work-lines__row">Row 2 (D, X, Y) = (2, 2, 5)</div></div>
+<p>This is an exam edge case: same slope, different intercept, so no intersection point exists.</p>
+<figure class="doc-figure"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-labelledby="prgm-sim2-ex3-title prgm-sim2-ex3-desc">
+  <title id="prgm-sim2-ex3-title">Parallel case: x+y=1 and 2x+2y=5</title>
+  <desc id="prgm-sim2-ex3-desc">Edge case where determinant is zero and there is no unique (x,y).</desc>
+  
+  <line x1="64" y1="245.14285714285714" x2="680" y2="245.14285714285714" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <line x1="152" y1="280" x2="152" y2="36" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <line x1="64" y1="175.42857142857144" x2="680" y2="419.42857142857144" stroke="var(--accent)" stroke-width="2.2"/>
+  <line x1="64" y1="36" x2="680" y2="280" stroke="var(--accent)" stroke-width="2.2"/>
+  <text x="574.4" y="248.62857142857143" fill="var(--text)">x + y = 1</text>
+  <text x="521.6" y="112.68571428571428" fill="var(--text)">2x + 2y = 5</text>
+  <text x="187.2" y="56.91428571428568" fill="var(--accent)">No unique (?, ?)</text>
+
+</svg>
+<figcaption>No single (?, ?) pair exists because both lines are parallel.</figcaption></figure>
+<ol><li>Enter Row 1 then Row 2 in order.</li><li>Key sequence: 1 <kbd class="keycap">EXE</kbd> 1 <kbd class="keycap">EXE</kbd> 1 <kbd class="keycap">EXE</kbd> 2 <kbd class="keycap">EXE</kbd> 2 <kbd class="keycap">EXE</kbd> 5 <kbd class="keycap">EXE</kbd>.</li><li>Math ERROR because determinant AY − BX = 1·2 − 1·2 = 0.</li><li>Conclusion for script: no unique M(x, y); the lines are parallel (or coincident in other AY−BX=0 cases).</li></ol>
+<aside class="doc-block note-block"><div class="doc-block__tag">note</div><div class="doc-block__body"><p>This is Cramer’s rule with the second y-coefficient stored in X (there is no variable E). If the first y-coefficient B is 0, swap the two equations before typing.</p></div></aside><h2 id="related">Related</h2><ul class="related-list"><li><a href="../example.html">Example Programs</a></li><li><a href="../commands.html">Commands</a></li><li><a href="../edit.html">Edit</a></li></ul>
+        <nav class="pager" aria-label="Page"><a class="pager__prev" href="../example.html"><span class="pager__label">Previous</span>Example Programs</a><a class="pager__next" href="./line-quad.html"><span class="pager__label">Next</span>Line ∩ Quad</a></nav>
+        <footer class="site-footer">
+          <p>Offline Casio calculator documentation. Content is structured for multiple models; rebuild with <code>node tools/build.js</code>.</p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script src="../../../../../search-index.js"></script>
+  <script src="../../../../../assets/js/theme.js"></script>
+  <script src="../../../../../assets/js/nav.js"></script>
+  <script src="../../../../../assets/js/search.js"></script>
+</body>
+</html>

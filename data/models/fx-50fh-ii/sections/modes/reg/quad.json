@@ -1,0 +1,240 @@
+{
+  "id": "modes/reg/quad",
+  "title": "MODE 5 ▶ 2: Quad (Quadratic Regression)",
+  "shortTitle": "Quad",
+  "parent": "modes/reg",
+  "order": 6,
+  "aliases": [
+    "quadratic regression",
+    "MODE 5 ▶ 2",
+    "MODE 5 RIGHT 2",
+    "REG Quad",
+    "parabola",
+    "Cx2"
+  ],
+  "keywords": [
+    "parabola",
+    "trajectory",
+    "second-order",
+    "A",
+    "B",
+    "C",
+    "DT",
+    "S-VAR"
+  ],
+  "formulas": [
+    "y = A + Bx + Cx²"
+  ],
+  "keySequence": [
+    "MODE",
+    "5",
+    "▶",
+    "2"
+  ],
+  "summary": "Enter x , y DT for at least 3 pairs, press AC, then recall A, B, C. Fitted parabola: y = A + Bx + Cx².",
+  "body": [
+    {
+      "type": "p",
+      "text": "Quad fits a parabola y = A + Bx + Cx² to paired data. Use when the trend bends once (a single peak or valley) — trajectories, symmetric curves, or any scatter that is not well served by a straight line."
+    },
+    {
+      "type": "formula",
+      "plain": "y = A + Bx + Cx^{2}"
+    },
+    {
+      "type": "p",
+      "mark": "reg-graph",
+      "text": "Quadratic regression fits y = A + Bx + Cx² — a parabola. Use it when the trend bends once (a single peak or valley). The calculator recalls A, B, and C (item 3 is C, not r)."
+    },
+    {
+      "type": "figure",
+      "mark": "reg-graph",
+      "svg": "img/reg/quad.svg",
+      "caption": "Sample fit y = x² − 2x + 3 through five points. The curve has a minimum near x = 1."
+    },
+    {
+      "type": "h2",
+      "text": "Input"
+    },
+    {
+      "type": "p",
+      "text": "Open Quad regression (MODE 5, ▶, then 2). Clear old data, then enter each pair as x , y DT using the M+ (DT) key. You need at least three points. When they are all registered, press AC once to leave the list."
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "MODE",
+        "5",
+        "▶",
+        "2"
+      ]
+    },
+    {
+      "type": "steps",
+      "title": "Enter data",
+      "items": [
+        "SHIFT 9 → 1 EXE if replacing an old list",
+        "For each point: x , y DT (comma between x and y, then DT)",
+        "After the third (or more) pair: AC once",
+        "Do not recall A, B, C until after AC"
+      ]
+    },
+    {
+      "type": "lines",
+      "lead": "Example — three points on y = x² − 2x + 3:",
+      "items": [
+        "0 , 3 DT",
+        "1 , 2 DT",
+        "2 , 3 DT",
+        "AC"
+      ]
+    },
+    {
+      "type": "note",
+      "text": "Minimum 3 pairs (three unknowns A, B, C). With exactly three non-collinear points the fit is exact. More points give a least-squares parabola."
+    },
+    {
+      "type": "h2",
+      "text": "Output"
+    },
+    {
+      "type": "p",
+      "text": "After AC, the calculator has fitted y = A + Bx + Cx². Recall A, B, and C with SHIFT 2 → 1 (VAR) → ▶ → ▶, then 1 / 2 / 3 EXE. Quad has no r; item 3 on that screen is C."
+    },
+    {
+      "type": "lines",
+      "lead": "S-VAR recalls (after AC):",
+      "items": [
+        "A — SHIFT 2 → 1 → ▶ → ▶ → 1 EXE",
+        "B — SHIFT 2 → 1 → ▶ → ▶ → 2 EXE",
+        "C — SHIFT 2 → 1 → ▶ → ▶ → 3 EXE",
+        "ŷ for a given x: type x, SHIFT 2 → 1 → ◀ → 3 EXE",
+        "x̂ from y (two roots): type y, SHIFT 2 → 1 → ◀ → 1 EXE and ◀ → 2 EXE"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Write the answer as y = A + Bx + Cx² using your recalled values. For the example above: A = 3, B = −2, C = 1 → y = 3 − 2x + x²."
+    },
+    {
+      "type": "h2",
+      "text": "Worked example"
+    },
+    {
+      "type": "steps",
+      "title": "Three points (0, 3), (1, 2), (2, 3)",
+      "items": [
+        {
+          "keys": [
+            "MODE",
+            "5",
+            "▶",
+            "2"
+          ]
+        },
+        {
+          "keys": [
+            "SHIFT",
+            "9",
+            "1",
+            "EXE"
+          ]
+        },
+        {
+          "keys": [
+            "0",
+            ",",
+            "3",
+            "DT"
+          ]
+        },
+        {
+          "keys": [
+            "1",
+            ",",
+            "2",
+            "DT"
+          ]
+        },
+        {
+          "keys": [
+            "2",
+            ",",
+            "3",
+            "DT"
+          ]
+        },
+        {
+          "keys": [
+            "AC"
+          ]
+        },
+        {
+          "keys": [
+            "SHIFT",
+            "2",
+            "1",
+            "▶",
+            "▶",
+            "1",
+            "EXE"
+          ],
+          "result": "A = 3"
+        },
+        {
+          "keys": [
+            "SHIFT",
+            "2",
+            "1",
+            "▶",
+            "▶",
+            "2",
+            "EXE"
+          ],
+          "result": "B = −2"
+        },
+        {
+          "keys": [
+            "SHIFT",
+            "2",
+            "1",
+            "▶",
+            "▶",
+            "3",
+            "EXE"
+          ],
+          "result": "C = 1"
+        },
+        {
+          "text": "Check $x = 0$: $y = 3 + 0 + 0 = 3$"
+        },
+        {
+          "text": "Check $x = 1$: $y = 3 - 2 + 1 = 2$"
+        },
+        {
+          "text": "Check $x = 2$: $y = 3 - 4 + 4 = 3$"
+        },
+        {
+          "text": "Fitted equation: $y = 3 - 2x + x^{2}$"
+        },
+        {
+          "keys": [
+            "4",
+            "SHIFT",
+            "2",
+            "1",
+            "◀",
+            "3",
+            "EXE"
+          ],
+          "result": "ŷ = 11 at $x = 4$"
+        }
+      ]
+    }
+  ],
+  "related": [
+    "modes/reg",
+    "modes/reg/lin",
+    "modes/reg/log"
+  ]
+}

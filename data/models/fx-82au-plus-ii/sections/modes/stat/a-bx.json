@@ -1,0 +1,60 @@
+{
+  "id": "modes/stat/a-bx",
+  "title": "MODE 2-2: A+BX",
+  "shortTitle": "A+BX",
+  "parent": "modes/stat",
+  "order": 2,
+  "aliases": [
+    "linear regression",
+    "MODE 2 2",
+    "A+BX"
+  ],
+  "keywords": [
+    "A",
+    "B",
+    "r",
+    "x̂",
+    "ŷ"
+  ],
+  "formulas": [
+    "y = A + Bx"
+  ],
+  "keySequence": [
+    "MODE",
+    "2",
+    "2"
+  ],
+  "summary": "Linear regression y = A + Bx with correlation r and estimators x̂, ŷ.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Straight-line trends and calibration curves."
+    },
+    {
+      "type": "formula",
+      "plain": "y = A + Bx"
+    },
+    {
+      "type": "p",
+      "text": "Lin-style fit: a constant rate of change. The STAT editor stores (x, y) pairs; after AC, SHIFT 1 → Reg recalls A, B, r, and the estimators x̂ / ŷ."
+    },
+    {
+      "type": "figure",
+      "svg": "img/reg/lin.svg",
+      "caption": "Sample fit y = 2x through (1, 2), (2, 4), (3, 6). A = 0, B = 2, r = 1."
+    },
+    {
+      "type": "steps",
+      "title": "Open this type",
+      "items": [
+        "MODE → 2 → 2",
+        "Clear or edit data in the Statistics Editor as needed",
+        "AC, then SHIFT 1 (STAT) for Var / Reg / MinMax recalls"
+      ]
+    }
+  ],
+  "related": [
+    "statistics",
+    "modes/stat"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "modes/sd/sum",
+  "title": "SD: Sum of values (Σx)",
+  "shortTitle": "Sum of values (Σx)",
+  "parent": "modes/sd",
+  "order": 2,
+  "aliases": [
+    "Σx",
+    "sum x",
+    "S-SUM 2",
+    "total"
+  ],
+  "keywords": [
+    "Σx",
+    "sum",
+    "S-SUM",
+    "frequency"
+  ],
+  "formulas": [
+    "Σx = Σ xi",
+    "Σx = Σ (xi · fi)"
+  ],
+  "keySequence": [
+    "SHIFT",
+    "1",
+    "2"
+  ],
+  "summary": "Sum of the x-values. With FreqOn each class is weighted by its frequency.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Σx is the running total of all observations. Every DT adds that value (times its frequency, if you used one)."
+    },
+    {
+      "type": "formula",
+      "plain": "\\sum x = x_1 + x_2 + \\cdots + x_n\n\\text{FreqOn: }\\sum x = \\sum x_i f_i"
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "SHIFT",
+        "1",
+        "2",
+        "EXE"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "lines",
+      "items": [
+        "Data: 2, 4, 6, 8 (four numbers)",
+        "Sum = 2 + 4 + 6 + 8 = 20",
+        "Σx = 20"
+      ]
+    },
+    {
+      "type": "steps",
+      "items": [
+        "MODE 4. If you were already in SD, SHIFT 9 → 1 (Stat) → EXE to clear the old list",
+        "2 DT",
+        "4 DT",
+        "6 DT",
+        "8 DT",
+        "then AC",
+        "SHIFT 1 → 2 EXE → Σx = 20"
+      ],
+      "title": "On the calculator"
+    },
+    {
+      "type": "h2",
+      "text": "Example with frequencies (FreqOn)"
+    },
+    {
+      "type": "lines",
+      "items": [
+        "75 once, 80 twice, 85 four times",
+        "Σx = 75×1 + 80×2 + 85×4",
+        "Σx = 75 + 160 + 340 = 575"
+      ]
+    },
+    {
+      "type": "steps",
+      "items": [
+        "Confirm FreqOn in SETUP, then MODE 4",
+        "75 DT",
+        "80 DT DT",
+        "85 ; 4 DT",
+        "then AC",
+        "SHIFT 1 → 2 EXE → Σx = 575"
+      ],
+      "title": "On the calculator"
+    },
+    {
+      "type": "note",
+      "text": "x̄ = Σx / n. If Σx looks wrong, a leftover Stat buffer or a frequency typed with FreqOff (Syntax ERROR / skipped) is the usual cause."
+    }
+  ],
+  "related": [
+    "modes/sd/n",
+    "modes/sd/sumsq",
+    "modes/sd/mean"
+  ]
+}

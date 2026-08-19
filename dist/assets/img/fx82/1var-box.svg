@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-labelledby="fx82-1var-box-title fx82-1var-box-desc">
+  <title id="fx82-1var-box-title">Box plot of 15, 18, 22, 25 with quartiles</title>
+  <desc id="fx82-1var-box-desc">Min 15, Q1 16.5, median 20, Q3 23.5, max 25. 1-VAR MinMax recalls these five numbers.</desc>
+  
+  <line x1="80" y1="170" x2="640" y2="170" stroke="var(--text-muted)" stroke-width="1"/>
+  <line x1="185.0" y1="170" x2="237.5" y2="170" stroke="var(--accent)" stroke-width="2"/>
+  <line x1="482.5" y1="170" x2="535.0" y2="170" stroke="var(--accent)" stroke-width="2"/>
+  <rect x="237.5" y="134" width="245.0" height="72" fill="var(--accent)" fill-opacity="0.18" stroke="var(--accent)" stroke-width="2"/>
+  <line x1="360.0" y1="134" x2="360.0" y2="206" stroke="var(--accent)" stroke-width="2.4"/>
+  <line x1="185.0" y1="156" x2="185.0" y2="184" stroke="var(--accent)" stroke-width="2"/>
+  <line x1="535.0" y1="156" x2="535.0" y2="184" stroke="var(--accent)" stroke-width="2"/>
+  <line x1="185.0" y1="214" x2="185.0" y2="220" stroke="var(--text-muted)" stroke-width="1"/>
+  <text x="185.0" y="238" text-anchor="middle" fill="var(--text)">15</text>
+  <line x1="237.5" y1="214" x2="237.5" y2="220" stroke="var(--text-muted)" stroke-width="1"/>
+  <text x="237.5" y="238" text-anchor="middle" fill="var(--text)">Q1</text>
+  <line x1="360.0" y1="214" x2="360.0" y2="220" stroke="var(--text-muted)" stroke-width="1"/>
+  <text x="360.0" y="238" text-anchor="middle" fill="var(--text)">med</text>
+  <line x1="482.5" y1="214" x2="482.5" y2="220" stroke="var(--text-muted)" stroke-width="1"/>
+  <text x="482.5" y="238" text-anchor="middle" fill="var(--text)">Q3</text>
+  <line x1="535.0" y1="214" x2="535.0" y2="220" stroke="var(--text-muted)" stroke-width="1"/>
+  <text x="535.0" y="238" text-anchor="middle" fill="var(--text)">25</text>
+  <text x="360" y="36" text-anchor="middle" fill="var(--text)">1-VAR MinMax: min, Q1, med, Q3, max</text>
+  <text x="360" y="300" text-anchor="middle" fill="var(--accent-soft)">This model reports quartiles; the fx-50FH II SD mode does not</text>
+
+</svg>

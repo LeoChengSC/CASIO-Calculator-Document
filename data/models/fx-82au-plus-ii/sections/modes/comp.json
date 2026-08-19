@@ -1,0 +1,55 @@
+{
+  "id": "modes/comp",
+  "title": "MODE 1: COMP (General Computation)",
+  "shortTitle": "COMP",
+  "parent": "modes",
+  "order": 1,
+  "aliases": [
+    "computation",
+    "MODE 1",
+    "surd",
+    "fraction"
+  ],
+  "keywords": [
+    "S⇔D",
+    "√",
+    "Natural Display",
+    "FACT"
+  ],
+  "formulas": [
+    "√48 + √27"
+  ],
+  "keySequence": [
+    "MODE",
+    "1"
+  ],
+  "summary": "Default mode for arithmetic, trig, logs, fractions, sexagesimal, Pol/Rec, FACT, and exact surds.",
+  "body": [
+    {
+      "type": "p",
+      "text": "COMP is everyday work. With MthIO, results often stay as exact fractions or surds until you press S⇔D for a decimal."
+    },
+    {
+      "type": "h2",
+      "text": "Example: exact surd then decimal"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "MODE → 1 (COMP)",
+        "√48 + √27 =",
+        "exact combined surd form",
+        "S⇔D → decimal approximation"
+      ]
+    },
+    {
+      "type": "note",
+      "text": "Angle unit (Deg/Rad/Gra) and MthIO vs LineIO are SET UP options—wrong angle unit is a common exam trap."
+    }
+  ],
+  "related": [
+    "setup",
+    "functions/sd",
+    "functions/fact"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "modes/stat/ln",
+  "title": "MODE 2-4: ln X",
+  "shortTitle": "ln X",
+  "parent": "modes/stat",
+  "order": 4,
+  "aliases": [
+    "logarithmic regression",
+    "MODE 2 4"
+  ],
+  "keywords": [
+    "ln",
+    "saturation"
+  ],
+  "formulas": [
+    "y = A + B ln x"
+  ],
+  "keySequence": [
+    "MODE",
+    "2",
+    "4"
+  ],
+  "summary": "Logarithmic regression y = A + B ln x.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Diminishing-return / log-x relationships (x > 0)."
+    },
+    {
+      "type": "formula",
+      "plain": "y = A + B \\ln x"
+    },
+    {
+      "type": "p",
+      "text": "Steep at first, then flattening. Every x value must be positive."
+    },
+    {
+      "type": "figure",
+      "svg": "img/reg/log.svg",
+      "caption": "Sample fit y = 2 + 3 ln x. Extra units of x matter less and less."
+    },
+    {
+      "type": "steps",
+      "title": "Open this type",
+      "items": [
+        "MODE → 2 → 4",
+        "Clear or edit data in the Statistics Editor as needed",
+        "AC, then SHIFT 1 (STAT) for Var / Reg / MinMax recalls"
+      ]
+    }
+  ],
+  "related": [
+    "statistics",
+    "modes/stat"
+  ]
+}

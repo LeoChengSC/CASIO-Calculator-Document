@@ -1,0 +1,51 @@
+{
+  "id": "exam",
+  "title": "Examination Compliance",
+  "shortTitle": "Exam",
+  "parent": "index",
+  "order": 7,
+  "aliases": [
+    "NESA",
+    "VCAA",
+    "QCAA",
+    "SACE",
+    "WACE",
+    "NCEA",
+    "HSC",
+    "VCE"
+  ],
+  "keywords": [
+    "non-programmable",
+    "non-CAS",
+    "no graphing"
+  ],
+  "formulas": [],
+  "keySequence": [],
+  "summary": "Built for non-programmable, non-CAS, non-graphing rules across Australian states and NCEA (NZ).",
+  "body": [
+    {
+      "type": "p",
+      "text": "No user program memory, no CAS, and no function graphing keep the fx-82AU PLUS II inside common Oceania exam policies. Always confirm the current year’s approved list for your board."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "NESA (NSW) — HSC",
+        "VCAA (VIC) — VCE",
+        "QCAA (QLD)",
+        "SACE (SA)",
+        "WACE (WA)",
+        "TASC (TAS)",
+        "NCEA (New Zealand)"
+      ]
+    },
+    {
+      "type": "note",
+      "text": "VERIF and exact surds help checking work; written method is still required where the syllabus demands it."
+    }
+  ],
+  "related": [
+    "hardware",
+    "compare"
+  ]
+}

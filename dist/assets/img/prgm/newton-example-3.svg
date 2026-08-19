@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" role="img" aria-labelledby="prgm-example-card-title prgm-example-card-desc">
+  <title id="prgm-example-card-title">Change f — here x² − 2 = 0</title>
+  <desc id="prgm-example-card-desc">Case sketch for this worked example.</desc>
+  
+  <rect x="28" y="34" width="664" height="254" rx="14" fill="var(--accent)" fill-opacity="0.06" stroke="var(--accent)" stroke-width="1.2"/>
+  <text x="46" y="80" fill="var(--accent)" font-size="24">Change f — here x² − 2 = 0</text>
+  <text x="46" y="118" fill="var(--text)" font-size="20">While editing, replace M³−2M−1 with M²−2. Guess 1 for √2.</text>
+  <text x="46" y="148" fill="var(--text)" font-size="20">Edit the green expression only. Variable stays M</text>
+  <text x="46" y="178" fill="var(--text)" font-size="20">1 【EXE】, then 【EXE】 until 1.414213562</text>
+
+</svg>

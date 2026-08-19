@@ -1,0 +1,260 @@
+{
+  "id": "fx-50fh-ii",
+  "name": "CASIO fx-50FH II",
+  "shortName": "fx-50FH II",
+  "aliases": [
+    "fx50fhii",
+    "50FH II",
+    "SUPER-FX PLUS"
+  ],
+  "nav": [
+    {
+      "id": "index",
+      "label": "Overview"
+    },
+    {
+      "id": "hardware",
+      "label": "Hardware"
+    },
+    {
+      "id": "modes",
+      "label": "Calculation Modes",
+      "children": [
+        {
+          "id": "modes/comp",
+          "label": "COMP"
+        },
+        {
+          "id": "modes/cmplx",
+          "label": "CMPLX"
+        },
+        {
+          "id": "modes/base-n",
+          "label": "BASE"
+        },
+        {
+          "id": "modes/sd",
+          "label": "SD",
+          "children": [
+            {
+              "id": "modes/sd/n",
+              "label": "Number of data points (n)"
+            },
+            {
+              "id": "modes/sd/sum",
+              "label": "Sum of values (Σx)"
+            },
+            {
+              "id": "modes/sd/sumsq",
+              "label": "Sum of squares (Σx²)"
+            },
+            {
+              "id": "modes/sd/mean",
+              "label": "Arithmetic mean (x̄)"
+            },
+            {
+              "id": "modes/sd/stdev",
+              "label": "Standard deviation (σx / sx)"
+            }
+          ]
+        },
+        {
+          "id": "modes/reg",
+          "label": "REG",
+          "children": [
+            {
+              "id": "modes/reg/lin",
+              "label": "Lin"
+            },
+            {
+              "id": "modes/reg/log",
+              "label": "Log"
+            },
+            {
+              "id": "modes/reg/exp",
+              "label": "Exp"
+            },
+            {
+              "id": "modes/reg/pwr",
+              "label": "Pwr"
+            },
+            {
+              "id": "modes/reg/inv",
+              "label": "Inv"
+            },
+            {
+              "id": "modes/reg/quad",
+              "label": "Quad"
+            },
+            {
+              "id": "modes/reg/ab-exp",
+              "label": "AB-Exp"
+            }
+          ]
+        },
+        {
+          "id": "modes/prgm",
+          "label": "PRGM",
+          "children": [
+            {
+              "id": "modes/prgm/edit",
+              "label": "Edit"
+            },
+            {
+              "id": "modes/prgm/run",
+              "label": "Run"
+            },
+            {
+              "id": "modes/prgm/clear",
+              "label": "Clear"
+            },
+            {
+              "id": "modes/prgm/commands",
+              "label": "Commands"
+            },
+            {
+              "id": "modes/prgm/example",
+              "label": "Example Programs",
+              "children": [
+                { "id": "modes/prgm/example/simultaneous-2", "label": "Simultaneous 2" },
+                { "id": "modes/prgm/example/line-quad", "label": "Line ∩ Quad" },
+                { "id": "modes/prgm/example/four-centres", "label": "Four Centres" },
+                { "id": "modes/prgm/example/circle-3pt", "label": "Circle 3 Points" },
+                { "id": "modes/prgm/example/cubic", "label": "Cubic" },
+                { "id": "modes/prgm/example/simultaneous-3", "label": "Simultaneous 3" },
+                { "id": "modes/prgm/example/newton", "label": "Newton" },
+                { "id": "modes/prgm/example/simpson", "label": "Simpson" },
+                { "id": "modes/prgm/example/inverse-normal", "label": "Inverse Normal" },
+                { "id": "modes/prgm/example/binomial-poisson", "label": "Bin / Poisson" },
+                { "id": "modes/prgm/example/quadratic", "label": "Quadratic" },
+                { "id": "modes/prgm/example/circle-centre", "label": "Circle Centre" },
+                { "id": "modes/prgm/example/sequences", "label": "AP / GP" },
+                { "id": "modes/prgm/example/line", "label": "Two-Point Line" },
+                { "id": "modes/prgm/example/polar", "label": "Pol / Rec" },
+                { "id": "modes/prgm/example/freq-sd", "label": "Freq → SD" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "setup",
+      "label": "SET UP"
+    },
+    {
+      "id": "fmla",
+      "label": "Built-in Formulas",
+      "children": [
+        {
+          "id": "fmla/01-quadratic",
+          "label": "[FMLA 01] QuadEquation"
+        },
+        {
+          "id": "fmla/02-cosine",
+          "label": "[FMLA 02] CosineTheorem"
+        },
+        {
+          "id": "fmla/03-heron",
+          "label": "[FMLA 03] HeronFormula"
+        },
+        {
+          "id": "fmla/04-normal-p",
+          "label": "[FMLA 04] NormalP"
+        },
+        {
+          "id": "fmla/05-normal-r",
+          "label": "[FMLA 05] NormalQ"
+        },
+        {
+          "id": "fmla/06-coulomb",
+          "label": "[FMLA 06] CoulombLaw"
+        },
+        {
+          "id": "fmla/07-resistance",
+          "label": "[FMLA 07] Resistance"
+        },
+        {
+          "id": "fmla/08-magnetic",
+          "label": "[FMLA 08] MagneticForce"
+        },
+        {
+          "id": "fmla/09-rc-voltage",
+          "label": "[FMLA 09] RCVoltage"
+        },
+        {
+          "id": "fmla/10-voltage-gain",
+          "label": "[FMLA 10] VoltageGain"
+        },
+        {
+          "id": "fmla/11-lrc-series",
+          "label": "[FMLA 11] SeriesLRC"
+        },
+        {
+          "id": "fmla/12-lrc-parallel",
+          "label": "[FMLA 12] ParallelLRC"
+        },
+        {
+          "id": "fmla/13-oscillation",
+          "label": "[FMLA 13] Oscillation"
+        },
+        {
+          "id": "fmla/14-drop",
+          "label": "[FMLA 14] DropDistance"
+        },
+        {
+          "id": "fmla/15-pendulum",
+          "label": "[FMLA 15] SimpPendulum"
+        },
+        {
+          "id": "fmla/16-spring",
+          "label": "[FMLA 16] SprgPendulum"
+        },
+        {
+          "id": "fmla/17-doppler",
+          "label": "[FMLA 17] Doppler"
+        },
+        {
+          "id": "fmla/18-gas",
+          "label": "[FMLA 18] IdealGas"
+        },
+        {
+          "id": "fmla/19-centrifugal",
+          "label": "[FMLA 19] Centrifugal"
+        },
+        {
+          "id": "fmla/20-elastic",
+          "label": "[FMLA 20] ElasticEnergy"
+        },
+        {
+          "id": "fmla/21-bernoulli",
+          "label": "[FMLA 21] Bernoulli"
+        },
+        {
+          "id": "fmla/22-stadia-h",
+          "label": "[FMLA 22] StadiaHeight"
+        },
+        {
+          "id": "fmla/23-stadia-d",
+          "label": "[FMLA 23] StadiaDist"
+        }
+      ]
+    },
+    {
+      "id": "memory",
+      "label": "Memory & Variables"
+    },
+    {
+      "id": "constants",
+      "label": "Scientific Constants"
+    },
+    {
+      "id": "keys",
+      "label": "Key Shortcuts"
+    },
+    {
+      "id": "exam",
+      "label": "Exam Compliance"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "fmla/04-normal-p",
+  "title": "[FMLA 04] NormalP — Normal Probability P(x)",
+  "shortTitle": "[FMLA 04] NormalP",
+  "parent": "fmla",
+  "order": 4,
+  "aliases": [
+    "Normal Probability P(x)",
+    "NormalP",
+    "FMLA 04",
+    "formula 04",
+    "04",
+    "[FMLA 04] NormalP"
+  ],
+  "keywords": [
+    "x",
+    "normal",
+    "NormalP",
+    "built-in"
+  ],
+  "formulas": [
+    "P(x) = ∫₋∞ˣ (1/√(2π)) e^(-t²/2) dt"
+  ],
+  "keySequence": [
+    "FMLA",
+    "0",
+    "4"
+  ],
+  "summary": "Standard normal CDF up to x (Hastings approximation). Prompt is x; range 0 ≤ x < 10⁵⁰.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Calculator scroll name: NormalP. Standard normal CDF up to x (Hastings approximation). The calculator prompt is x, not t."
+    },
+    {
+      "type": "formula",
+      "plain": "P(x) = \\int_{-\\infty}^{x} \\frac{1}{\\sqrt{2\\pi}} e^{-\\frac{t^{2}}{2}}\\, dt"
+    },
+    {
+      "type": "p",
+      "mark": "fmla-graph",
+      "text": "Picture a hill centred at 0. P(x) answers: “starting from the far left, how much of the hill have I covered when I stop at x?” A larger x covers more of the hill, so P(x) is closer to 1."
+    },
+    {
+      "type": "figure",
+      "mark": "fmla-graph",
+      "svg": "img/fmla/04-normal-p.svg",
+      "caption": "Standard bell (mean 0, spread 1). P(x) is the shaded area from the far left up to x. Here x = 1, so P(1) ≈ 0.8413 — about 84% of the hill sits to the left of 1."
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "FMLA",
+        "0",
+        "4"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Primary input: x (0 ≤ x < 10⁵⁰)."
+    },
+    {
+      "type": "steps",
+      "title": "How to run",
+      "items": [
+        "Press FMLA, then 0, then 4 (or scroll to the name and EXE)",
+        "Enter each prompted value",
+        "Read the result"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "lines",
+      "mark": "fmla-graph",
+      "items": [
+        "x = 1",
+        "P(1) ≈ 0.8413"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Limits",
+      "text": "Hastings-style approximation. Official range is 0 ≤ x < 1×10⁵⁰ — a negative x is out of range, not Φ(−1). For P(Z ≤ −a) use 1 − P(a), or 0.5 − Q(a) with FMLA 05."
+    }
+  ],
+  "related": [
+    "fmla/05-normal-r",
+    "fmla"
+  ]
+}

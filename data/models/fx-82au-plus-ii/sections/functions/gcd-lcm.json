@@ -1,0 +1,45 @@
+{
+  "id": "functions/gcd-lcm",
+  "title": "GCD and LCM",
+  "shortTitle": "GCD / LCM",
+  "parent": "functions",
+  "order": 2,
+  "aliases": [
+    "GCD",
+    "LCM",
+    "greatest common divisor",
+    "least common multiple"
+  ],
+  "keywords": [
+    "ALPHA",
+    "×",
+    "÷"
+  ],
+  "formulas": [],
+  "keySequence": [
+    "ALPHA",
+    "×"
+  ],
+  "summary": "Greatest common divisor and least common multiple of two positive integers.",
+  "body": [
+    {
+      "type": "p",
+      "text": "GCD is ALPHA ×; LCM is ALPHA ÷. Arguments are comma-separated inside parentheses."
+    },
+    {
+      "type": "h2",
+      "text": "Examples"
+    },
+    {
+      "type": "lines",
+      "items": [
+        "GCD(28, 35) = 7",
+        "LCM(12, 18) = 36"
+      ]
+    }
+  ],
+  "related": [
+    "functions",
+    "modes/comp"
+  ]
+}

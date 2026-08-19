@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-labelledby="keys-pol-title keys-pol-desc">
+  <title id="keys-pol-title">Pol(3, 4) as a 3–4–5 triangle</title>
+  <desc id="keys-pol-desc">Rectangular point (x, y) = (3, 4) with polar radius r = 5 and angle θ about 53.13 degrees from the positive x-axis.</desc>
+  
+  <line x1="96" y1="268" x2="640" y2="268" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <line x1="96" y1="268" x2="96" y2="36" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <line x1="196.7" y1="268" x2="196.7" y2="274" stroke="var(--text-muted)" stroke-width="1"/>
+  <text x="196.7" y="288" text-anchor="middle" fill="var(--text)">1</text>
+  <line x1="96" y1="225.0" x2="90" y2="225.0" stroke="var(--text-muted)" stroke-width="1"/>
+  <text x="82" y="225.04" text-anchor="end" fill="var(--text)">1</text>
+  <line x1="297.5" y1="268" x2="297.5" y2="274" stroke="var(--text-muted)" stroke-width="1"/>
+  <text x="297.5" y="288" text-anchor="middle" fill="var(--text)">2</text>
+  <line x1="96" y1="182.1" x2="90" y2="182.1" stroke="var(--text-muted)" stroke-width="1"/>
+  <text x="82" y="182.14" text-anchor="end" fill="var(--text)">2</text>
+  <line x1="398.2" y1="268" x2="398.2" y2="274" stroke="var(--text-muted)" stroke-width="1"/>
+  <text x="398.2" y="288" text-anchor="middle" fill="var(--text)">3</text>
+  <line x1="96" y1="139.1" x2="90" y2="139.1" stroke="var(--text-muted)" stroke-width="1"/>
+  <text x="82" y="139.14" text-anchor="end" fill="var(--text)">3</text>
+  <line x1="499.0" y1="268" x2="499.0" y2="274" stroke="var(--text-muted)" stroke-width="1"/>
+  <text x="499.0" y="288" text-anchor="middle" fill="var(--text)">4</text>
+  <line x1="96" y1="96.1" x2="90" y2="96.1" stroke="var(--text-muted)" stroke-width="1"/>
+  <text x="82" y="96.14" text-anchor="end" fill="var(--text)">4</text>
+  <line x1="599.7" y1="268" x2="599.7" y2="274" stroke="var(--text-muted)" stroke-width="1"/>
+  <text x="599.7" y="288" text-anchor="middle" fill="var(--text)">5</text>
+  <line x1="96" y1="53.2" x2="90" y2="53.2" stroke="var(--text-muted)" stroke-width="1"/>
+  <text x="82" y="53.24" text-anchor="end" fill="var(--text)">5</text>
+  <line x1="96" y1="268" x2="398.2" y2="268" stroke="var(--accent-soft)" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <line x1="398.2" y1="268" x2="398.2" y2="96.1" stroke="var(--accent-soft)" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <path d="M211.85,268.00 L211.75,265.92 L211.44,263.84 L210.93,261.77 L210.21,259.71 L209.29,257.66 L208.17,255.64 L206.85,253.63 L205.33,251.65 L203.62,249.70 L201.71,247.79 L199.62,245.90 L197.35,244.06 L194.89,242.26 L192.26,240.51 L189.46,238.80 L186.49,237.15 L183.36,235.55 L180.08,234.01 L176.64,232.53 L173.07,231.11 L169.35,229.76 L165.51,228.47" fill="none" stroke="var(--accent)" stroke-width="1.6"/>
+  <line x1="96" y1="268" x2="398.2" y2="96.1" stroke="var(--accent)" stroke-width="2.4"/>
+  <polygon points="398.2,96.1 394.0,104.1 389.2,95.7" fill="var(--accent)"/>
+  <circle cx="398.2" cy="96.1" r="5" fill="var(--accent)" stroke="var(--bg)" stroke-width="1.6"/>
+  <text x="247.1" y="256" text-anchor="middle" fill="var(--text)">x = 3</text>
+  <text x="416.2222222222222" y="182.1" fill="var(--text)">y = 4</text>
+  <text x="229.1" y="174.1" fill="var(--accent)">r = 5</text>
+  <text x="252.1" y="244.4" fill="var(--accent)">θ ≈ 53.13°</text>
+  <text x="632" y="304" text-anchor="end" fill="var(--text)">x</text>
+  <text x="108" y="52" fill="var(--accent-soft)">y</text>
+  <text x="360" y="24" text-anchor="middle" fill="var(--text)">Pol(3, 4) → r = 5, θ ≈ 53.13°</text>
+
+</svg>

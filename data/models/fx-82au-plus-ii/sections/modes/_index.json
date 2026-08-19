@@ -1,0 +1,66 @@
+{
+  "id": "modes",
+  "title": "Calculation Modes (MODE)",
+  "shortTitle": "Modes",
+  "parent": "index",
+  "order": 2,
+  "aliases": [
+    "MODE key",
+    "COMP",
+    "STAT",
+    "VERIF"
+  ],
+  "keywords": [
+    "MODE 1",
+    "MODE 2",
+    "MODE 3"
+  ],
+  "formulas": [],
+  "keySequence": [
+    "MODE"
+  ],
+  "summary": "Three primary modes: COMP, STAT (eight sub-types), and VERIF.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Press MODE to choose the calculation environment. STAT opens a model picker (1-VAR plus seven regressions). VERIF evaluates equality/inequality statements as TRUE or FALSE."
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Key",
+        "Mode",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "1",
+          "COMP",
+          "General arithmetic, surds, fractions, transforms"
+        ],
+        [
+          "2",
+          "STAT",
+          "1-VAR + seven bivariate regressions"
+        ],
+        [
+          "3",
+          "VERIF",
+          "TRUE/FALSE verification of relations"
+        ]
+      ]
+    },
+    {
+      "type": "children",
+      "title": "Mode pages",
+      "ids": [
+        "modes/comp",
+        "modes/stat",
+        "modes/verif"
+      ]
+    }
+  ],
+  "related": [
+    "setup"
+  ]
+}

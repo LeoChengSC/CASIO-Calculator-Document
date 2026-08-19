@@ -1,0 +1,98 @@
+{
+  "id": "modes/sd/sumsq",
+  "title": "SD: Sum of squares (Σx²)",
+  "shortTitle": "Sum of squares (Σx²)",
+  "parent": "modes/sd",
+  "order": 3,
+  "aliases": [
+    "Σx²",
+    "Σx2",
+    "sum of squares",
+    "S-SUM 1"
+  ],
+  "keywords": [
+    "Σx²",
+    "S-SUM",
+    "variance"
+  ],
+  "formulas": [
+    "Σx² = Σ xi²",
+    "Σx² = Σ (xi² · fi)"
+  ],
+  "keySequence": [
+    "SHIFT",
+    "1",
+    "1"
+  ],
+  "summary": "Sum of the squared x-values. Needed to compute both standard deviations from S-SUM totals.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Σx² is the sum of each observation squared (with frequency if you used one). It is not (Σx)²."
+    },
+    {
+      "type": "formula",
+      "plain": "\\sum x^{2} = x_1^{2} + x_2^{2} + \\cdots + x_n^{2}\n\\text{FreqOn: }\\sum x^{2} = \\sum x_i^{2} f_i"
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "SHIFT",
+        "1",
+        "1",
+        "EXE"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "p",
+      "text": "Square each number first, then add those squares (this is not “add first, then square”)."
+    },
+    {
+      "type": "lines",
+      "items": [
+        "Data: 2, 4, 6, 8 (four numbers)",
+        "2² = 4",
+        "4² = 16",
+        "6² = 36",
+        "8² = 64",
+        "Σx² = 4 + 16 + 36 + 64 = 120"
+      ]
+    },
+    {
+      "type": "steps",
+      "title": "On the calculator",
+      "items": [
+        "MODE 4. If you were already in SD, SHIFT 9 → 1 (Stat) → EXE to clear the old list",
+        "2 DT",
+        "4 DT",
+        "6 DT",
+        "8 DT",
+        "then AC",
+        "SHIFT 1 → 1 EXE → Σx² = 120"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "This total is what the machine uses internally for σx and sx:"
+    },
+    {
+      "type": "lines",
+      "items": [
+        "$\\sigma x = \\sqrt{\\frac{\\sum x^{2}}{n} - \\bar{x}^{2}}$",
+        "$sx = \\sqrt{\\frac{\\sum x^{2} - n\\bar{x}^{2}}{n - 1}}$"
+      ]
+    },
+    {
+      "type": "note",
+      "text": "SHIFT 1 → 1 is Σx²; SHIFT 1 → 2 is Σx. Mixing the two is a common keying error."
+    }
+  ],
+  "related": [
+    "modes/sd/sum",
+    "modes/sd/stdev"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "memory",
+  "title": "Memory and Variables",
+  "shortTitle": "Memory",
+  "parent": "index",
+  "order": 6,
+  "aliases": [
+    "STO",
+    "RCL",
+    "Ans",
+    "M+",
+    "variables"
+  ],
+  "keywords": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "X",
+    "Y",
+    "M"
+  ],
+  "formulas": [],
+  "keySequence": [
+    "SHIFT",
+    "RCL"
+  ],
+  "summary": "Nine variables (A–F, X, Y, M), Ans chaining, and independent M+/M− memory.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Store with SHIFT RCL (STO) then a variable key. Recall with RCL or embed with ALPHA + variable."
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "lines",
+      "items": [
+        "15 × 4 = 60",
+        "store in A",
+        "3A + 10 = 190"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Independent M"
+    },
+    {
+      "type": "p",
+      "text": "M+ adds display to M; SHIFT M+ (M−) subtracts. Indicator M shows when M ≠ 0."
+    },
+    {
+      "type": "h2",
+      "text": "Ans"
+    },
+    {
+      "type": "p",
+      "text": "Last result is Ans. Starting the next line with an operator continues from Ans automatically."
+    }
+  ],
+  "related": [
+    "modes/comp"
+  ]
+}

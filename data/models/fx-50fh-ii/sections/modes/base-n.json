@@ -1,0 +1,87 @@
+{
+  "id": "modes/base-n",
+  "title": "MODE 3: BASE (Bases and Logic)",
+  "shortTitle": "BASE",
+  "parent": "modes",
+  "order": 3,
+  "aliases": [
+    "binary",
+    "hex",
+    "octal",
+    "MODE 3",
+    "bitwise",
+    "AND OR XOR",
+    "BASE-N"
+  ],
+  "keywords": [
+    "BIN",
+    "OCT",
+    "DEC",
+    "HEX",
+    "NOT",
+    "XNOR",
+    "LOGIC",
+    "computer science"
+  ],
+  "formulas": [],
+  "keySequence": [
+    "MODE",
+    "3"
+  ],
+  "summary": "Convert among BIN, OCT, DEC, HEX and apply bitwise logical operators on integers.",
+  "body": [
+    {
+      "type": "p",
+      "text": "MODE 3 is BASE (the mode menu prints BASE, not BASE-N). Use the green DEC, HEX, BIN, and OCT keys to set the working base. Values are integers; binary logic is 10-bit."
+    },
+    {
+      "type": "h2",
+      "text": "Hex digits A–F"
+    },
+    {
+      "type": "p",
+      "text": "In BASE, hex A–F are the green letters on (-) = A, °′″ = B, hyp = C, sin = D, cos = E, tan = F. Press those keys unshifted. ALPHA A is variable A and will not type hex A."
+    },
+    {
+      "type": "h2",
+      "text": "Example: decimal 45 to binary"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "MODE → 3",
+        "DEC, enter 45 EXE",
+        "BIN",
+        "Read 101101"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example: hex 1F + 1"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "HEX",
+        "1 tan (F) + 1 EXE",
+        "Result 20₁₆"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "LOGIC menu"
+    },
+    {
+      "type": "p",
+      "text": "In BASE the X key opens LOGIC (and, or, xor, xnor, Not, Neg, and d/h/o/b prefixes). Binary Not and Neg use a 10-bit word."
+    },
+    {
+      "type": "note",
+      "label": "Pitfall",
+      "text": "Fractions, EXP, and most scientific functions are not valid in BASE. Return to COMP for floating-point work."
+    }
+  ],
+  "related": [
+    "modes/comp"
+  ]
+}

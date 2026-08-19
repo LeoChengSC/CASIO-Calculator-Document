@@ -1,0 +1,97 @@
+{
+  "id": "fmla/09-rc-voltage",
+  "title": "[FMLA 09] RCVoltage — RC Series Terminal Voltage of R",
+  "shortTitle": "[FMLA 09] RCVoltage",
+  "parent": "fmla",
+  "order": 9,
+  "aliases": [
+    "RC Series Terminal Voltage Change",
+    "RCVoltage",
+    "FMLA 09",
+    "formula 09",
+    "09",
+    "[FMLA 09] RCVoltage"
+  ],
+  "keywords": [
+    "V",
+    "R",
+    "C",
+    "t",
+    "rc",
+    "RCVoltage",
+    "resistor voltage",
+    "built-in"
+  ],
+  "formulas": [
+    "VR = V · e^(-t/(CR))"
+  ],
+  "keySequence": [
+    "FMLA",
+    "0",
+    "9"
+  ],
+  "summary": "Resistor terminal voltage VR in an RC series circuit after a DC voltage V is applied (exponential decay).",
+  "body": [
+    {
+      "type": "p",
+      "text": "Calculator scroll name: RCVoltage. This is the voltage across the resistor R at time t after DC voltage V is applied to a series RC circuit — not the capacitor charging voltage."
+    },
+    {
+      "type": "formula",
+      "plain": "V_{R} = V\\, e^{-t/(CR)}"
+    },
+    {
+      "type": "p",
+      "mark": "fmla-graph",
+      "text": "At the instant the switch closes, all of V is across R. Current then dies away as the capacitor fills, so VR falls toward 0. The time unit is RC (resistance × capacitance)."
+    },
+    {
+      "type": "figure",
+      "mark": "fmla-graph",
+      "svg": "img/fmla/09-rc-voltage.svg",
+      "caption": "Resistor voltage decaying from V. At t = RC, VR has fallen to about 37% of V. Capacitor voltage would be the complementary curve V(1 − e^(−t/RC))."
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "FMLA",
+        "0",
+        "9"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Primary inputs: V, R, C, t."
+    },
+    {
+      "type": "steps",
+      "title": "How to run",
+      "items": [
+        "Press FMLA, then 0, then 9 (or scroll to the name and EXE)",
+        "Enter each prompted value",
+        "Read the result"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "lines",
+      "mark": "fmla-graph",
+      "items": [
+        "At t = 0, VR = V",
+        "At t = RC, VR ≈ 0.37 V",
+        "At t = 5 RC, VR ≈ 0.007 V"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Units",
+      "text": "Use SI: R in Ω, C in F, t in seconds, V and VR in volts. Official constraints: C, R, t > 0."
+    }
+  ],
+  "related": [
+    "fmla"
+  ]
+}

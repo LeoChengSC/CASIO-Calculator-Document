@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-labelledby="fmla17-title fmla17-desc">
+  <title id="fmla17-title">Moving source bunches wavefronts ahead of it</title>
+  <desc id="fmla17-desc">Source moving to the right. Wavefronts crowd in front (higher pitch) and spread behind (lower pitch).</desc>
+  
+  <circle cx="280" cy="160" r="40" fill="none" stroke="var(--accent)" stroke-width="1.6" opacity="0.9"/>
+  <circle cx="298" cy="160" r="70" fill="none" stroke="var(--accent)" stroke-width="1.6" opacity="0.78"/>
+  <circle cx="316" cy="160" r="100" fill="none" stroke="var(--accent)" stroke-width="1.6" opacity="0.66"/>
+  <circle cx="334" cy="160" r="130" fill="none" stroke="var(--accent)" stroke-width="1.6" opacity="0.54"/>
+  <circle cx="352" cy="160" r="8" fill="var(--accent)"/>
+  <polygon points="368,160 396,150 396,170" fill="var(--accent-soft)"/>
+  <text x="420" y="164" fill="var(--accent-soft)">source →</text>
+  <text x="520" y="90">closer crests → higher f′</text>
+  <text x="80" y="90">wider crests → lower f′</text>
+  <text x="360" y="300" text-anchor="middle">Observer still, source moving right</text>
+
+</svg>

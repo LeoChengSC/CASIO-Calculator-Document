@@ -1,0 +1,42 @@
+{
+  "id": "modes/prgm/clear",
+  "title": "MODE 6-3: Clear",
+  "shortTitle": "Clear",
+  "parent": "modes/prgm",
+  "order": 3,
+  "aliases": [
+    "MODE 6 3",
+    "Clear",
+    "PRGM Clear"
+  ],
+  "keywords": [
+    "program",
+    "clear"
+  ],
+  "formulas": [],
+  "keySequence": [
+    "MODE",
+    "6",
+    "3"
+  ],
+  "summary": "Erase a program slot and free its bytes.",
+  "body": [
+    {
+      "type": "p",
+      "text": "MODE 6 → 3 → slot → confirm with EXE. Irreversible for that slot’s source."
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "MODE → 6 → 3 → 1 → EXE clears P1."
+      ]
+    }
+  ],
+  "related": [
+    "modes/prgm/commands"
+  ]
+}

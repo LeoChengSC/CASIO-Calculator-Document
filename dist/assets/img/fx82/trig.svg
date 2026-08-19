@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-labelledby="fx82-trig-title fx82-trig-desc">
+  <title id="fx82-trig-title">cos⁻¹ 0.5 = 60° on the unit circle</title>
+  <desc id="fx82-trig-desc">The point with cosine 0.5 (x-coordinate) sits at 60 degrees from the positive x-axis, so inverse cosine of 0.5 is 60 degrees in Deg mode.</desc>
+  
+  <line x1="132.5" y1="175" x2="451.1" y2="175" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <line x1="280" y1="322.5" x2="280" y2="27.5" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <circle cx="280" cy="175" r="118" fill="none" stroke="var(--text-muted)" stroke-width="1.4"/>
+  
+  <line x1="280" y1="175" x2="339.0" y2="175" stroke="var(--accent-soft)" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <line x1="339.0" y1="175" x2="339.0" y2="72.8" stroke="var(--accent-soft)" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <line x1="280" y1="175" x2="339.0" y2="72.8" stroke="var(--accent)" stroke-width="2.4"/>
+  <path d="M313.0,175.0 L313.0,173.1 L312.8,171.2 L312.5,169.3 L312.1,167.4 L311.7,165.5 L311.0,163.7 L310.3,161.9 L309.5,160.2 L308.6,158.5 L307.6,156.8 L306.5,155.3 L305.3,153.8 L304.0,152.3 L302.7,151.0 L301.2,149.7 L299.7,148.5 L298.2,147.4 L296.5,146.4" fill="none" stroke="var(--accent)" stroke-width="1.8"/>
+  <circle cx="339.0" cy="72.8" r="5" fill="var(--accent)" stroke="var(--bg)" stroke-width="1.6"/>
+  <text x="309.5" y="195" text-anchor="middle" fill="var(--text)">0.5</text>
+  <text x="329.6" y="153.8" fill="var(--accent)">60°</text>
+  <text x="520" y="160" fill="var(--text)">cos⁻¹ 0.5</text>
+  <text x="520" y="184" fill="var(--accent)">= 60°  (Deg)</text>
+  <text x="447.6" y="197" text-anchor="end" fill="var(--text)">cos</text>
+  <text x="290" y="33.4" fill="var(--accent-soft)">sin</text>
+  <text x="520" y="28" text-anchor="middle" fill="var(--text)">Inverse cosine in Deg mode</text>
+
+</svg>

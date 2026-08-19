@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" role="img" aria-labelledby="sd-mean-title sd-mean-desc">
+  <title id="sd-mean-title">Mean of 2, 4, 6, 8 on a number line</title>
+  <desc id="sd-mean-desc">Four data values sit at 2, 4, 6 and 8. Their balance point, the arithmetic mean, is at 5.</desc>
+  
+  <line x1="80" y1="170" x2="640" y2="170" stroke="var(--text-muted)" stroke-width="1.4"/>
+  <line x1="80.0" y1="170" x2="80.0" y2="176" stroke="var(--text-muted)" stroke-width="1"/>
+  <text x="80.0" y="194" text-anchor="middle" fill="var(--text)">0</text>
+  <line x1="192.0" y1="170" x2="192.0" y2="176" stroke="var(--text-muted)" stroke-width="1"/>
+  <text x="192.0" y="194" text-anchor="middle" fill="var(--text)">2</text>
+  <line x1="304.0" y1="170" x2="304.0" y2="176" stroke="var(--text-muted)" stroke-width="1"/>
+  <text x="304.0" y="194" text-anchor="middle" fill="var(--text)">4</text>
+  <line x1="360.0" y1="170" x2="360.0" y2="180" stroke="var(--accent)" stroke-width="1.6"/>
+  <text x="360.0" y="194" text-anchor="middle" fill="var(--accent)">5</text>
+  <line x1="416.0" y1="170" x2="416.0" y2="176" stroke="var(--text-muted)" stroke-width="1"/>
+  <text x="416.0" y="194" text-anchor="middle" fill="var(--text)">6</text>
+  <line x1="528.0" y1="170" x2="528.0" y2="176" stroke="var(--text-muted)" stroke-width="1"/>
+  <text x="528.0" y="194" text-anchor="middle" fill="var(--text)">8</text>
+  <line x1="640.0" y1="170" x2="640.0" y2="176" stroke="var(--text-muted)" stroke-width="1"/>
+  <text x="640.0" y="194" text-anchor="middle" fill="var(--text)">10</text>
+  <circle cx="192.0" cy="170" r="6" fill="var(--accent)" stroke="var(--bg)" stroke-width="1.8"/>
+  <circle cx="304.0" cy="170" r="6" fill="var(--accent)" stroke="var(--bg)" stroke-width="1.8"/>
+  <circle cx="416.0" cy="170" r="6" fill="var(--accent)" stroke="var(--bg)" stroke-width="1.8"/>
+  <circle cx="528.0" cy="170" r="6" fill="var(--accent)" stroke="var(--bg)" stroke-width="1.8"/>
+  <line x1="360.0" y1="118" x2="360.0" y2="180" stroke="var(--accent)" stroke-width="1.8"/>
+  <polygon points="360.0,108 352,122 368,122" fill="var(--accent)"/>
+  <text x="360.0" y="98" text-anchor="middle" fill="var(--text)">x̄ = 5</text>
+  <text x="360" y="36" text-anchor="middle" fill="var(--text)">Data 2, 4, 6, 8 balance at the mean</text>
+  <text x="360" y="292" text-anchor="middle" fill="var(--accent-soft)">Each pair 2 with 8, and 4 with 6, averages to 5</text>
+
+</svg>

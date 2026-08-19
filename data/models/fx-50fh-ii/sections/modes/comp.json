@@ -1,0 +1,67 @@
+{
+  "id": "modes/comp",
+  "title": "MODE 1: COMP (General Computation)",
+  "shortTitle": "COMP",
+  "parent": "modes",
+  "order": 1,
+  "aliases": [
+    "computation",
+    "MODE 1",
+    "normal mode",
+    "arithmetic"
+  ],
+  "keywords": [
+    "trigonometry",
+    "logarithm",
+    "fraction",
+    "coordinate",
+    "Ans"
+  ],
+  "formulas": [],
+  "keySequence": [
+    "MODE",
+    "1"
+  ],
+  "summary": "Default environment for arithmetic, trigonometry, logarithms, exponentials, fractions, and coordinate transformations.",
+  "body": [
+    {
+      "type": "p",
+      "text": "COMP is the everyday mode. It supports continuous calculations, variable store/recall, CONST, FMLA, and multi-statement work with Ans chaining. Angle results follow the current Deg/Rad/Gra SET UP."
+    },
+    {
+      "type": "h2",
+      "text": "Worked example"
+    },
+    {
+      "type": "p",
+      "text": "Evaluate 2 × (3 + 4²) after confirming COMP mode."
+    },
+    {
+      "type": "lines",
+      "items": [
+        "4² = 16",
+        "3 + 16 = 19",
+        "2 × 19 = 38"
+      ]
+    },
+    {
+      "type": "steps",
+      "items": [
+        "MODE → 1 (COMP)",
+        "Enter: 2 × ( 3 + 4 x² ) EXE",
+        "Expected result: 38"
+      ],
+      "title": "Key strokes"
+    },
+    {
+      "type": "note",
+      "label": "When to leave COMP",
+      "text": "Switch to CMPLX for i, BASE for hex/bin logic, SD/REG for statistics buffers, or PRGM to edit code. Mixing statistic DT entry in COMP will not fill the SD/REG buffers."
+    }
+  ],
+  "related": [
+    "setup",
+    "memory",
+    "keys"
+  ]
+}

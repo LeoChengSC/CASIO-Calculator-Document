@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="fmla03-title fmla03-desc">
+  <title id="fmla03-title">3-4-5 right triangle with area 6</title>
+  <desc id="fmla03-desc">Heron's formula on sides 3, 4, 5 gives semi-perimeter 6 and area 6. The shaded interior is that area.</desc>
+  
+  <polygon points="200,292 420,292 200,127" fill="var(--accent)" fill-opacity="0.18" stroke="var(--accent)" stroke-width="2.2" stroke-linejoin="round"/>
+  <text x="310" y="316" text-anchor="middle">4</text>
+  <text x="182" y="209.5" text-anchor="end">3</text>
+  <text x="324" y="209.5">5</text>
+  <text x="270" y="222" fill="var(--accent-soft)">area = 6</text>
+  <text x="360" y="36" text-anchor="middle" fill="var(--text)">Sides 3, 4, 5</text>
+
+</svg>

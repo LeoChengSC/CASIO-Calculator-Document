@@ -1,0 +1,66 @@
+{
+  "id": "index",
+  "title": "fx-50FH II Overview",
+  "shortTitle": "Overview",
+  "parent": "root",
+  "order": 0,
+  "aliases": [
+    "introduction",
+    "about",
+    "home",
+    "fx-50FH II"
+  ],
+  "keywords": [
+    "HKEAA",
+    "programmable",
+    "scientific",
+    "SUPER-FX PLUS",
+    "680 bytes"
+  ],
+  "formulas": [],
+  "keySequence": [],
+  "summary": "Architectural overview of the CASIO fx-50FH II: exam-approved programmable scientific calculator with six modes, 23 formulas, 40 constants, and 680-byte program memory.",
+  "body": [
+    {
+      "type": "p",
+      "text": "The CASIO fx-50FH II (HKEAA designation SUPER-FX PLUS) is a programmable scientific calculator aimed at advanced secondary and tertiary mathematics, engineering, and physical sciences. It combines a photovoltaic cell with an LR44 battery so memory and operation remain stable in low light."
+    },
+    {
+      "type": "p",
+      "text": "The display is two-line: an upper 12-character dot-matrix line for expressions and prompts, and a lower 10+2 digit numeric line for results. The calculator intentionally omits symbolic CAS and dedicated numerical calculus keys, which helps keep it exam-legal while still offering four program slots (P1–P4), 23 ROM formulas, 40 scientific constants, complex numbers, statistics, and Base-n logic."
+    },
+    {
+      "type": "h2",
+      "text": "What you can do with this reference"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Walk every MODE and its sub-menus (REG regressions, PRGM actions).",
+        "Configure SET UP (angles, display, fractions, separators).",
+        "Run each of the 23 FMLA algorithms with inputs and examples.",
+        "Use variables, CONST, and common key shortcuts.",
+        "Write BASIC-like programs with the full command suite."
+      ]
+    },
+    {
+      "type": "children",
+      "title": "Start here",
+      "ids": [
+        "hardware",
+        "modes",
+        "setup",
+        "fmla",
+        "memory",
+        "constants",
+        "keys",
+        "modes/prgm",
+        "exam"
+      ]
+    }
+  ],
+  "related": [
+    "hardware",
+    "exam"
+  ]
+}

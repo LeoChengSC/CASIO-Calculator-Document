@@ -1,0 +1,78 @@
+{
+  "id": "hardware",
+  "title": "Hardware and Specifications",
+  "shortTitle": "Hardware",
+  "parent": "index",
+  "order": 1,
+  "aliases": [
+    "specs",
+    "display",
+    "battery",
+    "AAA",
+    "drop-resistant"
+  ],
+  "keywords": [
+    "Natural-VPAM",
+    "16-digit",
+    "cursor keys",
+    "hard case"
+  ],
+  "formulas": [],
+  "keySequence": [],
+  "summary": "Natural-V.P.A.M. LCD, single AAA power, drop-resistant shell, and multi-jurisdiction exam compliance.",
+  "body": [
+    {
+      "type": "table",
+      "headers": [
+        "Parameter",
+        "Specification",
+        "Notes"
+      ],
+      "rows": [
+        [
+          "Display",
+          "Natural-V.P.A.M. two-line LCD",
+          "Textbook fractions/surds; 10+2 result digits"
+        ],
+        [
+          "Engine",
+          "Infix / Natural textbook",
+          "~15-digit internal precision"
+        ],
+        [
+          "Memory",
+          "A–F, X, Y, M + Ans + STAT RAM",
+          "No user program slots"
+        ],
+        [
+          "Power",
+          "Single AAA (R03 UM-4) × 1",
+          "No solar; ~2-year life (1 hr/day)"
+        ],
+        [
+          "Case",
+          "Drop-resistant + slide-on cover",
+          "Cover attaches top or bottom"
+        ],
+        [
+          "Cursor",
+          "Separate 4-way keys",
+          "Replaces rocker pad"
+        ],
+        [
+          "Exam",
+          "NESA, VCAA, QCAA, SACE, WACE, NCEA…",
+          "Non-programmable / non-CAS"
+        ]
+      ]
+    },
+    {
+      "type": "note",
+      "text": "Unlike the fx-50FH II, there is no FMLA/CONST ROM library and no PRGM mode. Use COMP for exact arithmetic and VERIF for identity checks."
+    }
+  ],
+  "related": [
+    "exam",
+    "compare"
+  ]
+}

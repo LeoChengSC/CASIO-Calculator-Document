@@ -1,0 +1,40 @@
+{
+  "id": "functions/random",
+  "title": "Random Numbers (Ran# / RanInt#)",
+  "shortTitle": "Ran# / RanInt#",
+  "parent": "functions",
+  "order": 7,
+  "aliases": [
+    "RanInt#",
+    "Ran#",
+    "random integer",
+    "dice"
+  ],
+  "keywords": [
+    "ALPHA",
+    ".",
+    "uniform"
+  ],
+  "formulas": [],
+  "keySequence": [
+    "ALPHA",
+    "."
+  ],
+  "summary": "Pseudo-random fraction Ran# or integer RanInt#(a,b) on a closed interval.",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Dice roll 1–6"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "ALPHA . (RanInt#) 1 , 6 ) ="
+      ]
+    }
+  ],
+  "related": [
+    "functions",
+    "modes/comp"
+  ]
+}

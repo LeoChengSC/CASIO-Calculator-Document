@@ -1,0 +1,68 @@
+{
+  "id": "modes/cmplx",
+  "title": "MODE 2: CMPLX (Complex Numbers)",
+  "shortTitle": "CMPLX",
+  "parent": "modes",
+  "order": 2,
+  "aliases": [
+    "complex",
+    "MODE 2",
+    "imaginary",
+    "polar",
+    "rectangular"
+  ],
+  "keywords": [
+    "i",
+    "Arg",
+    "Abs",
+    "ENG key",
+    "a+bi",
+    "r∠θ"
+  ],
+  "formulas": [
+    "a + bi",
+    "r∠θ"
+  ],
+  "keySequence": [
+    "MODE",
+    "2"
+  ],
+  "summary": "Rectangular (a+bi) and polar (r∠θ) arithmetic on complex numbers.",
+  "body": [
+    {
+      "type": "p",
+      "text": "In CMPLX, the imaginary unit i is the ENG key unshifted. Use this mode for AC circuit phasors, polynomial roots with imaginaries, and polar conversions. SHIFT EXE (Re⇔Im) toggles the real and imaginary parts of a result."
+    },
+    {
+      "type": "formula",
+      "plain": "(a + bi) + (c + di)\n= (a + c) + (b + d)i"
+    },
+    {
+      "type": "h2",
+      "text": "Example: add 3+2i and 1−4i"
+    },
+    {
+      "type": "figure",
+      "svg": "img/cmplx/add.svg",
+      "caption": "Each complex number is an arrow from the origin. Adding them is the parallelogram rule: the resultant is 4 − 2i."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "MODE → 2",
+        "3 + 2i (i is ENG)",
+        "+ 1 − 4i EXE",
+        "4 − 2i"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Display form",
+      "text": "Polar vs rectangular presentation depends on calculator settings and conversion functions (Pol/Rec). Confirm angle unit before interpreting θ."
+    }
+  ],
+  "related": [
+    "keys",
+    "modes/comp"
+  ]
+}

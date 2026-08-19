@@ -1,0 +1,100 @@
+{
+  "id": "fmla/17-doppler",
+  "title": "[FMLA 17] Doppler — Doppler Effect",
+  "shortTitle": "[FMLA 17] Doppler",
+  "parent": "fmla",
+  "order": 17,
+  "aliases": [
+    "Doppler Effect",
+    "Doppler",
+    "FMLA 17",
+    "formula 17",
+    "17",
+    "[FMLA 17] Doppler"
+  ],
+  "keywords": [
+    "f1",
+    "v",
+    "v1",
+    "u",
+    "doppler",
+    "Doppler",
+    "built-in"
+  ],
+  "formulas": [
+    "f = f1 · (v − u) / (v − v1)"
+  ],
+  "keySequence": [
+    "FMLA",
+    "1",
+    "7"
+  ],
+  "summary": "Observed frequency when source and observer move. The ROM uses one signed formula, not the textbook ± form.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Calculator scroll name: Doppler. Determines the frequency f heard by an observer when both source and observer are moving. The calculator does not offer a ± picker; it evaluates one signed formula."
+    },
+    {
+      "type": "formula",
+      "plain": "f = f_{1}\\cdot\\frac{v - u}{v - v_{1}}"
+    },
+    {
+      "type": "p",
+      "mark": "fmla-graph",
+      "text": "If the source runs toward you, more waves hit your ear each second (higher f). If it runs away, fewer waves arrive (lower f)."
+    },
+    {
+      "type": "figure",
+      "mark": "fmla-graph",
+      "svg": "img/fmla/17-doppler.svg",
+      "caption": "Source moving right. Wavefronts bunch in front (higher pitch) and spread behind (lower pitch)."
+    },
+    {
+      "type": "p",
+      "text": "v is the speed of sound, f₁ the source frequency, v₁ the source speed, and u the observer speed. Casio takes u and v₁ positive in the direction of sound travel (source → observer). Source approaching the observer → v₁ positive; source receding → v₁ negative."
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "FMLA",
+        "1",
+        "7"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Primary inputs: f₁, v, u, v₁."
+    },
+    {
+      "type": "steps",
+      "title": "How to run",
+      "items": [
+        "Press FMLA, then 1, then 7 (or scroll to the name and EXE)",
+        "Enter each prompted value",
+        "Read the observed frequency f"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "FMLA → 1 → 7",
+        "Horn 256 Hz, sound 330 m/s, pedestrian at rest (u = 0), car 25 m/s",
+        "256 EXE 330 EXE 0 EXE 25 EXE → 276.9836 Hz (source approaching, v₁ = +25)",
+        "Repeat last prompt as −25 EXE → 237.9718 Hz (source receding)"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Signs",
+      "text": "Official constraints: v ≠ v₁, f₁ > 0, and (v − u)/(v − v₁) > 0. Do not type textbook ± into this routine; map approach/recede onto the signs of u and v₁ instead."
+    }
+  ],
+  "related": [
+    "fmla"
+  ]
+}

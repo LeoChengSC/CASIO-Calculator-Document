@@ -1,0 +1,49 @@
+{
+  "id": "functions/pol-rec",
+  "title": "Coordinate Transforms (Pol / Rec)",
+  "shortTitle": "Pol / Rec",
+  "parent": "functions",
+  "order": 5,
+  "aliases": [
+    "Pol",
+    "Rec",
+    "polar",
+    "rectangular"
+  ],
+  "keywords": [
+    "r",
+    "θ",
+    "X",
+    "Y"
+  ],
+  "formulas": [],
+  "keySequence": [
+    "SHIFT",
+    "+"
+  ],
+  "summary": "Rectangular ↔ polar conversion; results also populate X/Y (and related) registers.",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Example: (3,4) → polar (Deg)"
+    },
+    {
+      "type": "lines",
+      "items": [
+        "x = 3",
+        "y = 4",
+        "r = 5",
+        "θ ≈ 53.13°"
+      ]
+    },
+    {
+      "type": "figure",
+      "svg": "img/keys/pol-rec.svg",
+      "caption": "Same example on the plane. The legs are x = 3 and y = 4; the hypotenuse is r = 5; the angle from the x-axis is θ ≈ 53.13°. Rec recovers (3, 4)."
+    }
+  ],
+  "related": [
+    "functions",
+    "modes/comp"
+  ]
+}

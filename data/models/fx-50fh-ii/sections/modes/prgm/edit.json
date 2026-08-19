@@ -1,0 +1,55 @@
+{
+  "id": "modes/prgm/edit",
+  "title": "MODE 6-1: Edit",
+  "shortTitle": "Edit",
+  "parent": "modes/prgm",
+  "order": 1,
+  "aliases": [
+    "MODE 6 1",
+    "Edit",
+    "PRGM Edit",
+    "run mode"
+  ],
+  "keywords": [
+    "program",
+    "edit",
+    "COMP",
+    "CMPLX"
+  ],
+  "formulas": [],
+  "keySequence": [
+    "MODE",
+    "6",
+    "1"
+  ],
+  "summary": "Open a program slot (P1–P4) to author or modify commands. A new unused slot also asks for the program’s run mode.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Press MODE 6 → 1, then select slot 1–4. Enter statements from the keypad and SHIFT 3 (P-CMD). AC leaves editing."
+    },
+    {
+      "type": "h2",
+      "text": "Run mode (new programs only)"
+    },
+    {
+      "type": "p",
+      "text": "Choosing an unused slot opens a run-mode menu. Screen 1: 1 COMP, 2 CMPLX. Press ▶ for screen 2: 3 BASE, 4 SD, 5 REG. That mode is stored with the program and cannot be changed later — only assigned when you create the program. Editing an existing slot skips this menu."
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "MODE → 6 → 1 → unused slot (e.g. 1 if P1 is empty)",
+        "1 (COMP) or 2 (CMPLX) — or ▶ then 3 / 4 / 5 for BASE / SD / REG",
+        "MODE → 6 → 1 → 1 on an existing P1 opens the editor with no run-mode prompt"
+      ]
+    }
+  ],
+  "related": [
+    "modes/prgm/commands"
+  ]
+}

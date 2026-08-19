@@ -1,0 +1,57 @@
+{
+  "id": "modes/stat/ex",
+  "title": "MODE 2-5: e^X",
+  "shortTitle": "e^X",
+  "parent": "modes/stat",
+  "order": 5,
+  "aliases": [
+    "exponential regression",
+    "MODE 2 5",
+    "e^X"
+  ],
+  "keywords": [
+    "growth",
+    "decay"
+  ],
+  "formulas": [
+    "y = A e^(Bx)"
+  ],
+  "keySequence": [
+    "MODE",
+    "2",
+    "5"
+  ],
+  "summary": "Natural exponential regression y = A e^(Bx).",
+  "body": [
+    {
+      "type": "p",
+      "text": "Continuous growth/decay models."
+    },
+    {
+      "type": "formula",
+      "plain": "y = A e^{Bx}"
+    },
+    {
+      "type": "p",
+      "text": "Continuous compound growth (B > 0) or decay toward zero (B < 0)."
+    },
+    {
+      "type": "figure",
+      "svg": "img/reg/exp.svg",
+      "caption": "Sample fit y = 2 e^(0.5x). Each equal step in x multiplies y by about e^0.5 ≈ 1.65."
+    },
+    {
+      "type": "steps",
+      "title": "Open this type",
+      "items": [
+        "MODE → 2 → 5",
+        "Clear or edit data in the Statistics Editor as needed",
+        "AC, then SHIFT 1 (STAT) for Var / Reg / MinMax recalls"
+      ]
+    }
+  ],
+  "related": [
+    "statistics",
+    "modes/stat"
+  ]
+}

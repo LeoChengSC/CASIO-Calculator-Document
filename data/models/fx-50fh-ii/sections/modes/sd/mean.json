@@ -1,0 +1,123 @@
+{
+  "id": "modes/sd/mean",
+  "title": "SD: Arithmetic mean (x̄)",
+  "shortTitle": "Arithmetic mean (x̄)",
+  "parent": "modes/sd",
+  "order": 4,
+  "aliases": [
+    "mean",
+    "average",
+    "x-bar",
+    "x̄",
+    "S-VAR 1"
+  ],
+  "keywords": [
+    "x̄",
+    "S-VAR",
+    "Σx",
+    "n"
+  ],
+  "formulas": [
+    "x̄ = Σx / n"
+  ],
+  "keySequence": [
+    "SHIFT",
+    "2",
+    "1"
+  ],
+  "summary": "Arithmetic mean of the current SD list: Σx divided by n.",
+  "body": [
+    {
+      "type": "p",
+      "text": "x̄ is the arithmetic mean. After AC, recall it from S-VAR. The calculator uses [[modes/sd/sum]] and [[modes/sd/n]] to get it."
+    },
+    {
+      "type": "formula",
+      "plain": "\\bar{x} = \\frac{\\sum x}{n}"
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "SHIFT",
+        "2",
+        "1",
+        "EXE"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "lines",
+      "items": [
+        "Data: 2, 4, 6, 8 (four numbers)",
+        "n = 4",
+        "Sum = 2 + 4 + 6 + 8 = 20",
+        "Mean x̄ = 20 ÷ 4 = 5"
+      ]
+    },
+    {
+      "type": "figure",
+      "svg": "img/sd/mean.svg",
+      "caption": "The four values 2, 4, 6, 8 sit on a number line. Their balance point is the mean x̄ = 5."
+    },
+    {
+      "type": "steps",
+      "items": [
+        "MODE 4. If you were already in SD, SHIFT 9 → 1 (Stat) → EXE to clear the old list",
+        "2 DT",
+        "4 DT",
+        "6 DT",
+        "8 DT",
+        "then AC",
+        "SHIFT 2 → 1 EXE → x̄ = 5"
+      ],
+      "title": "On the calculator"
+    },
+    {
+      "type": "h2",
+      "text": "Example with frequencies (FreqOn)"
+    },
+    {
+      "type": "lines",
+      "items": [
+        "Scores: 75 once, 80 twice, 85 four times",
+        "n = 1 + 2 + 4 = 7",
+        "Σx = 75×1 + 80×2 + 85×4",
+        "Σx = 75 + 160 + 340 = 575",
+        "Mean x̄ = 575 ÷ 7 ≈ 82.14285714"
+      ]
+    },
+    {
+      "type": "figure",
+      "svg": "img/sd/freq.svg",
+      "caption": "FreqOn stores three classes. The bar for 85 is four times as tall as 75, so the mean (~82.14) sits closer to 85 than to 75."
+    },
+    {
+      "type": "steps",
+      "items": [
+        "Confirm FreqOn in SETUP, then MODE 4",
+        "75 DT",
+        "80 DT DT",
+        "85 ; 4 DT",
+        "then AC",
+        "SHIFT 2 → 1 EXE → about 82.14285714"
+      ],
+      "title": "On the calculator"
+    },
+    {
+      "type": "p",
+      "text": "You can embed the mean in an expression while remaining in SD: SHIFT 2 1 × 2 EXE doubles x̄."
+    },
+    {
+      "type": "note",
+      "text": "MATH ERROR if n = 0 (empty list). Press AC first if you were scrolling the STAT-data editor."
+    }
+  ],
+  "related": [
+    "modes/sd/n",
+    "modes/sd/sum",
+    "modes/sd/stdev"
+  ]
+}

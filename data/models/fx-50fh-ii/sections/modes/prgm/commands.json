@@ -1,0 +1,116 @@
+{
+  "id": "modes/prgm/commands",
+  "title": "Programming Command Suite",
+  "shortTitle": "Commands",
+  "parent": "modes/prgm",
+  "order": 5,
+  "aliases": [
+    "Goto",
+    "Lbl",
+    "If Then",
+    "For Next",
+    "ClrMemory",
+    "input prompt",
+    "◢"
+  ],
+  "keywords": [
+    "syntax",
+    "branch",
+    "loop",
+    "assignment",
+    "multi-statement",
+    "P-CMD"
+  ],
+  "formulas": [
+    "? → Var",
+    "Expr → Var",
+    "Goto N",
+    "Lbl N",
+    "Cond ⇒ Cmd"
+  ],
+  "keySequence": [
+    "MODE",
+    "6",
+    "1"
+  ],
+  "summary": "Core PRGM language: input, assignment, display pause, jumps, structured If, For loops, Break, and memory clear. Type commands from SHIFT 3 (P-CMD).",
+  "body": [
+    {
+      "type": "p",
+      "text": "While editing, open the command menu with SHIFT 3 (P-CMD), or the Prog key. There is no Stop command. End a branch with Goto / Lbl, IfEnd, WhileEnd, or Break (Break only exits For / While)."
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Command",
+        "Syntax",
+        "Effect"
+      ],
+      "rows": [
+        [
+          "Input",
+          "? → Var",
+          "Pause and store user value into Var"
+        ],
+        [
+          "Assignment",
+          "Expr → Var",
+          "Evaluate Expr; store in Var"
+        ],
+        [
+          "Multi-statement",
+          "Cmd1 : Cmd2",
+          "Run commands in sequence"
+        ],
+        [
+          "Display pause",
+          "Expr ◢",
+          "Show value; wait for EXE"
+        ],
+        [
+          "Label",
+          "Lbl N",
+          "Destination marker (N typically 0–9)"
+        ],
+        [
+          "Goto",
+          "Goto N",
+          "Jump to Lbl N"
+        ],
+        [
+          "Conditional jump",
+          "Cond ⇒ Cmd",
+          "Run Cmd only if Cond is true"
+        ],
+        [
+          "If block",
+          "If Cond : Then … Else … IfEnd",
+          "Structured branching"
+        ],
+        [
+          "For loop",
+          "For Start → Var To End Step Δ : … : Next",
+          "Counted iteration"
+        ],
+        [
+          "Break",
+          "Break",
+          "Leave the enclosing For or While loop"
+        ],
+        [
+          "ClrMemory",
+          "ClrMemory",
+          "Zero A–D, X, Y, M"
+        ]
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Byte budget",
+      "text": "Each command consumes program memory. Prefer compact expressions and reuse Ans/variables. Clear unused slots before writing long solvers."
+    }
+  ],
+  "related": [
+    "modes/prgm/example"
+  ]
+}

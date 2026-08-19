@@ -1,0 +1,44 @@
+{
+  "id": "functions/fact",
+  "title": "Prime Factorization (FACT)",
+  "shortTitle": "FACT",
+  "parent": "functions",
+  "order": 1,
+  "aliases": [
+    "FACT",
+    "prime factors",
+    "factorise"
+  ],
+  "keywords": [
+    "SHIFT",
+    "°′″",
+    "integer"
+  ],
+  "formulas": [],
+  "keySequence": [
+    "SHIFT",
+    "°′″"
+  ],
+  "summary": "Factor a positive integer (up to 10 digits) into primes after evaluating it.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Evaluate an integer, then SHIFT °′″ (FACT) to show its prime factorization."
+    },
+    {
+      "type": "h2",
+      "text": "Example: 2016"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "2016 =",
+        "SHIFT °′″ (FACT) → prime-power product"
+      ]
+    }
+  ],
+  "related": [
+    "functions",
+    "modes/comp"
+  ]
+}

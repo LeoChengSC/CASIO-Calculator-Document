@@ -1,0 +1,95 @@
+{
+  "id": "fmla/22-stadia-h",
+  "title": "[FMLA 22] StadiaHeight — Stadia Calculations (Height)",
+  "shortTitle": "[FMLA 22] StadiaHeight",
+  "parent": "fmla",
+  "order": 22,
+  "aliases": [
+    "Stadia Calculations (Height)",
+    "StadiaHeight",
+    "FMLA 22",
+    "formula 22",
+    "22",
+    "[FMLA 22] StadiaHeight"
+  ],
+  "keywords": [
+    "s",
+    "θ",
+    "stadia",
+    "StadiaHeight",
+    "built-in"
+  ],
+  "formulas": [
+    "H = K s sinθ cosθ + C sinθ",
+    "H = (1/2) K s sin(2θ) + C sinθ"
+  ],
+  "keySequence": [
+    "FMLA",
+    "2",
+    "2"
+  ],
+  "summary": "Surveying stadia elevation difference from staff interval s and elevation angle θ (Deg), with instrument constants K and C.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Calculator scroll name: StadiaHeight. Elevation difference from the transit to the leveling rod, using the staff interval s between the stadia hairs and the angle of elevation θ."
+    },
+    {
+      "type": "formula",
+      "plain": "H = Ks\\sin\\theta\\cos\\theta + C\\sin\\theta = \\tfrac{1}{2}Ks\\sin(2\\theta) + C\\sin\\theta"
+    },
+    {
+      "type": "p",
+      "mark": "fmla-graph",
+      "text": "Surveying: look through the instrument at a vertical staff. K and C are instrument constants; s and θ are what you read."
+    },
+    {
+      "type": "figure",
+      "mark": "fmla-graph",
+      "svg": "img/fmla/22-stadia-h.svg",
+      "caption": "Sight onto a staff. The interval s between the two stadia hairs, with elevation angle θ, is turned into elevation difference h = Ks sinθ cosθ + C sinθ."
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "FMLA",
+        "2",
+        "2"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Primary inputs: K, s, C, θ."
+    },
+    {
+      "type": "steps",
+      "title": "How to run",
+      "items": [
+        "Press FMLA, then 2, then 2 (or scroll to the name and EXE)",
+        "Enter each prompted value",
+        "Read the result"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "FMLA → 2 → 2",
+        "Enter stadia constant K, interval s, additive C, angle θ",
+        "Height H = Ks sinθ cosθ + C sinθ"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Angle unit",
+      "text": "Run in Deg. Typical internal-focus instruments use K = 100 and C = 0. Companion distance formula is FMLA 23: D = Ks cos²θ + C cosθ."
+    }
+  ],
+  "related": [
+    "fmla/23-stadia-d",
+    "fmla"
+  ]
+}

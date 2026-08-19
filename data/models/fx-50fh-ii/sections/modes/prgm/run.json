@@ -1,0 +1,42 @@
+{
+  "id": "modes/prgm/run",
+  "title": "MODE 6-2: Run",
+  "shortTitle": "Run",
+  "parent": "modes/prgm",
+  "order": 2,
+  "aliases": [
+    "MODE 6 2",
+    "Run",
+    "PRGM Run"
+  ],
+  "keywords": [
+    "program",
+    "run"
+  ],
+  "formulas": [],
+  "keySequence": [
+    "MODE",
+    "6",
+    "2"
+  ],
+  "summary": "Execute the program stored in a selected slot.",
+  "body": [
+    {
+      "type": "p",
+      "text": "MODE 6 → 2 → slot. Respond to ? prompts with values then EXE. Display pauses (◢) wait for EXE to continue."
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "MODE → 6 → 2 → 1 runs P1."
+      ]
+    }
+  ],
+  "related": [
+    "modes/prgm/commands"
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "fmla/21-bernoulli",
+  "title": "[FMLA 21] Bernoulli — Bernoulli's Theorem",
+  "shortTitle": "[FMLA 21] Bernoulli",
+  "parent": "fmla",
+  "order": 21,
+  "aliases": [
+    "Bernoulli's Theorem",
+    "Bernoulli",
+    "FMLA 21",
+    "formula 21",
+    "21",
+    "[FMLA 21] Bernoulli"
+  ],
+  "keywords": [
+    "v",
+    "z",
+    "ρ",
+    "P",
+    "bernoulli's",
+    "Bernoulli",
+    "built-in"
+  ],
+  "formulas": [
+    "C = v²/2 + g z + P/ρ",
+    "P + ρgh + (1/2)ρv² = const"
+  ],
+  "keySequence": [
+    "FMLA",
+    "2",
+    "1"
+  ],
+  "summary": "Incompressible steady flow. The calculator prints C = v²/2 + gz + P/ρ (energy per unit mass), not the pressure-form constant.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Calculator scroll name: Bernoulli. For steady inviscid incompressible flow, height, speed, and pressure trade off. The ROM evaluates the energy-per-mass constant C, not the pressure-form sum P + ρgh + ½ρv²."
+    },
+    {
+      "type": "formula",
+      "plain": "C = \\frac{v^{2}}{2} + gz + \\frac{P}{\\rho}"
+    },
+    {
+      "type": "p",
+      "mark": "fmla-graph",
+      "text": "For a steady incompressible flow, height, speed, and pressure trade off. Low and narrow → fast and lower P."
+    },
+    {
+      "type": "figure",
+      "mark": "fmla-graph",
+      "svg": "img/fmla/21-bernoulli.svg",
+      "caption": "The pipe drops and narrows. Fluid speeds up and pressure falls. The calculator reports C = v²/2 + gz + P/ρ, which stays the same along the flow."
+    },
+    {
+      "type": "p",
+      "text": "Multiply through by density ρ to recover the textbook pressure form P + ρgz + ½ρv² (same physics; a different number on the display)."
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "FMLA",
+        "2",
+        "1"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Primary inputs: v, z, ρ, P (that prompt order; height is z, not h)."
+    },
+    {
+      "type": "steps",
+      "title": "How to run",
+      "items": [
+        "Press FMLA, then 2, then 1 (or scroll to the name and EXE)",
+        "Enter each prompted value",
+        "Read C (energy per unit mass)"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "FMLA → 2 → 1",
+        "Enter v, z, ρ, P",
+        "Display is C = v²/2 + gz + P/ρ, not P + ρgz + ½ρv²"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "CONST / g",
+      "text": "The routine uses gravitational acceleration g from ROM. Keep v, z, ρ, and P in consistent SI units (m/s, m, kg/m³, Pa)."
+    }
+  ],
+  "related": [
+    "fmla"
+  ]
+}

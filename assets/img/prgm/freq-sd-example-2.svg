@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" role="img" aria-labelledby="prgm-example-card-title prgm-example-card-desc">
+  <title id="prgm-example-card-title">Five equal scores of 10</title>
+  <desc id="prgm-example-card-desc">Case sketch for this worked example.</desc>
+  
+  <rect x="28" y="34" width="664" height="254" rx="14" fill="var(--accent)" fill-opacity="0.06" stroke="var(--accent)" stroke-width="1.2"/>
+  <text x="46" y="80" fill="var(--accent)" font-size="24">Five equal scores of 10</text>
+  <text x="46" y="118" fill="var(--text)" font-size="20">One row: 10 ; 5.</text>
+  <text x="46" y="148" fill="var(--text)" font-size="20">10 【EXE】  5 【EXE】, AC</text>
+  <text x="46" y="178" fill="var(--text)" font-size="20">n = 5, x̄ = 10, σx = 0, variance 0</text>
+
+</svg>

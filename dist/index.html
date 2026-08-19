@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CASIO Calculator Documentation</title>
+  <link rel="stylesheet" href="./assets/css/site.css">
+  <link rel="stylesheet" href="./assets/vendor/katex/katex.min.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("casio-theme");
+        if (t === "light" || t === "dark" || t === "reading") {
+          document.documentElement.setAttribute("data-theme", t);
+        }
+      } catch (e) {}
+    })();
+  </script>
+<script>window.CASIO_ASSET_ROOT="./";</script>
+</head>
+<body class="layout-hub">
+  <header class="site-header">
+    <a class="site-brand" href="./index.html">
+      <span class="site-brand__name">CASIO Docs</span>
+      <span class="site-brand__tag">Calculator Reference</span>
+    </a>
+    <div class="header-search" role="search">
+      <label class="sr-only" for="site-search">Search documentation</label>
+      <input id="site-search" type="search" placeholder="Search names, keys, formulas… (/)" autocomplete="off" spellcheck="false">
+      <div id="search-results" class="search-results" hidden></div>
+    </div>
+    <div class="header-controls">
+      <label class="theme-label" for="theme-select">Theme</label>
+      <select id="theme-select" class="theme-select" aria-label="Color theme">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+        <option value="reading">Reading</option>
+      </select>
+    </div>
+  </header>
+
+  <div class="site-body">
+    <aside class="site-sidebar" aria-label="Table of contents">
+      
+    </aside>
+    <main class="site-main">
+      <div class="page-sections-host" id="page-sections-host" aria-hidden="true">
+        <button type="button" class="page-sections-host__backdrop" id="page-sections-backdrop" tabindex="-1" aria-label="Close on this page"></button>
+        <div class="page-sections-host__panel">
+          <nav class="page-sections" aria-label="On this page"><p class="page-sections__title">On this page</p><ul class="page-sections__list"><li class="page-sections__item"><a class="page-sections__link" href="#how-this-site-works">How this site works</a></li></ul></nav>
+        </div>
+      </div>
+      <div class="mobile-nav-bar">
+        <button type="button" id="mobile-nav-back" class="mobile-nav-back" aria-label="Back to contents">← Contents</button>
+        <button type="button" id="mobile-nav-sections" class="mobile-nav-sections" aria-label="On this page" aria-expanded="false" aria-controls="page-sections-host" hidden>
+          <span class="mobile-nav-sections__icon" aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="site-content">
+        <div class="page-intro">
+          
+          <h1>CASIO Calculator Documentation</h1>
+          <p class="page-summary">Offline reference manuals for Casio scientific calculators.</p>
+        </div>
+        
+<p>Select a calculator model. Documentation is generated from structured data so new models can be added without new HTML templates.</p>
+<div class="model-grid">
+<article class="model-card">
+  <h2>CASIO fx-50FH II</h2>
+  <p>HKEAA-approved programmable scientific calculator (SUPER-FX PLUS). Modes, SETUP, 23 formulas, constants, and programming reference.</p>
+  <a class="btn" href="./models/fx-50fh-ii/index.html">Open documentation</a>
+</article>
+<article class="model-card">
+  <h2>CASIO fx-82AU PLUS II</h2>
+  <p>Natural-V.P.A.M. non-programmable calculator for AU/NZ exams. COMP, STAT, VERIF, and exact surds.</p>
+  <a class="btn" href="./models/fx-82au-plus-ii/index.html">Open documentation</a>
+</article>
+</div>
+<h2 id="how-this-site-works">How this site works</h2>
+<ul>
+<li>Browse by model, then by mode, setup option, formula, or programming topic.</li>
+<li>Use the search bar for names, key sequences (e.g. MODE 5 1), or formulas (e.g. y=A+Bx).</li>
+<li>Switch Light, Dark, or Reading theme from the header. Preference is stored locally.</li>
+<li>Everything works offline from the <code>dist/</code> folder.</li>
+</ul>
+        
+        <footer class="site-footer">
+          <p>Offline Casio calculator documentation. Content is structured for multiple models; rebuild with <code>node tools/build.js</code>.</p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script src="./search-index.js"></script>
+  <script src="./assets/js/theme.js"></script>
+  <script src="./assets/js/nav.js"></script>
+  <script src="./assets/js/search.js"></script>
+</body>
+</html>

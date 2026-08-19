@@ -1,0 +1,93 @@
+{
+  "id": "fmla/10-voltage-gain",
+  "title": "[FMLA 10] VoltageGain — Voltage Gain",
+  "shortTitle": "[FMLA 10] VoltageGain",
+  "parent": "fmla",
+  "order": 10,
+  "aliases": [
+    "Voltage Gain",
+    "VoltageGain",
+    "FMLA 10",
+    "formula 10",
+    "10",
+    "[FMLA 10] VoltageGain"
+  ],
+  "keywords": [
+    "Vin",
+    "Vout",
+    "voltage",
+    "VoltageGain",
+    "built-in"
+  ],
+  "formulas": [
+    "G = 20 log₁₀ (Vout / Vin)"
+  ],
+  "keySequence": [
+    "FMLA",
+    "1",
+    "0"
+  ],
+  "summary": "Decibel voltage gain between input and output.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Calculator scroll name: VoltageGain. Decibel voltage gain between input and output."
+    },
+    {
+      "type": "formula",
+      "plain": "G = 20 \\log_{10} \\left(\\frac{V_{\\text{out}}}{V_{\\text{in}}}\\right)"
+    },
+    {
+      "type": "p",
+      "mark": "fmla-graph",
+      "text": "Voltage gain in decibels is a compressed way to write a ratio. A ratio of 10 is 20 dB; a ratio of 100 is 40 dB. If Vout is smaller than Vin, G is negative (a loss)."
+    },
+    {
+      "type": "figure",
+      "mark": "fmla-graph",
+      "svg": "img/fmla/10-voltage-gain.svg",
+      "caption": "Example: Vin = 0.1 V, Vout = 1 V. The output is 10 times the input, which is 20 dB."
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "FMLA",
+        "1",
+        "0"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Primary inputs: E′ (output), E (input)."
+    },
+    {
+      "type": "steps",
+      "title": "How to run",
+      "items": [
+        "Press FMLA, then 1, then 0 (or scroll to the name and EXE)",
+        "Enter each prompted value",
+        "Read the result"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "lines",
+      "mark": "fmla-graph",
+      "items": [
+        "Output E′ = 30 V, input E = 12 V",
+        "30 EXE 12 EXE → G = 7.9588 dB"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Units",
+      "text": "Vin and Vout in the same voltage unit (E′/E > 0). G is in dB. A ratio below 1 gives negative gain (a loss)."
+    }
+  ],
+  "related": [
+    "fmla"
+  ]
+}

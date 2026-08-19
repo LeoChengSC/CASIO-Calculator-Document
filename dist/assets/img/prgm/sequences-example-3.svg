@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" role="img" aria-labelledby="prgm-example-card-title prgm-example-card-desc">
+  <title id="prgm-example-card-title">GP with |r| ≥ 1 (no infinite sum)</title>
+  <desc id="prgm-example-card-desc">Case sketch for this worked example.</desc>
+  
+  <rect x="28" y="34" width="664" height="254" rx="14" fill="var(--accent)" fill-opacity="0.06" stroke="var(--accent)" stroke-width="1.2"/>
+  <text x="46" y="80" fill="var(--accent)" font-size="24">GP with |r| ≥ 1 (no infinite sum)</text>
+  <text x="46" y="118" fill="var(--text)" font-size="20">A = 3, B = 2, C = 5. T₅ = 48, S₅ = 93, then Math ERROR on S∞.</text>
+  <text x="46" y="148" fill="var(--text)" font-size="20">1 【EXE】  3 【EXE】  2 【EXE】  5 【EXE】</text>
+  <text x="46" y="178" fill="var(--text)" font-size="20">48, then 93, then Math ERROR on tanh⁻¹(2). That error means S∞ does not exist</text>
+
+</svg>

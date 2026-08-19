@@ -1,0 +1,94 @@
+{
+  "id": "fmla/06-coulomb",
+  "title": "[FMLA 06] CoulombLaw — Coulomb's Law",
+  "shortTitle": "[FMLA 06] CoulombLaw",
+  "parent": "fmla",
+  "order": 6,
+  "aliases": [
+    "Coulomb's Law",
+    "CoulombLaw",
+    "FMLA 06",
+    "formula 06",
+    "06",
+    "[FMLA 06] CoulombLaw"
+  ],
+  "keywords": [
+    "Q",
+    "q",
+    "r",
+    "coulomb's",
+    "CoulombLaw",
+    "built-in"
+  ],
+  "formulas": [
+    "F = (1/(4πε₀)) · (Q q / r²)"
+  ],
+  "keySequence": [
+    "FMLA",
+    "0",
+    "6"
+  ],
+  "summary": "Electrostatic force between two point charges.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Calculator scroll name: CoulombLaw. Electrostatic force between two point charges."
+    },
+    {
+      "type": "formula",
+      "plain": "F = \\frac{1}{4\\pi\\varepsilon_{0}} \\cdot \\frac{Q q}{r^{2}}"
+    },
+    {
+      "type": "p",
+      "mark": "fmla-graph",
+      "text": "Point charges push or pull along the line between them. Same sign → push apart (as drawn). Opposite signs → pull together. The force shrinks quickly as they move apart because of r² in the denominator."
+    },
+    {
+      "type": "figure",
+      "mark": "fmla-graph",
+      "svg": "img/fmla/06-coulomb.svg",
+      "caption": "Two like charges. Each feels a force F along the line joining them. Double the gap r and F falls to one quarter."
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "FMLA",
+        "0",
+        "6"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Primary inputs: Q, q, r (that prompt order)."
+    },
+    {
+      "type": "steps",
+      "title": "How to run",
+      "items": [
+        "Press FMLA, then 0, then 6 (or scroll to the name and EXE)",
+        "Enter each prompted value",
+        "Read the result"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "FMLA → 0 → 6",
+        "4 EXP (−) 5 EXE  1 EXP (−) 5 EXE  0.8 EXE",
+        "F = 5.6172 N"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "CONST / ε₀",
+      "text": "The routine uses permittivity ε₀ from ROM. Enter charges in C and separation r in m (r > 0) to get F in N."
+    }
+  ],
+  "related": [
+    "fmla"
+  ]
+}

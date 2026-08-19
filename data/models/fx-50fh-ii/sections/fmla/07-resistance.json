@@ -1,0 +1,94 @@
+{
+  "id": "fmla/07-resistance",
+  "title": "[FMLA 07] Resistance — Resistance of a Conductor",
+  "shortTitle": "[FMLA 07] Resistance",
+  "parent": "fmla",
+  "order": 7,
+  "aliases": [
+    "Resistance of a Conductor",
+    "Resistance",
+    "FMLA 07",
+    "formula 07",
+    "07",
+    "[FMLA 07] Resistance"
+  ],
+  "keywords": [
+    "ρ",
+    "ℓ",
+    "S",
+    "resistance",
+    "Resistance",
+    "built-in"
+  ],
+  "formulas": [
+    "R = ρ · ℓ / S"
+  ],
+  "keySequence": [
+    "FMLA",
+    "0",
+    "7"
+  ],
+  "summary": "Ohmic resistance from resistivity, length, and cross-section.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Calculator scroll name: Resistance. Ohmic resistance from resistivity, length, and cross-section."
+    },
+    {
+      "type": "formula",
+      "plain": "R = \\rho \\cdot \\frac{\\ell}{S}"
+    },
+    {
+      "type": "p",
+      "mark": "fmla-graph",
+      "text": "Think of a corridor: a long thin corridor is harder to walk through than a short wide one. That is R = ρ ℓ / S."
+    },
+    {
+      "type": "figure",
+      "mark": "fmla-graph",
+      "svg": "img/fmla/07-resistance.svg",
+      "caption": "A wire of length ℓ and end-area S. Longer ℓ raises R; a fatter S lowers R. ρ is “how reluctant this metal is.”"
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "FMLA",
+        "0",
+        "7"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Primary inputs: ρ, ℓ, S (length ℓ and cross-section S, not L and A)."
+    },
+    {
+      "type": "steps",
+      "title": "How to run",
+      "items": [
+        "Press FMLA, then 0, then 7 (or scroll to the name and EXE)",
+        "Enter each prompted value",
+        "Read the result"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "FMLA → 0 → 7",
+        "Enter ρ, ℓ, S",
+        "Resistance R = ρℓ/S"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Units",
+      "text": "SI: ρ in Ω·m, ℓ in m, cross-section S in m² (S, ℓ, ρ > 0). Result R is in ohms."
+    }
+  ],
+  "related": [
+    "fmla"
+  ]
+}

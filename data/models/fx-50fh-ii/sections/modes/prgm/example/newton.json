@@ -1,0 +1,123 @@
+{
+  "id": "modes/prgm/example/newton",
+  "title": "Newton’s Method",
+  "shortTitle": "Newton",
+  "parent": "modes/prgm/example",
+  "order": 13,
+  "aliases": [
+    "牛頓法",
+    "Newton-Raphson",
+    "numerical root"
+  ],
+  "keywords": [
+    "iteration",
+    "f(M)",
+    "numerical derivative"
+  ],
+  "formulas": [
+    "xₙ₊₁ = xₙ − f(xₙ)/f′(xₙ)"
+  ],
+  "keySequence": [
+    "MODE",
+    "6",
+    "2"
+  ],
+  "summary": "General real root of f(x) = 0. Edit the green f(M). 51 bytes plus the function.",
+  "body": [
+    {
+      "type": "p",
+      "text": "No solver key. This WebCal Newton I listing approximates f′ with a 10⁻⁷ step, so you do not type a derivative. The green M³ − 2M − 1 is f(M); change only that expression (variable must stay M). Prompt is the first guess. Each EXE is the next iterate. AC when the digits freeze. E is EXP, so E−7 is 10⁻⁷."
+    },
+    {
+      "type": "note",
+      "label": "Memory / run mode",
+      "text": "51 bytes plus the function of the shared 680-byte pool. Create the slot in COMP. Type ? → : ◢ Goto Lbl If Then from SHIFT 3 (P-CMD)."
+    },
+    {
+      "type": "formula",
+      "plain": "xₙ₊₁ = xₙ − f(xₙ)/f′(xₙ)"
+    },
+    {
+      "type": "figure",
+      "svg": "img/prgm/newton.svg",
+      "caption": "y = x³ − 2x − 1. Guess 1; the first Newton step lands at 3, then walks to ≈ 1.618."
+    },
+    {
+      "type": "h2",
+      "text": "Program (one line)"
+    },
+    {
+      "type": "program",
+      "code": "ClrMemory:?→M:Lbl 0:C→A:M³−2M−1→C:B=0→B:Ans⇒E−7M+⇒Goto 0:E−7(1+A÷(C−A)M−:M◢Goto 0"
+    },
+    {
+      "type": "h2",
+      "text": "Example 1: x³ − 2x − 1 = 0, guess 1"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: x³ − 2x − 1 = 0, guess 1."
+    },
+    {
+      "type": "p",
+      "text": "Given: Leave the listing as shipped. The unique real root is the golden-ratio value 2 cos(π/5) ≈ 1.618034."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "1 【EXE】 → 3",
+        "【EXE】 → 2.2",
+        "Keep 【EXE】. By the sixth pause the display is 1.618034049"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 2: Same polynomial, guess 0"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: Same polynomial, guess 0."
+    },
+    {
+      "type": "p",
+      "text": "Given: A worse start still converges, just with more steps."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "0 【EXE】, then 【EXE】 until the digits stop changing",
+        "Same limit ≈ 1.618034"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 3 (edge): Change f — here x² − 2 = 0"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: Change f — here x² − 2 = 0."
+    },
+    {
+      "type": "p",
+      "text": "Given: While editing, replace M³−2M−1 with M²−2. Guess 1 for √2."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "Edit the green expression only. Variable stays M",
+        "1 【EXE】, then 【EXE】 until 1.414213562",
+        "Guess −1 if you want the negative root"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Pitfalls",
+      "text": "First iterate can jump (1 → 3 on the shipped f). If f′ is nearly 0 you get Math ERROR or a wild jump — try another guess. ClrMemory wipes A–D, X, Y, M; swap it for 0→B if you must keep a constant in another letter. Source: WebCal newton.htm."
+    }
+  ],
+  "related": [
+    "modes/prgm/example",
+    "modes/prgm/commands",
+    "modes/prgm/edit"
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "fmla/11-lrc-series",
+  "title": "[FMLA 11] SeriesLRC — Impedance LRC Series",
+  "shortTitle": "[FMLA 11] SeriesLRC",
+  "parent": "fmla",
+  "order": 11,
+  "aliases": [
+    "Impedance LRC Series",
+    "SeriesLRC",
+    "FMLA 11",
+    "formula 11",
+    "11",
+    "[FMLA 11] SeriesLRC"
+  ],
+  "keywords": [
+    "f",
+    "R",
+    "L",
+    "C",
+    "impedance",
+    "SeriesLRC",
+    "built-in"
+  ],
+  "formulas": [
+    "Z = √(R² + (2πf L - 1/(2πf C))²)"
+  ],
+  "keySequence": [
+    "FMLA",
+    "1",
+    "1"
+  ],
+  "summary": "Series RLC impedance at frequency f. Type f in Hz; the ROM uses 2πf, not a separate ω prompt.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Calculator scroll name: SeriesLRC. Series RLC impedance at frequency f. Type f in Hz; do not type ω into the f prompt."
+    },
+    {
+      "type": "formula",
+      "plain": "Z = \\sqrt{R^{2} + \\left(2\\pi f L - \\frac{1}{2\\pi f C}\\right)^{2}}"
+    },
+    {
+      "type": "p",
+      "mark": "fmla-graph",
+      "text": "R, L, and C sit in one line. At most frequencies they fight each other and Z is large. At one special frequency (resonance) the L and C parts cancel, and only R remains."
+    },
+    {
+      "type": "figure",
+      "mark": "fmla-graph",
+      "svg": "img/fmla/11-lrc-series.svg",
+      "caption": "Example R = 10 Ω, L = 0.1 H, C = 1 µF. Series impedance Z is smallest at the resonant frequency f₀ ≈ 503 Hz, where Z ≈ R."
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "FMLA",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Primary inputs: f, R, L, C (frequency in Hz, not ω)."
+    },
+    {
+      "type": "steps",
+      "title": "How to run",
+      "items": [
+        "Press FMLA, then 1, then 1 (or scroll to the name and EXE)",
+        "Enter each prompted value",
+        "Read the result"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "FMLA → 1 → 1",
+        "50 EXE  2 EXE  0.07 EXE  25 EXP (−) 6 EXE",
+        "Z = 105.3518 Ω"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Units",
+      "text": "SI: f in Hz, L in H, C in F, R and Z in Ω (all > 0). The formula uses 2πf; there is no ω input."
+    }
+  ],
+  "related": [
+    "fmla/12-lrc-parallel",
+    "fmla/13-oscillation",
+    "fmla"
+  ]
+}

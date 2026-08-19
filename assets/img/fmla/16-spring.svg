@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-labelledby="fmla16-title fmla16-desc">
+  <title id="fmla16-title">Mass on a spring</title>
+  <desc id="fmla16-desc">A mass m on a spring of stiffness k oscillates. Stiffer k or smaller m means a shorter period.</desc>
+  
+  <rect x="120" y="90" width="80" height="140" fill="var(--text-muted)" fill-opacity="0.15" stroke="var(--text-muted)" stroke-width="1.4"/>
+  <polyline points="200,150 200,150 212,120 224,180 236,150 236,150 248,120 260,180 272,150 272,150 284,120 296,180 308,150 308,150 320,120 332,180 344,150 344,150 356,120 368,180 380,150 380,150 392,120 404,180 416,150 416,150 428,120 440,180 452,150 452,150 464,120 476,180 488,150" fill="none" stroke="var(--accent)" stroke-width="2.2"/>
+  <rect x="488" y="122" width="70" height="56" fill="var(--accent)" fill-opacity="0.18" stroke="var(--accent)" stroke-width="2"/>
+  <text x="523" y="156" text-anchor="middle" fill="var(--text)">m</text>
+  <text x="340" y="108" fill="var(--accent-soft)">k</text>
+  <text x="360" y="250" text-anchor="middle">Heavier m → slower. Stiffer k → faster.</text>
+
+</svg>

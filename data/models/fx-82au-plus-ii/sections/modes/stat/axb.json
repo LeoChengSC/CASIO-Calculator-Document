@@ -1,0 +1,56 @@
+{
+  "id": "modes/stat/axb",
+  "title": "MODE 2-7: A·X^B",
+  "shortTitle": "A·X^B",
+  "parent": "modes/stat",
+  "order": 7,
+  "aliases": [
+    "power regression",
+    "MODE 2 7"
+  ],
+  "keywords": [
+    "power law",
+    "scaling"
+  ],
+  "formulas": [
+    "y = A · x^B"
+  ],
+  "keySequence": [
+    "MODE",
+    "2",
+    "7"
+  ],
+  "summary": "Power regression y = A·x^B.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Positive-data scaling laws (log-log linear)."
+    },
+    {
+      "type": "formula",
+      "plain": "y = A \\cdot x^{B}"
+    },
+    {
+      "type": "p",
+      "text": "Power-law scaling. Both x and y must be positive; log-log looks linear."
+    },
+    {
+      "type": "figure",
+      "svg": "img/reg/pwr.svg",
+      "caption": "Sample fit y = 0.5 x^1.5. Curved on ordinary axes; a straight line if both axes are logged."
+    },
+    {
+      "type": "steps",
+      "title": "Open this type",
+      "items": [
+        "MODE → 2 → 7",
+        "Clear or edit data in the Statistics Editor as needed",
+        "AC, then SHIFT 1 (STAT) for Var / Reg / MinMax recalls"
+      ]
+    }
+  ],
+  "related": [
+    "statistics",
+    "modes/stat"
+  ]
+}

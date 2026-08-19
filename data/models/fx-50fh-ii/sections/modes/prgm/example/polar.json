@@ -1,0 +1,123 @@
+{
+  "id": "modes/prgm/example/polar",
+  "title": "Polar ↔ Rectangular",
+  "shortTitle": "Pol / Rec",
+  "parent": "modes/prgm/example",
+  "order": 9,
+  "aliases": [
+    "極座標",
+    "Pol Rec program"
+  ],
+  "keywords": [
+    "Pol",
+    "Rec",
+    "r",
+    "θ"
+  ],
+  "formulas": [
+    "Pol(x, y)",
+    "Rec(r, θ)"
+  ],
+  "keySequence": [
+    "MODE",
+    "6",
+    "2"
+  ],
+  "summary": "Looping Pol/Rec with θ (or y) in Y. ~40 bytes.",
+  "body": [
+    {
+      "type": "p",
+      "text": "M1/M2 students store this so they do not forget that θ lives in Y. First prompt M: 0 = Rec, anything else = Pol. Then two numbers. First pause is r or x; EXE then RCL Y is not needed because the program already pauses Y (θ or y)."
+    },
+    {
+      "type": "note",
+      "label": "Memory / run mode",
+      "text": "~40 bytes of the shared 680-byte pool. Create the slot in COMP, Deg (or Rad to match SET UP). Type ? → : ◢ Goto Lbl If Then from SHIFT 3 (P-CMD)."
+    },
+    {
+      "type": "formula",
+      "plain": "Pol(x, y)"
+    },
+    {
+      "type": "figure",
+      "svg": "img/prgm/polar.svg",
+      "caption": "Pol(3, 4) → r = 5, θ ≈ 53.13° in Deg."
+    },
+    {
+      "type": "h2",
+      "text": "Program (one line)"
+    },
+    {
+      "type": "program",
+      "code": "?→M:?→A:?→B:If M:Then Pol(A,B◢RCL Y:Else Rec(A,B◢RCL Y:IfEnd"
+    },
+    {
+      "type": "h2",
+      "text": "Example 1: Pol(3, 4) in Deg"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: Pol(3, 4) in Deg."
+    },
+    {
+      "type": "p",
+      "text": "Given: M ≠ 0 selects Pol."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "SHIFT MODE 1 (Deg) if needed",
+        "1 【EXE】  3 【EXE】  4 【EXE】",
+        "r = 5. 【EXE】 → θ ≈ 53.13°"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 2: Rec(5, 53.13°)"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: Rec(5, 53.13°)."
+    },
+    {
+      "type": "p",
+      "text": "Given: M = 0 selects Rec."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "0 【EXE】  5 【EXE】  53.13 【EXE】",
+        "x ≈ 3. 【EXE】 → y ≈ 4"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 3 (edge): Point on the negative x-axis"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: Point on the negative x-axis."
+    },
+    {
+      "type": "p",
+      "text": "Given: Pol(−2, 0) should give r = 2, θ = 180° (or −180° depending on range)."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "1 【EXE】  −2 【EXE】  0 【EXE】",
+        "r = 2. 【EXE】 → 180 (or −180). Rec of that pair returns (−2, 0)"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Pitfalls",
+      "text": "Pol/Rec also exist as SHIFT + and SHIFT − without a program; the stored line is for repeated conversion in one Run. θ range is −180° < θ ≤ 180°."
+    }
+  ],
+  "related": [
+    "modes/prgm/example",
+    "modes/prgm/commands",
+    "modes/prgm/edit"
+  ]
+}

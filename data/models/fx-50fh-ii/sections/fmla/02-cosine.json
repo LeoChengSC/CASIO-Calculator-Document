@@ -1,0 +1,96 @@
+{
+  "id": "fmla/02-cosine",
+  "title": "[FMLA 02] CosineTheorem — Cosine Theorem",
+  "shortTitle": "[FMLA 02] CosineTheorem",
+  "parent": "fmla",
+  "order": 2,
+  "aliases": [
+    "Cosine Theorem",
+    "CosineTheorem",
+    "FMLA 02",
+    "formula 02",
+    "02",
+    "[FMLA 02] CosineTheorem"
+  ],
+  "keywords": [
+    "b",
+    "c",
+    "A",
+    "cosine",
+    "CosineTheorem",
+    "built-in"
+  ],
+  "formulas": [
+    "a² = b² + c² - 2bc cos A"
+  ],
+  "keySequence": [
+    "FMLA",
+    "0",
+    "2"
+  ],
+  "summary": "Find a side opposite angle A in a triangle (law of cosines).",
+  "body": [
+    {
+      "type": "p",
+      "text": "Calculator scroll name: CosineTheorem. Find a side opposite angle A in a triangle (law of cosines)."
+    },
+    {
+      "type": "formula",
+      "plain": "a^{2} = b^{2} + c^{2} - 2bc \\cos A"
+    },
+    {
+      "type": "p",
+      "mark": "fmla-graph",
+      "text": "You already know two sides and the angle between them. The cosine theorem finds the third side — the one sitting opposite that angle."
+    },
+    {
+      "type": "figure",
+      "mark": "fmla-graph",
+      "svg": "img/fmla/02-cosine.svg",
+      "caption": "Example: b = 5, c = 7, included angle A = 60°. Side a opposite A is about 6.24."
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "FMLA",
+        "0",
+        "2"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Primary inputs: b, c, A."
+    },
+    {
+      "type": "steps",
+      "title": "How to run",
+      "items": [
+        "Press FMLA, then 0, then 2 (or scroll to the name and EXE)",
+        "Enter each prompted value",
+        "Read the result"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "lines",
+      "mark": "fmla-graph",
+      "items": [
+        "b = 5, c = 7, A = 60°",
+        "a² = 25 + 49 − 2·5·7·cos 60°",
+        "a² = 74 − 35 = 39",
+        "a = {sqrt:39} ≈ 6.245"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Angle unit",
+      "text": "Run in Deg. The included angle must be between 0° and 180°. Wrong SET UP angle unit is the usual source of a mismatch with a textbook answer."
+    }
+  ],
+  "related": [
+    "fmla"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "modes/stat",
+  "title": "MODE 2: STAT (Statistics)",
+  "shortTitle": "STAT",
+  "parent": "modes",
+  "order": 2,
+  "aliases": [
+    "statistics",
+    "MODE 2",
+    "regression",
+    "1-VAR"
+  ],
+  "keywords": [
+    "quartile",
+    "median",
+    "A+BX",
+    "FREQ"
+  ],
+  "formulas": [
+    "y = A + Bx"
+  ],
+  "keySequence": [
+    "MODE",
+    "2"
+  ],
+  "summary": "Statistics editor with 1-VAR (including quartiles) and seven paired regression models.",
+  "body": [
+    {
+      "type": "p",
+      "text": "MODE 2 opens a type menu. After you pick a model, the Statistics Editor appears. Use SHIFT 1 (STAT) menus for Sum, Var, Reg, and MinMax after AC exits the editor."
+    },
+    {
+      "type": "h2",
+      "text": "Example: 1-VAR mean and sx"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "MODE → 2 → 1 (1-VAR)",
+        "15 =",
+        "18 =",
+        "22 =",
+        "25 =",
+        "AC → SHIFT 1 (STAT) → 4 (Var) → 2 (x̄) =",
+        "SHIFT 1 → 4 (Var) → 4 (sx) ="
+      ]
+    },
+    {
+      "type": "figure",
+      "svg": "img/fx82/1var-mean.svg",
+      "caption": "Those four scores on a number line. The mean x̄ = 20 is the balance point you recall from STAT → Var."
+    },
+    {
+      "type": "children",
+      "title": "STAT types",
+      "ids": [
+        "modes/stat/1-var",
+        "modes/stat/a-bx",
+        "modes/stat/quad",
+        "modes/stat/ln",
+        "modes/stat/ex",
+        "modes/stat/abx",
+        "modes/stat/axb",
+        "modes/stat/inv"
+      ]
+    }
+  ],
+  "related": [
+    "statistics",
+    "setup"
+  ]
+}

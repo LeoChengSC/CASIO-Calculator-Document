@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-labelledby="fmla10-title fmla10-desc">
+  <title id="fmla10-title">Voltage gain of 20 dB when Vout is ten times Vin</title>
+  <desc id="fmla10-desc">Example: Vin = 0.1 V and Vout = 1 V. The ratio is 10, so G = 20 log10(10) = 20 dB.</desc>
+  
+  <rect x="160" y="150" width="70" height="100" fill="var(--accent)" fill-opacity="0.15" stroke="var(--accent)" stroke-width="2"/>
+  <rect x="490" y="50" width="70" height="200" fill="var(--accent)" fill-opacity="0.22" stroke="var(--accent)" stroke-width="2"/>
+  <text x="195" y="270" text-anchor="middle">Vin</text>
+  <text x="195" y="140" text-anchor="middle">0.1 V</text>
+  <text x="525" y="270" text-anchor="middle">Vout</text>
+  <text x="525" y="40" text-anchor="middle">1 V</text>
+  <path d="M250 200 L470 140" stroke="var(--accent-soft)" stroke-width="1.6"/>
+  <text x="360" y="150" text-anchor="middle" fill="var(--accent-soft)">× 10  →  20 dB</text>
+
+</svg>

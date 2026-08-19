@@ -1,0 +1,59 @@
+{
+  "id": "modes/stat/quad",
+  "title": "MODE 2-3: _+CX²",
+  "shortTitle": "_+CX²",
+  "parent": "modes/stat",
+  "order": 3,
+  "aliases": [
+    "quadratic regression",
+    "MODE 2 3",
+    "CX2"
+  ],
+  "keywords": [
+    "A",
+    "B",
+    "C",
+    "parabola"
+  ],
+  "formulas": [
+    "y = A + Bx + Cx²"
+  ],
+  "keySequence": [
+    "MODE",
+    "2",
+    "3"
+  ],
+  "summary": "Quadratic regression with coefficients A, B, C and dual x̂ estimators.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Parabolic / second-order experimental fits."
+    },
+    {
+      "type": "formula",
+      "plain": "y = A + Bx + Cx^{2}"
+    },
+    {
+      "type": "p",
+      "text": "A parabola. You need at least three pairs. Recall A, B, and C from STAT → Reg (no r on this model type)."
+    },
+    {
+      "type": "figure",
+      "svg": "img/reg/quad.svg",
+      "caption": "Sample fit y = x² − 2x + 3. The curve has a single bend (a minimum near x = 1)."
+    },
+    {
+      "type": "steps",
+      "title": "Open this type",
+      "items": [
+        "MODE → 2 → 3",
+        "Clear or edit data in the Statistics Editor as needed",
+        "AC, then SHIFT 1 (STAT) for Var / Reg / MinMax recalls"
+      ]
+    }
+  ],
+  "related": [
+    "statistics",
+    "modes/stat"
+  ]
+}

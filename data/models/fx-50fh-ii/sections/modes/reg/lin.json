@@ -1,0 +1,226 @@
+{
+  "id": "modes/reg/lin",
+  "title": "MODE 5-1: Lin (Linear Regression)",
+  "shortTitle": "Lin",
+  "parent": "modes/reg",
+  "order": 1,
+  "aliases": [
+    "linear regression",
+    "y=A+Bx",
+    "MODE 5 1",
+    "correlation r"
+  ],
+  "keywords": [
+    "slope",
+    "intercept",
+    "r",
+    "bivariate",
+    "DT",
+    "S-VAR"
+  ],
+  "formulas": [
+    "y = A + Bx"
+  ],
+  "keySequence": [
+    "MODE",
+    "5",
+    "1"
+  ],
+  "summary": "Enter x , y DT pairs (≥2), AC, then recall A, B, and r. Fitted line: y = A + Bx.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Lin fits a straight line to paired data. Use it for constant rate of change, calibration lines, and anywhere a scatter plot looks roughly linear."
+    },
+    {
+      "type": "formula",
+      "plain": "y = A + Bx"
+    },
+    {
+      "type": "p",
+      "mark": "reg-graph",
+      "text": "Each dot is an (x, y) pair you entered with DT. The calculator finds the straight line that best matches them. Here the points lie perfectly on y = 2x, so A = 0, B = 2, and r = 1."
+    },
+    {
+      "type": "figure",
+      "mark": "reg-graph",
+      "svg": "img/reg/lin.svg",
+      "caption": "Example points (1, 2), (2, 4), (3, 6) on y = 2x. Perfect collinearity gives intercept A = 0, slope B = 2, and correlation r = 1."
+    },
+    {
+      "type": "h2",
+      "text": "Input"
+    },
+    {
+      "type": "p",
+      "text": "Open linear regression, clear any old list, then register at least two (x, y) pairs. Format: x , y DT (comma, then DT on the M+ key)."
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "MODE",
+        "5",
+        "1"
+      ]
+    },
+    {
+      "type": "steps",
+      "title": "Enter data",
+      "items": [
+        "If reusing REG, SHIFT 9 → 1 EXE to clear Stat memory",
+        "For each point: type x , y DT",
+        "When all pairs are in, press AC once to leave the list"
+      ]
+    },
+    {
+      "type": "lines",
+      "lead": "Example — register (1, 2) and (2, 4):",
+      "items": [
+        "1 , 2 DT",
+        "2 , 4 DT",
+        "AC"
+      ]
+    },
+    {
+      "type": "note",
+      "text": "Minimum 2 pairs. FreqOn: x , y ; f DT repeats a pair f times. See [[modes/reg]] for FreqOn/FreqOff and list editing."
+    },
+    {
+      "type": "h2",
+      "text": "Output"
+    },
+    {
+      "type": "p",
+      "text": "The calculator stores coefficients for the fitted line y = A + Bx and the correlation coefficient r (−1 to 1; closer to ±1 means a better linear match)."
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "SHIFT",
+        "2",
+        "1",
+        "▶",
+        "▶",
+        "1",
+        "EXE"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Above recalls A (constant term / y-intercept). Same menu path with 2 EXE → B (slope); 3 EXE → r."
+    },
+    {
+      "type": "lines",
+      "lead": "S-VAR recalls (after AC):",
+      "items": [
+        "A — SHIFT 2 → 1 → ▶ → ▶ → 1 EXE",
+        "B — SHIFT 2 → 1 → ▶ → ▶ → 2 EXE",
+        "r — SHIFT 2 → 1 → ▶ → ▶ → 3 EXE",
+        "ŷ for a given x: type x, then SHIFT 2 → 1 → ◀ → 2 EXE",
+        "x̂ for a given y: type y, then SHIFT 2 → 1 → ◀ → 1 EXE"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Worked example"
+    },
+    {
+      "type": "steps",
+      "title": "Points (1, 2) and (2, 4)",
+      "items": [
+        {
+          "keys": [
+            "MODE",
+            "5",
+            "1"
+          ]
+        },
+        {
+          "keys": [
+            "SHIFT",
+            "9",
+            "1",
+            "EXE"
+          ]
+        },
+        {
+          "keys": [
+            "1",
+            ",",
+            "2",
+            "DT"
+          ]
+        },
+        {
+          "keys": [
+            "2",
+            ",",
+            "4",
+            "DT"
+          ]
+        },
+        {
+          "keys": [
+            "AC"
+          ]
+        },
+        {
+          "keys": [
+            "SHIFT",
+            "2",
+            "1",
+            "▶",
+            "▶",
+            "2",
+            "EXE"
+          ],
+          "result": "B = 2"
+        },
+        {
+          "keys": [
+            "SHIFT",
+            "2",
+            "1",
+            "▶",
+            "▶",
+            "1",
+            "EXE"
+          ],
+          "result": "A = 0"
+        },
+        {
+          "keys": [
+            "SHIFT",
+            "2",
+            "1",
+            "▶",
+            "▶",
+            "3",
+            "EXE"
+          ],
+          "result": "r = 1"
+        },
+        {
+          "text": "Fitted equation: $y = 2x$"
+        },
+        {
+          "keys": [
+            "10",
+            "SHIFT",
+            "2",
+            "1",
+            "◀",
+            "2",
+            "EXE"
+          ],
+          "result": "ŷ = 20 at $x = 10$"
+        }
+      ]
+    }
+  ],
+  "related": [
+    "modes/reg",
+    "modes/reg/log",
+    "modes/reg/exp"
+  ]
+}

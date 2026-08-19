@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="fmla23-title fmla23-desc">
+  <title id="fmla23-title">Stadia horizontal distance to a staff</title>
+  <desc id="fmla23-desc">A sight at angle θ to a staff of interval s. The formula turns s and θ into a horizontal distance D.</desc>
+  
+  <line x1="120" y1="280" x2="620" y2="280" stroke="var(--text-muted)" stroke-width="1.4"/>
+  <rect x="140" y="200" width="70" height="28" fill="var(--accent)" fill-opacity="0.15" stroke="var(--accent)" stroke-width="1.8"/>
+  <line x1="210" y1="214" x2="520" y2="120" stroke="var(--accent)" stroke-width="2"/>
+  <line x1="520" y1="70" x2="520" y2="280" stroke="var(--accent-soft)" stroke-width="2.2"/>
+  <line x1="508" y1="110" x2="532" y2="110" stroke="var(--text)" stroke-width="1.4"/>
+  <line x1="508" y1="150" x2="532" y2="150" stroke="var(--text)" stroke-width="1.4"/>
+  <text x="544" y="134">s</text>
+  <text x="300" y="150">θ</text>
+  <line x1="210" y1="280" x2="520" y2="280" stroke="var(--text-muted)" stroke-dasharray="3 3"/>
+  <text x="360" y="300">D</text>
+  <text x="360" y="40" text-anchor="middle" fill="var(--text)">Distance D from staff interval s</text>
+
+</svg>

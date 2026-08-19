@@ -1,0 +1,93 @@
+{
+  "id": "fmla/13-oscillation",
+  "title": "[FMLA 13] Oscillation — Frequency of Electric Oscillation",
+  "shortTitle": "[FMLA 13] Oscillation",
+  "parent": "fmla",
+  "order": 13,
+  "aliases": [
+    "Frequency of Electric Oscillation",
+    "Oscillation",
+    "FMLA 13",
+    "formula 13",
+    "13",
+    "[FMLA 13] Oscillation"
+  ],
+  "keywords": [
+    "L",
+    "C",
+    "frequency",
+    "Oscillation",
+    "built-in"
+  ],
+  "formulas": [
+    "f = 1 / (2π √(LC))"
+  ],
+  "keySequence": [
+    "FMLA",
+    "1",
+    "3"
+  ],
+  "summary": "LC tank resonant frequency.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Calculator scroll name: Oscillation. LC tank resonant frequency."
+    },
+    {
+      "type": "formula",
+      "plain": "f = \\frac{1}{2\\pi \\sqrt{LC}}"
+    },
+    {
+      "type": "p",
+      "mark": "fmla-graph",
+      "text": "Energy sloshes between the inductor and the capacitor. The time for one slosh is T. A larger L or C makes a slower ring (lower frequency f = 1/T)."
+    },
+    {
+      "type": "figure",
+      "mark": "fmla-graph",
+      "svg": "img/fmla/13-oscillation.svg",
+      "caption": "The LC circuit rings: current (or voltage) repeats every T = 2π √(LC). Two full cycles are drawn."
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "FMLA",
+        "1",
+        "3"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Primary inputs: L, C."
+    },
+    {
+      "type": "steps",
+      "title": "How to run",
+      "items": [
+        "Press FMLA, then 1, then 3 (or scroll to the name and EXE)",
+        "Enter each prompted value",
+        "Read the result"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "FMLA → 1 → 3",
+        "Enter L, C",
+        "Resonant frequency"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Units",
+      "text": "SI: L in H, C in F (both > 0); f in Hz."
+    }
+  ],
+  "related": [
+    "fmla"
+  ]
+}

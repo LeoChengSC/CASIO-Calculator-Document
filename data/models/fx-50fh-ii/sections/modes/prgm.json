@@ -1,0 +1,53 @@
+{
+  "id": "modes/prgm",
+  "title": "MODE 6: PRGM (Programming)",
+  "shortTitle": "PRGM",
+  "parent": "modes",
+  "order": 6,
+  "aliases": [
+    "program",
+    "MODE 6",
+    "P1",
+    "P2",
+    "BASIC"
+  ],
+  "keywords": [
+    "Edit",
+    "Run",
+    "Clear",
+    "DEL",
+    "680 bytes",
+    "program areas"
+  ],
+  "formulas": [],
+  "keySequence": [
+    "MODE",
+    "6"
+  ],
+  "summary": "Manage four program slots: edit, run, or delete (DEL).",
+  "body": [
+    {
+      "type": "p",
+      "text": "PRGM opens a three-item menu over slots P1–P4 sharing 680 bytes: 1 EDIT, 2 RUN, 3 DEL. Programs use a BASIC-like language with input prompts, display pauses, branches, and loops. Formulas in ROM do not consume this RAM."
+    },
+    {
+      "type": "children",
+      "title": "PRGM actions",
+      "ids": [
+        "modes/prgm/edit",
+        "modes/prgm/run",
+        "modes/prgm/clear",
+        "modes/prgm/commands",
+        "modes/prgm/example"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Hong Kong DSE students typically fill P1–P4 from the [[modes/prgm/example]] list (simultaneous linear, quadratic, four centres, circles, cubic, sequences)."
+    }
+  ],
+  "related": [
+    "modes/prgm/commands",
+    "exam"
+  ]
+}

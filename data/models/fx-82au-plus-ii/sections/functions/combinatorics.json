@@ -1,0 +1,42 @@
+{
+  "id": "functions/combinatorics",
+  "title": "Permutations, Combinations, Factorials",
+  "shortTitle": "nPr / nCr / n!",
+  "parent": "functions",
+  "order": 6,
+  "aliases": [
+    "nPr",
+    "nCr",
+    "factorial",
+    "permutation",
+    "combination"
+  ],
+  "keywords": [
+    "8C3",
+    "5!",
+    "counting"
+  ],
+  "formulas": [],
+  "keySequence": [
+    "SHIFT",
+    "÷"
+  ],
+  "summary": "nPr, nCr, and n! for counting problems.",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Examples"
+    },
+    {
+      "type": "lines",
+      "items": [
+        "8 C 3 = 56",
+        "5! = 120"
+      ]
+    }
+  ],
+  "related": [
+    "functions",
+    "modes/comp"
+  ]
+}

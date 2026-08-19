@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[FMLA 02] CosineTheorem — Cosine Theorem — fx-50FH II</title>
+  <link rel="stylesheet" href="../../../assets/css/site.css">
+  <link rel="stylesheet" href="../../../assets/vendor/katex/katex.min.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("casio-theme");
+        if (t === "light" || t === "dark" || t === "reading") {
+          document.documentElement.setAttribute("data-theme", t);
+        }
+      } catch (e) {}
+    })();
+  </script>
+<script>window.CASIO_ASSET_ROOT="../../../";</script>
+</head>
+<body class="layout-docs">
+  <header class="site-header">
+    <a class="site-brand" href="../../../index.html">
+      <span class="site-brand__name">CASIO Docs</span>
+      <span class="site-brand__tag">Calculator Reference</span>
+    </a>
+    <div class="header-search" role="search">
+      <label class="sr-only" for="site-search">Search documentation</label>
+      <input id="site-search" type="search" placeholder="Search names, keys, formulas… (/)" autocomplete="off" spellcheck="false">
+      <div id="search-results" class="search-results" hidden></div>
+    </div>
+    <div class="header-controls">
+      <label class="theme-label" for="theme-select">Theme</label>
+      <select id="theme-select" class="theme-select" aria-label="Color theme">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+        <option value="reading">Reading</option>
+      </select>
+    </div>
+  </header>
+
+  <div class="site-body">
+    <aside class="site-sidebar" aria-label="Table of contents">
+      <p class="toc-model-link"><a href="../index.html">fx-50FH II</a></p>
+<p class="toc-title">Contents</p>
+<ul class="toc" data-toc-root="1"><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../index.html">Overview</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../hardware.html">Hardware</a></div></li><li class="toc-item toc-item--branch is-collapsed" data-toc-id="modes"><div class="toc-row"><button type="button" class="toc-toggle" aria-expanded="false" title="Expand or collapse"><span class="toc-toggle__icon" aria-hidden="true"></span></button><a class="" href="../modes.html">Calculation Modes</a></div><ul class="toc-children"><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/comp.html">COMP</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/cmplx.html">CMPLX</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/base-n.html">BASE</a></div></li><li class="toc-item toc-item--branch is-collapsed" data-toc-id="modes/sd"><div class="toc-row"><button type="button" class="toc-toggle" aria-expanded="false" title="Expand or collapse"><span class="toc-toggle__icon" aria-hidden="true"></span></button><a class="" href="../modes/sd.html">SD</a></div><ul class="toc-children"><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/sd/n.html">Number of data points (n)</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/sd/sum.html">Sum of values (Σx)</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/sd/sumsq.html">Sum of squares (Σx²)</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/sd/mean.html">Arithmetic mean (x̄)</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/sd/stdev.html">Standard deviation (σx / sx)</a></div></li></ul></li><li class="toc-item toc-item--branch is-collapsed" data-toc-id="modes/reg"><div class="toc-row"><button type="button" class="toc-toggle" aria-expanded="false" title="Expand or collapse"><span class="toc-toggle__icon" aria-hidden="true"></span></button><a class="" href="../modes/reg.html">REG</a></div><ul class="toc-children"><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/reg/lin.html">Lin</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/reg/log.html">Log</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/reg/exp.html">Exp</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/reg/pwr.html">Pwr</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/reg/inv.html">Inv</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/reg/quad.html">Quad</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/reg/ab-exp.html">AB-Exp</a></div></li></ul></li><li class="toc-item toc-item--branch is-collapsed" data-toc-id="modes/prgm"><div class="toc-row"><button type="button" class="toc-toggle" aria-expanded="false" title="Expand or collapse"><span class="toc-toggle__icon" aria-hidden="true"></span></button><a class="" href="../modes/prgm.html">PRGM</a></div><ul class="toc-children"><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/prgm/edit.html">Edit</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/prgm/run.html">Run</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/prgm/clear.html">Clear</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/prgm/commands.html">Commands</a></div></li><li class="toc-item toc-item--branch is-collapsed" data-toc-id="modes/prgm/example"><div class="toc-row"><button type="button" class="toc-toggle" aria-expanded="false" title="Expand or collapse"><span class="toc-toggle__icon" aria-hidden="true"></span></button><a class="" href="../modes/prgm/example.html">Example Programs</a></div><ul class="toc-children"><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/prgm/example/simultaneous-2.html">Simultaneous 2</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/prgm/example/line-quad.html">Line ∩ Quad</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/prgm/example/four-centres.html">Four Centres</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/prgm/example/circle-3pt.html">Circle 3 Points</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/prgm/example/cubic.html">Cubic</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/prgm/example/simultaneous-3.html">Simultaneous 3</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/prgm/example/newton.html">Newton</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/prgm/example/simpson.html">Simpson</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/prgm/example/inverse-normal.html">Inverse Normal</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/prgm/example/binomial-poisson.html">Bin / Poisson</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/prgm/example/quadratic.html">Quadratic</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/prgm/example/circle-centre.html">Circle Centre</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/prgm/example/sequences.html">AP / GP</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/prgm/example/line.html">Two-Point Line</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/prgm/example/polar.html">Pol / Rec</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../modes/prgm/example/freq-sd.html">Freq → SD</a></div></li></ul></li></ul></li></ul></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../setup.html">SET UP</a></div></li><li class="toc-item toc-item--branch is-expanded" data-toc-id="fmla"><div class="toc-row"><button type="button" class="toc-toggle" aria-expanded="true" title="Expand or collapse"><span class="toc-toggle__icon" aria-hidden="true"></span></button><a class="" href="../fmla.html">Built-in Formulas</a></div><ul class="toc-children"><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./01-quadratic.html">[FMLA 01] QuadEquation</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="is-current" href="./02-cosine.html">[FMLA 02] CosineTheorem</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./03-heron.html">[FMLA 03] HeronFormula</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./04-normal-p.html">[FMLA 04] NormalP</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./05-normal-r.html">[FMLA 05] NormalQ</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./06-coulomb.html">[FMLA 06] CoulombLaw</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./07-resistance.html">[FMLA 07] Resistance</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./08-magnetic.html">[FMLA 08] MagneticForce</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./09-rc-voltage.html">[FMLA 09] RCVoltage</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./10-voltage-gain.html">[FMLA 10] VoltageGain</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./11-lrc-series.html">[FMLA 11] SeriesLRC</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./12-lrc-parallel.html">[FMLA 12] ParallelLRC</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./13-oscillation.html">[FMLA 13] Oscillation</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./14-drop.html">[FMLA 14] DropDistance</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./15-pendulum.html">[FMLA 15] SimpPendulum</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./16-spring.html">[FMLA 16] SprgPendulum</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./17-doppler.html">[FMLA 17] Doppler</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./18-gas.html">[FMLA 18] IdealGas</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./19-centrifugal.html">[FMLA 19] Centrifugal</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./20-elastic.html">[FMLA 20] ElasticEnergy</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./21-bernoulli.html">[FMLA 21] Bernoulli</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./22-stadia-h.html">[FMLA 22] StadiaHeight</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="./23-stadia-d.html">[FMLA 23] StadiaDist</a></div></li></ul></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../memory.html">Memory &amp; Variables</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../constants.html">Scientific Constants</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../keys.html">Key Shortcuts</a></div></li><li class="toc-item"><div class="toc-row"><span class="toc-toggle-spacer" aria-hidden="true"></span><a class="" href="../exam.html">Exam Compliance</a></div></li></ul>
+
+    </aside>
+    <main class="site-main">
+      <div class="page-sections-host" id="page-sections-host" aria-hidden="true">
+        <button type="button" class="page-sections-host__backdrop" id="page-sections-backdrop" tabindex="-1" aria-label="Close on this page"></button>
+        <div class="page-sections-host__panel">
+          <nav class="page-sections" aria-label="On this page"><p class="page-sections__title">On this page</p><ul class="page-sections__list"><li class="page-sections__item"><a class="page-sections__link" href="#example">Example</a></li><li class="page-sections__item"><a class="page-sections__link" href="#related">Related</a></li></ul></nav>
+        </div>
+      </div>
+      <div class="mobile-nav-bar">
+        <button type="button" id="mobile-nav-back" class="mobile-nav-back" aria-label="Back to contents">← Contents</button>
+        <button type="button" id="mobile-nav-sections" class="mobile-nav-sections" aria-label="On this page" aria-expanded="false" aria-controls="page-sections-host" hidden>
+          <span class="mobile-nav-sections__icon" aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="site-content">
+        <div class="page-intro">
+          <nav aria-label="Breadcrumb"><ol class="breadcrumb">
+<li><a href="../../../index.html">Models</a></li>
+<li><a href="../index.html">fx-50FH II</a></li>
+<li><a href="../fmla.html">Built-in Formulas</a></li>
+<li><span aria-current="page">[FMLA 02] CosineTheorem</span></li>
+</ol></nav>
+          <h1>[FMLA 02] CosineTheorem — Cosine Theorem</h1>
+          <p class="page-summary">Find a side opposite angle A in a triangle (law of cosines).</p>
+        </div>
+        <p>Calculator scroll name: CosineTheorem. Find a side opposite angle A in a triangle (law of cosines).</p>
+<div class="doc-block formula-block" role="math"><div class="doc-block__tag">formula</div><div class="doc-block__body"><div class="formula-block__text"><div class="formula-line"><span class="katex-display"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8641em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.9474em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.9474em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord mathnormal">c</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">2</span><span class="mord mathnormal">b</span><span class="mord mathnormal">c</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop">cos</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">A</span></span></span></span></span></div></div></div></div>
+<p>You already know two sides and the angle between them. The cosine theorem finds the third side — the one sitting opposite that angle.</p>
+<figure class="doc-figure"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="fmla02-title fmla02-desc">
+  <title id="fmla02-title">Triangle with included angle A = 60° and sides b = 5, c = 7</title>
+  <desc id="fmla02-desc">Law of cosines: side a opposite angle A is found from sides b and c and the included angle 60 degrees.</desc>
+  
+  <polygon points="150,292 444,292 255,110.13466520526791" fill="var(--accent)" fill-opacity="0.12" stroke="var(--accent)" stroke-width="2.2" stroke-linejoin="round"/>
+  <text x="132" y="298" fill="var(--text)">A</text>
+  <text x="454" y="298" fill="var(--text)">B</text>
+  <text x="249" y="100.13466520526791" fill="var(--text)">C</text>
+  <text x="297" y="314" text-anchor="middle">c = 7</text>
+  <text x="184.5" y="201.06733260263394" text-anchor="end">b = 5</text>
+  <text x="365.5" y="201.06733260263394" >a ≈ 6.24</text>
+  <text x="188" y="278" fill="var(--accent-soft)">60°</text>
+  <text x="360" y="36" text-anchor="middle" fill="var(--text)">Find side a opposite A</text>
+
+</svg>
+<figcaption>Example: b = 5, c = 7, included angle A = 60°. Side a opposite A is about 6.24.</figcaption></figure>
+<div class="doc-block keyseq-block" role="group" aria-label="Key sequence"><div class="doc-block__tag">keys</div><div class="doc-block__body"><span class="keyseq keyseq--inline"><kbd class="keycap">FMLA</kbd><span class="keyseq__sep">→</span><kbd class="keycap">0</kbd><span class="keyseq__sep">→</span><kbd class="keycap">2</kbd></span></div></div>
+<p>Primary inputs: b, c, A.</p>
+<div class="doc-block steps-block"><div class="doc-block__tag">steps</div><div class="doc-block__body"><p class="steps-block__title">How to run</p><ol><li>Press FMLA, then 0, then 2 (or scroll to the name and EXE)</li><li>Enter each prompted value</li><li>Read the result</li></ol></div></div>
+<h2 id="example">Example</h2>
+<div class="work-lines"><div class="work-lines__row">b = 5, c = 7, A = 60°</div><div class="work-lines__row">a² = 25 + 49 − 2·5·7·cos 60°</div><div class="work-lines__row">a² = 74 − 35 = 39</div><div class="work-lines__row">a = <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.04em;vertical-align:-0.1328em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9072em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">39</span></span></span><span style="top:-2.8672em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg xmlns="http://www.w3.org/2000/svg" width="400em" height="1.08em" viewBox="0 0 400000 1080" preserveAspectRatio="xMinYMin slice"><path d="M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1328em;"><span></span></span></span></span></span></span></span></span> ≈ 6.245</div></div>
+<aside class="doc-block note-block"><div class="doc-block__tag">note</div><div class="doc-block__body"><p>Run in Deg. The included angle must be between 0° and 180°. Wrong SET UP angle unit is the usual source of a mismatch with a textbook answer.</p></div></aside><h2 id="related">Related</h2><ul class="related-list"><li><a href="../fmla.html">FMLA</a></li></ul>
+        <nav class="pager" aria-label="Page"><a class="pager__prev" href="./01-quadratic.html"><span class="pager__label">Previous</span>[FMLA 01] QuadEquation</a><a class="pager__next" href="./03-heron.html"><span class="pager__label">Next</span>[FMLA 03] HeronFormula</a></nav>
+        <footer class="site-footer">
+          <p>Offline Casio calculator documentation. Content is structured for multiple models; rebuild with <code>node tools/build.js</code>.</p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script src="../../../search-index.js"></script>
+  <script src="../../../assets/js/theme.js"></script>
+  <script src="../../../assets/js/nav.js"></script>
+  <script src="../../../assets/js/search.js"></script>
+</body>
+</html>

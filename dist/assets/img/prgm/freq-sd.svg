@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-labelledby="prgm-freq-title prgm-freq-desc">
+  <title id="prgm-freq-title">Frequency table 75, 80, 85</title>
+  <desc id="prgm-freq-desc">Bar heights 1, 2, 4 for scores 75, 80, 85.</desc>
+  
+  <line x1="96" y1="268" x2="640" y2="268" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <rect x="176" y="216" width="90" height="52" fill="var(--accent)" fill-opacity="0.35" stroke="var(--accent)" stroke-width="1.6"/>
+  <text x="221" y="290" text-anchor="middle" fill="var(--text)">75</text>
+  <text x="221" y="208" text-anchor="middle" fill="var(--text)">f = 1</text>
+  <rect x="326" y="164" width="90" height="104" fill="var(--accent)" fill-opacity="0.35" stroke="var(--accent)" stroke-width="1.6"/>
+  <text x="371" y="290" text-anchor="middle" fill="var(--text)">80</text>
+  <text x="371" y="156" text-anchor="middle" fill="var(--text)">f = 2</text>
+  <rect x="476" y="60" width="90" height="208" fill="var(--accent)" fill-opacity="0.35" stroke="var(--accent)" stroke-width="1.6"/>
+  <text x="521" y="290" text-anchor="middle" fill="var(--text)">85</text>
+  <text x="521" y="52" text-anchor="middle" fill="var(--text)">f = 4</text>
+  <text x="360" y="24" text-anchor="middle" fill="var(--text)">n = 7 after 75 ; 1, 80 ; 2, 85 ; 4</text>
+
+</svg>

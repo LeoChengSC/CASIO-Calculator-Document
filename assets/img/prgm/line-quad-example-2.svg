@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" role="img" aria-labelledby="prgm-example-card-title prgm-example-card-desc">
+  <title id="prgm-example-card-title">x = 2 and x² + y² + 3x + 7y + 2 = 0</title>
+  <desc id="prgm-example-card-desc">Case sketch for this worked example.</desc>
+  
+  <rect x="28" y="34" width="664" height="254" rx="14" fill="var(--accent)" fill-opacity="0.06" stroke="var(--accent)" stroke-width="1.2"/>
+  <text x="46" y="80" fill="var(--accent)" font-size="24">x = 2 and x² + y² + 3x + 7y + 2 = 0</text>
+  <text x="46" y="118" fill="var(--text)" font-size="20">Rewrite as x + 0y = 2 and x² + y² + 3x + 7y = −2. Version I died on the 0; this listing does not.</text>
+  <text x="46" y="148" fill="var(--text)" font-size="20">1 【EXE】  0 【EXE】  2 【EXE】  1 【EXE】  0 【EXE】  1 【EXE】  3 【EXE】  7 【EXE】  −2 【EXE】</text>
+  <text x="46" y="178" fill="var(--text)" font-size="20">Display (2, −3). 【EXE】 【EXE】 → (2, −4)</text>
+
+</svg>

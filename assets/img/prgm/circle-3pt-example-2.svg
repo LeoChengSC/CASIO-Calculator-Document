@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" role="img" aria-labelledby="prgm-example-card-title prgm-example-card-desc">
+  <title id="prgm-example-card-title">Right triangle (0, 0), (6, 0), (0, 8)</title>
+  <desc id="prgm-example-card-desc">Case sketch for this worked example.</desc>
+  
+  <rect x="28" y="34" width="664" height="254" rx="14" fill="var(--accent)" fill-opacity="0.06" stroke="var(--accent)" stroke-width="1.2"/>
+  <text x="46" y="80" fill="var(--accent)" font-size="24">Right triangle (0, 0), (6, 0), (0, 8)</text>
+  <text x="46" y="118" fill="var(--text)" font-size="20">Hypotenuse from (6, 0) to (0, 8); centre is the midpoint (3, 4), radius 5.</text>
+  <text x="46" y="148" fill="var(--text)" font-size="20">0 【EXE】  0 【EXE】  6 【EXE】  0 【EXE】  0 【EXE】  8 【EXE】</text>
+  <text x="46" y="178" fill="var(--text)" font-size="20">If Math ERROR, swap so two points do not share a y-value as the first pair — enter (0, 8) first: 0 【EXE】 8 【EXE】 0 【EXE】 0 【EXE】 6 【EXE】 0 【EXE】</text>
+
+</svg>

@@ -1,0 +1,95 @@
+{
+  "id": "fmla/05-normal-r",
+  "title": "[FMLA 05] NormalQ — Normal Probability Q(x)",
+  "shortTitle": "[FMLA 05] NormalQ",
+  "parent": "fmla",
+  "order": 5,
+  "aliases": [
+    "Normal Probability Q(x)",
+    "NormalQ",
+    "FMLA 05",
+    "formula 05",
+    "05",
+    "[FMLA 05] NormalQ"
+  ],
+  "keywords": [
+    "x",
+    "normal",
+    "NormalQ",
+    "built-in",
+    "0 to x"
+  ],
+  "formulas": [
+    "Q(x) = ∫₀^|x| (1/√(2π)) e^(-t²/2) dt"
+  ],
+  "keySequence": [
+    "FMLA",
+    "0",
+    "5"
+  ],
+  "summary": "Standard normal probability from 0 to x (Casio Q; Hastings approximation). Prompt is x; range 0 ≤ x < 10⁵⁰.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Calculator scroll name: NormalQ. The prompt is x. Q(x) is the area under the standard normal curve from 0 to x — that is P(0 ≤ Z ≤ x), not the upper tail from x to +∞."
+    },
+    {
+      "type": "formula",
+      "plain": "Q(x) = \\int_{0}^{|x|} \\frac{1}{\\sqrt{2\\pi}} e^{-\\frac{t^{2}}{2}}\\, dt"
+    },
+    {
+      "type": "p",
+      "mark": "fmla-graph",
+      "text": "Q(x) is the slab between the mean (0) and x. For x = 1 that slab is about 0.3413. NormalP is the whole left side including this slab: P(1) = 0.5 + Q(1) ≈ 0.8413."
+    },
+    {
+      "type": "figure",
+      "mark": "fmla-graph",
+      "svg": "img/fmla/05-normal-r.svg",
+      "caption": "Same bell as NormalP. Q(x) is the shaded area from 0 to x. Here x = 1, so Q(1) ≈ 0.3413 = P(0 ≤ Z ≤ 1)."
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "FMLA",
+        "0",
+        "5"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Primary input: x (0 ≤ x < 10⁵⁰)."
+    },
+    {
+      "type": "steps",
+      "title": "How to run",
+      "items": [
+        "Press FMLA, then 0, then 5 (or scroll to the name and EXE)",
+        "Enter each prompted value",
+        "Read the result"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "lines",
+      "mark": "fmla-graph",
+      "items": [
+        "x = 1",
+        "Q(1) ≈ 0.3413",
+        "check: P(1) − 0.5 = 0.8413 − 0.5 = 0.3413"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Limits",
+      "text": "Hastings-style approximation. Official range is 0 ≤ x < 1×10⁵⁰. The printed integral uses |x|; still enter a non-negative x. For a left-of-mean interval, use symmetry: P(−a ≤ Z ≤ 0) = Q(a)."
+    }
+  ],
+  "related": [
+    "fmla/04-normal-p",
+    "fmla"
+  ]
+}

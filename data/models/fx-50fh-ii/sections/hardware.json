@@ -1,0 +1,91 @@
+{
+  "id": "hardware",
+  "title": "Hardware and Specifications",
+  "shortTitle": "Hardware",
+  "parent": "index",
+  "order": 1,
+  "aliases": [
+    "specs",
+    "display",
+    "memory capacity",
+    "power",
+    "LR44"
+  ],
+  "keywords": [
+    "10+2",
+    "two-line",
+    "680 bytes",
+    "solar",
+    "battery",
+    "variables"
+  ],
+  "formulas": [],
+  "keySequence": [],
+  "summary": "Display, program RAM, registers, power, and exam certification specifications.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Hardware choices on the fx-50FH II balance exam rules with practical scientific work: dual power, non-volatile user RAM for programs, and a hybrid two-line LCD suited to algebraic entry without graphing."
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Parameter",
+        "Specification",
+        "Notes"
+      ],
+      "rows": [
+        [
+          "Display",
+          "Two-line hybrid LCD",
+          "Upper 12-char dot-matrix; lower 10+2 numeric"
+        ],
+        [
+          "Program capacity",
+          "680 bytes user RAM",
+          "Shared dynamically across P1–P4"
+        ],
+        [
+          "Memory registers",
+          "7 variables: A, B, C, D, X, Y, M",
+          "Plus Ans (auto) and independent M+/M−"
+        ],
+        [
+          "Built-in formulas",
+          "23 algorithms",
+          "FMLA key, indices 01–23"
+        ],
+        [
+          "Scientific constants",
+          "40 values",
+          "CONST key, 10 pages × keys 1–4"
+        ],
+        [
+          "Power",
+          "Solar + LR44",
+          "Continuous retention in low light"
+        ],
+        [
+          "Exam mark",
+          "HKEAA SUPER-FX PLUS",
+          "Approved for designated HK exams"
+        ],
+        [
+          "Size / weight (typical)",
+          "≈ 11.1 × 80 × 162 mm / 95 g",
+          "Without hard case; with case ≈ 12.2 mm / 105 g"
+        ]
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Tip",
+      "text": "Program bytes are shared. A large program in P1 reduces space left for P2–P4. Clear unused slots (MODE 6 → Clear) when you need room."
+    }
+  ],
+  "related": [
+    "memory",
+    "modes/prgm",
+    "exam"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "modes/stat/abx",
+  "title": "MODE 2-6: A·B^X",
+  "shortTitle": "A·B^X",
+  "parent": "modes/stat",
+  "order": 6,
+  "aliases": [
+    "ab exponential",
+    "MODE 2 6"
+  ],
+  "keywords": [
+    "base",
+    "discrete growth"
+  ],
+  "formulas": [
+    "y = A · B^x"
+  ],
+  "keySequence": [
+    "MODE",
+    "2",
+    "6"
+  ],
+  "summary": "Base-B exponential regression y = A·B^x.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Discrete compound / geometric growth."
+    },
+    {
+      "type": "formula",
+      "plain": "y = A · B^x"
+    },
+    {
+      "type": "p",
+      "text": "Geometric / discrete compound growth: each step in x multiplies y by the same base B. Different parametrisation from e^X."
+    },
+    {
+      "type": "figure",
+      "svg": "img/fx82/abx.svg",
+      "caption": "Sample fit y = 2 × 1.5^x. Compare with e^X: here the multiplier is B itself, not e^B."
+    },
+    {
+      "type": "steps",
+      "title": "Open this type",
+      "items": [
+        "MODE → 2 → 6",
+        "Clear or edit data in the Statistics Editor as needed",
+        "AC, then SHIFT 1 (STAT) for Var / Reg / MinMax recalls"
+      ]
+    }
+  ],
+  "related": [
+    "statistics",
+    "modes/stat"
+  ]
+}

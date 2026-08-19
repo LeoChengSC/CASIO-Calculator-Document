@@ -1,0 +1,39 @@
+{
+  "id": "functions/dms",
+  "title": "Sexagesimal (° ′ ″)",
+  "shortTitle": "° ′ ″",
+  "parent": "functions",
+  "order": 4,
+  "aliases": [
+    "DMS",
+    "degrees minutes seconds",
+    "sexagesimal"
+  ],
+  "keywords": [
+    "°′″",
+    "navigation",
+    "bearing"
+  ],
+  "formulas": [],
+  "keySequence": [
+    "°′″"
+  ],
+  "summary": "Convert between decimal degrees and degrees-minutes-seconds.",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "2.325 =",
+        "°′″ → DMS display"
+      ]
+    }
+  ],
+  "related": [
+    "functions",
+    "modes/comp"
+  ]
+}

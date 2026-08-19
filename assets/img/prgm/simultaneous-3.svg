@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" role="img" aria-labelledby="prgm-sim3-title prgm-sim3-desc">
+  <title id="prgm-sim3-title">Three planes meet at (1,2,3)</title>
+  <desc id="prgm-sim3-desc">The unique solution of the 3×3 example system is the point (1, 2, 3).</desc>
+  
+  <line x1="64" y1="245.14285714285714" x2="680" y2="245.14285714285714" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <line x1="152" y1="280" x2="152" y2="36" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <polygon points="196,220.74285714285713 539.2,206.8 433.59999999999997,77.82857142857145 134.4,98.74285714285713"
+    fill="var(--accent)" fill-opacity="0.11" stroke="var(--accent)" stroke-width="1.2"/>
+  <polygon points="292.8,238.17142857142858 600.8,168.45714285714286 389.6,63.88571428571427 108,144.05714285714285"
+    fill="var(--accent-soft)" fill-opacity="0.18" stroke="var(--accent-soft)" stroke-width="1.2"/>
+  <polygon points="169.6,210.28571428571428 627.2,217.25714285714287 530.4,105.71428571428572 116.8,88.28571428571428"
+    fill="var(--accent)" fill-opacity="0.08" stroke="var(--text-muted)" stroke-width="1.1"/>
+  <circle cx="310.4" cy="154.5142857142857" r="5" fill="var(--accent)" stroke="var(--bg)" stroke-width="1.5"/>
+  <text x="310.4" y="172.5142857142857" text-anchor="middle" fill="var(--text)">(x,y,z) = (1,2,3)</text>
+  <text x="468.8" y="63.88571428571427" fill="var(--text)">plane 1</text>
+  <text x="592" y="161.48571428571427" fill="var(--text)">plane 2</text>
+  <text x="486.4" y="231.2" fill="var(--text)">plane 3</text>
+  <text x="169.6" y="46.457142857142856" fill="var(--text-muted)">det ≠ 0 → unique intersection</text>
+
+</svg>

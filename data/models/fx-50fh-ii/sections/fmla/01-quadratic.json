@@ -1,0 +1,181 @@
+{
+  "id": "fmla/01-quadratic",
+  "title": "[FMLA 01] QuadEquation — Quadratic Equation Solution",
+  "shortTitle": "[FMLA 01] QuadEquation",
+  "parent": "fmla",
+  "order": 1,
+  "aliases": [
+    "Quadratic Equation Solution",
+    "QuadEquation",
+    "FMLA 01",
+    "formula 01",
+    "01",
+    "[FMLA 01] QuadEquation",
+    "MATH ERROR",
+    "discriminant",
+    "real roots"
+  ],
+  "keywords": [
+    "a",
+    "b",
+    "c",
+    "quadratic",
+    "QuadEquation",
+    "built-in",
+    "MATH ERROR",
+    "discriminant",
+    "double root",
+    "repeated root"
+  ],
+  "formulas": [
+    "x = (-b ± √(b² - 4ac)) / (2a)",
+    "D = b² - 4ac",
+    "ax² + bx + c = 0"
+  ],
+  "keySequence": [
+    "FMLA",
+    "0",
+    "1"
+  ],
+  "summary": "Solve ax² + bx + c = 0 for real roots. Two distinct roots, one repeated root, or MATH ERROR when there are no real roots.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Calculator scroll name: QuadEquation. Solves the quadratic equation ax² + bx + c = 0 for real roots. Enter coefficients a, b, and c when prompted (a ≠ 0)."
+    },
+    {
+      "type": "formula",
+      "plain": "x = \\frac{-b \\pm \\sqrt{b^{2} - 4ac}}{2a}"
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "FMLA",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "The calculator uses the discriminant D = b² − 4ac internally. How many real roots you get depends on D:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "D > 0 — two distinct real roots (shown one after another; press EXE to see the second)",
+        "D = 0 — one real root (a repeated / double root); both displays are the same value",
+        "D < 0 — no real roots; the calculator shows MATH ERROR"
+      ]
+    },
+    {
+      "type": "note",
+      "text": "MATH ERROR on FMLA 01 means there are no real roots (complex conjugate roots exist, but this built-in formula does not display them). For complex-style output, use a custom PRGM such as the sample quadratic solver under Programming."
+    },
+    {
+      "type": "h2",
+      "text": "How to run"
+    },
+    {
+      "type": "steps",
+      "title": "Open QuadEquation",
+      "items": [
+        "Press FMLA, then 0, then 1 (or scroll to QuadEquation and EXE)",
+        "Enter a, then b, then c at each prompt",
+        "Read the first root; press EXE again for the second root when two are shown"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example: two distinct real roots"
+    },
+    {
+      "type": "lines",
+      "lead": "Solve x² − 7x + 12 = 0",
+      "items": [
+        "a = 1",
+        "b = −7",
+        "c = 12",
+        "D = 49 − 48 = 1 > 0",
+        "two real roots: x = 4 and x = 3"
+      ]
+    },
+    {
+      "type": "figure",
+      "mark": "fmla-graph",
+      "svg": "img/fmla/01-quadratic.svg",
+      "caption": "Same example: y = x² − 7x + 12. The curve hits the axis at the two roots the calculator prints, x = 3 and x = 4."
+    },
+    {
+      "type": "steps",
+      "title": "Key strokes",
+      "items": [
+        "FMLA → 0 → 1",
+        "Enter a: 1 EXE",
+        "Enter b: −7 EXE",
+        "Enter c: 12 EXE",
+        "First display: 4 — press EXE",
+        "Second display: 3"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example: one real root (repeated)"
+    },
+    {
+      "type": "lines",
+      "lead": "Solve x² − 6x + 9 = 0, which is (x − 3)² = 0",
+      "items": [
+        "a = 1",
+        "b = −6",
+        "c = 9",
+        "D = 36 − 36 = 0",
+        "one real root: x = 3 (shown twice)"
+      ]
+    },
+    {
+      "type": "steps",
+      "title": "Key strokes",
+      "items": [
+        "FMLA → 0 → 1",
+        "Enter a: 1 EXE",
+        "Enter b: −6 EXE",
+        "Enter c: 9 EXE",
+        "Display: 3 (and again 3 on the next EXE)"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example: no real roots (MATH ERROR)"
+    },
+    {
+      "type": "lines",
+      "lead": "Solve x² + 6x + 25 = 0",
+      "items": [
+        "a = 1",
+        "b = 6",
+        "c = 25",
+        "D = 36 − 100 = −64 < 0",
+        "no real roots — FMLA 01 shows MATH ERROR"
+      ]
+    },
+    {
+      "type": "steps",
+      "title": "Key strokes",
+      "items": [
+        "FMLA → 0 → 1",
+        "Enter a: 1 EXE",
+        "Enter b: 6 EXE",
+        "Enter c: 25 EXE",
+        "Display: MATH ERROR — means no real roots for this equation"
+      ]
+    },
+    {
+      "type": "note",
+      "text": "Always confirm a ≠ 0. If a = 0 the equation is not quadratic and the routine is not valid. For complex roots or vertex output in one program, see [[modes/prgm/example/quadratic]]."
+    }
+  ],
+  "related": [
+    "modes/prgm/example/quadratic",
+    "fmla"
+  ]
+}

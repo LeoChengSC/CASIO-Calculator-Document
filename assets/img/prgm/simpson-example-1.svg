@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" role="img" aria-labelledby="prgm-example-card-title prgm-example-card-desc">
+  <title id="prgm-example-card-title">∫₁² ln x dx, 10 strips</title>
+  <desc id="prgm-example-card-desc">Case sketch for this worked example.</desc>
+  
+  <rect x="28" y="34" width="664" height="254" rx="14" fill="var(--accent)" fill-opacity="0.06" stroke="var(--accent)" stroke-width="1.2"/>
+  <text x="46" y="80" fill="var(--accent)" font-size="24">∫₁² ln x dx, 10 strips</text>
+  <text x="46" y="118" fill="var(--text)" font-size="20">Exact value is 2 ln 2 − 1 ≈ 0.386294361.</text>
+  <text x="46" y="148" fill="var(--text)" font-size="20">1 【EXE】  2 【EXE】  10 【EXE】</text>
+  <text x="46" y="178" fill="var(--text)" font-size="20">Display ≈ 0.386293403</text>
+
+</svg>

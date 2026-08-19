@@ -1,0 +1,125 @@
+{
+  "id": "modes/prgm/example/binomial-poisson",
+  "title": "Binomial / Poisson Cumulative",
+  "shortTitle": "Bin / Poisson",
+  "parent": "modes/prgm/example",
+  "order": 16,
+  "aliases": [
+    "二項分佈",
+    "泊松分佈",
+    "P(X=k)",
+    "P(a≤X≤b)"
+  ],
+  "keywords": [
+    "nCr",
+    "e^",
+    "factorial",
+    "M1"
+  ],
+  "formulas": [
+    "P(X=k) = C(n,k) p^k (1−p)^{n−k}",
+    "P(X=k) = e^{−λ} λ^k / k!"
+  ],
+  "keySequence": [
+    "MODE",
+    "6",
+    "2"
+  ],
+  "summary": "Single-term and range probabilities for Bin(n,p) and Po(λ). 110 bytes.",
+  "body": [
+    {
+      "type": "p",
+      "text": "nCr types one binomial term; a CDF is a loop. This WebCal version II listing auto-detects the law: if the second input is a probability in (0,1) it is Binomial (then n, p, k); otherwise it is Poisson (λ, k). Enter an upper index at the next prompt for P(k ≤ X ≤ m). EXE through extra terms, then 0 EXE to print the sum. AC after a one-term run. nCr is SHIFT ÷. On the fx-50FH II the × after nCr may be omitted (109 bytes) and A^(B)÷B!e^(A needs no extra brackets."
+    },
+    {
+      "type": "note",
+      "label": "Memory / run mode",
+      "text": "110 bytes (109 on fx-50FH II) of the shared 680-byte pool. Create the slot in COMP. Type ? → : ◢ Goto Lbl If Then from SHIFT 3 (P-CMD)."
+    },
+    {
+      "type": "formula",
+      "plain": "P(X=k) = C(n,k) p^k (1−p)^{n−k}"
+    },
+    {
+      "type": "figure",
+      "svg": "img/prgm/binomial-poisson.svg",
+      "caption": "Bin(9, 0.5). Shaded bars k = 4, 5, 6 sum to 0.65625."
+    },
+    {
+      "type": "h2",
+      "text": "Program (one line)"
+    },
+    {
+      "type": "program",
+      "code": "ClrMemory:?→A:?→B:B⇒1>B⇒B→Y:Ans⇒?→B:Lbl 0:Y⇒A nCr B Y^(B)(1-Y)^(A-B→C:Y=0⇒A^(B)÷B!e^(A→C:CM+:X=0⇒?→C:C≧1⇒C→X:1+B→B:X≧B⇒Goto 0:C⇒X=0⇒Goto 0:M"
+    },
+    {
+      "type": "h2",
+      "text": "Example 1: X ~ Bin(9, 0.5), P(X = 4)"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: X ~ Bin(9, 0.5), P(X = 4)."
+    },
+    {
+      "type": "p",
+      "text": "Given: Second input 0.5 is in (0,1), so the third prompt is k."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "9 【EXE】  0.5 【EXE】  4 【EXE】",
+        "Display ≈ 0.24609. AC to leave"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 2: Same X, P(4 ≤ X ≤ 6)"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: Same X, P(4 ≤ X ≤ 6)."
+    },
+    {
+      "type": "p",
+      "text": "Given: After k = 4, enter the upper index 6."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "9 【EXE】  0.5 【EXE】  4 【EXE】  6 【EXE】",
+        "Display 0.65625",
+        "Or 4 【EXE】, 【EXE】, 【EXE】 to see 0.24609, 0.24609, 0.16406, then 0 【EXE】 for the sum"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 3 (edge): X ~ Po(5), P(X = 4) and P(4 ≤ X ≤ 6)"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: X ~ Po(5), P(X = 4) and P(4 ≤ X ≤ 6)."
+    },
+    {
+      "type": "p",
+      "text": "Given: Second input 4 is not a probability, so A is λ."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "5 【EXE】  4 【EXE】 → P(X=4) ≈ 0.17547, then AC",
+        "5 【EXE】  4 【EXE】  6 【EXE】 → P(4≤X≤6) ≈ 0.49716"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Pitfalls",
+      "text": "Do not enter p = 0 or p = 1 as the second input — those look like Poisson. P(X=0) for Poisson: λ EXE 0 EXE. The running sum lives in M. Source: WebCal binomial_PoissonDist2.htm."
+    }
+  ],
+  "related": [
+    "modes/prgm/example",
+    "modes/prgm/commands",
+    "modes/prgm/edit"
+  ]
+}

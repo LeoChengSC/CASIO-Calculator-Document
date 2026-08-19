@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-labelledby="prgm-seq-title prgm-seq-desc">
+  <title id="prgm-seq-title">AP 2,5,8,… up to n=20</title>
+  <desc id="prgm-seq-desc">Arithmetic sequence with first term 2 and difference 3.</desc>
+  
+  <line x1="64" y1="198.66666666666669" x2="680" y2="198.66666666666669" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <line x1="90.78260869565217" y1="280" x2="90.78260869565217" y2="36" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <circle cx="117.56521739130434" cy="194.60000000000002" r="3.2" fill="var(--accent)"/>
+  <circle cx="144.3478260869565" cy="188.5" r="3.2" fill="var(--accent)"/>
+  <circle cx="171.1304347826087" cy="182.39999999999998" r="3.2" fill="var(--accent)"/>
+  <circle cx="197.91304347826087" cy="176.3" r="3.2" fill="var(--accent)"/>
+  <circle cx="224.69565217391303" cy="170.2" r="3.2" fill="var(--accent)"/>
+  <circle cx="251.47826086956522" cy="164.10000000000002" r="3.2" fill="var(--accent)"/>
+  <circle cx="278.2608695652174" cy="158" r="3.2" fill="var(--accent)"/>
+  <circle cx="305.04347826086956" cy="151.9" r="3.2" fill="var(--accent)"/>
+  <circle cx="331.82608695652175" cy="145.79999999999998" r="3.2" fill="var(--accent)"/>
+  <circle cx="358.60869565217394" cy="139.70000000000002" r="3.2" fill="var(--accent)"/>
+  <circle cx="385.39130434782606" cy="133.6" r="3.2" fill="var(--accent)"/>
+  <circle cx="412.17391304347825" cy="127.5" r="3.2" fill="var(--accent)"/>
+  <circle cx="438.95652173913044" cy="121.4" r="3.2" fill="var(--accent)"/>
+  <circle cx="465.7391304347826" cy="115.29999999999998" r="3.2" fill="var(--accent)"/>
+  <circle cx="492.52173913043475" cy="109.20000000000002" r="3.2" fill="var(--accent)"/>
+  <circle cx="519.304347826087" cy="103.1" r="3.2" fill="var(--accent)"/>
+  <circle cx="546.0869565217391" cy="97" r="3.2" fill="var(--accent)"/>
+  <circle cx="572.8695652173913" cy="90.9" r="3.2" fill="var(--accent)"/>
+  <circle cx="599.6521739130435" cy="84.79999999999998" r="3.2" fill="var(--accent)"/>
+  <circle cx="626.4347826086956" cy="78.70000000000002" r="3.2" fill="var(--accent)"/>
+  <text x="626.4347826086956" y="66.70000000000002" text-anchor="middle" fill="var(--text)">T₂₀ = 59</text>
+  <text x="360" y="24" text-anchor="middle" fill="var(--text)">A = 2, d = 3</text>
+
+</svg>

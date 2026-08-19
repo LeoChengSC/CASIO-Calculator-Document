@@ -1,0 +1,80 @@
+{
+  "id": "modes/prgm/example",
+  "title": "Example Programs (Hong Kong DSE)",
+  "shortTitle": "Example Programs",
+  "parent": "modes/prgm",
+  "order": 6,
+  "aliases": [
+    "HK programs",
+    "DSE programs",
+    "P1 P2 P3 P4",
+    "must-enter programs"
+  ],
+  "keywords": [
+    "680 bytes",
+    "four slots",
+    "DSE",
+    "必入"
+  ],
+  "formulas": [],
+  "keySequence": [
+    "MODE",
+    "6"
+  ],
+  "summary": "Listings that fill a real ROM gap: 2×2 and line∩quadratic, triangle centres, 3-point circle, cubic, then M1/M2 Newton, Simpson, inverse normal, binomial/Poisson, and 3×3.",
+  "body": [
+    {
+      "type": "p",
+      "text": "The fx-50FH II has four slots (P1–P4) sharing 680 bytes. Store what FMLA and the keys cannot do. FMLA 01–05 already cover real quadratic roots, cosine (third side), Heron, and forward standard normal; Pol/Rec, SD frequencies, and REG Lin cover polar, tables, and a two-point line. The pages below are the ones that still earn a slot."
+    },
+    {
+      "type": "p",
+      "text": "Pick four that match the paper. Core: 2×2 linear, line∩quadratic, four centres or 3-point circle, cubic. M1: drop a geometry program for Simpson or inverse normal. M2: Newton or 3×3. Type each listing as one line. Confirm with the worked cases before an exam sitting."
+    },
+    {
+      "type": "children",
+      "title": "Compulsory (no FMLA equivalent)",
+      "ids": [
+        "modes/prgm/example/simultaneous-2",
+        "modes/prgm/example/line-quad",
+        "modes/prgm/example/four-centres",
+        "modes/prgm/example/circle-3pt",
+        "modes/prgm/example/cubic"
+      ]
+    },
+    {
+      "type": "children",
+      "title": "Worth a slot (M1 / M2)",
+      "ids": [
+        "modes/prgm/example/simultaneous-3",
+        "modes/prgm/example/newton",
+        "modes/prgm/example/simpson",
+        "modes/prgm/example/inverse-normal",
+        "modes/prgm/example/binomial-poisson"
+      ]
+    },
+    {
+      "type": "children",
+      "title": "Convenience (ROM or a short COMP line can replace these)",
+      "ids": [
+        "modes/prgm/example/quadratic",
+        "modes/prgm/example/circle-centre",
+        "modes/prgm/example/sequences",
+        "modes/prgm/example/line",
+        "modes/prgm/example/polar",
+        "modes/prgm/example/freq-sd"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Slots",
+      "text": "MODE 6 → 1 → unused slot, choose COMP / CMPLX / SD / REG as the page says, then paste the line. Run with MODE 6 → 2 → slot. AC aborts a loop. Green fragments (Newton f(M), Simpson f(X)) must be edited for the function in the question."
+    }
+  ],
+  "related": [
+    "modes/prgm/commands",
+    "modes/prgm/edit",
+    "exam",
+    "fmla"
+  ]
+}

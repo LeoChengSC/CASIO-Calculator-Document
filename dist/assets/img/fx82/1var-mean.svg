@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" role="img" aria-labelledby="fx82-1var-mean-title fx82-1var-mean-desc">
+  <title id="fx82-1var-mean-title">Mean of 15, 18, 22, 25 on a number line</title>
+  <desc id="fx82-1var-mean-desc">Four scores sit at 15, 18, 22 and 25. Their arithmetic mean is 20.</desc>
+  
+  <line x1="80" y1="170" x2="640" y2="170" stroke="var(--text-muted)" stroke-width="1.4"/>
+  <line x1="80.0" y1="170" x2="80.0" y2="176" stroke="var(--text-muted)" stroke-width="1"/>
+  <text x="80.0" y="194" text-anchor="middle" fill="var(--text)">10</text>
+  <line x1="220.0" y1="170" x2="220.0" y2="176" stroke="var(--text-muted)" stroke-width="1"/>
+  <text x="220.0" y="194" text-anchor="middle" fill="var(--text)">15</text>
+  <line x1="304.0" y1="170" x2="304.0" y2="176" stroke="var(--text-muted)" stroke-width="1"/>
+  <text x="304.0" y="194" text-anchor="middle" fill="var(--text)">18</text>
+  <line x1="360.0" y1="170" x2="360.0" y2="180" stroke="var(--accent)" stroke-width="1.6"/>
+  <text x="360.0" y="194" text-anchor="middle" fill="var(--accent)">20</text>
+  <line x1="416.0" y1="170" x2="416.0" y2="176" stroke="var(--text-muted)" stroke-width="1"/>
+  <text x="416.0" y="194" text-anchor="middle" fill="var(--text)">22</text>
+  <line x1="500.0" y1="170" x2="500.0" y2="176" stroke="var(--text-muted)" stroke-width="1"/>
+  <text x="500.0" y="194" text-anchor="middle" fill="var(--text)">25</text>
+  <line x1="640.0" y1="170" x2="640.0" y2="176" stroke="var(--text-muted)" stroke-width="1"/>
+  <text x="640.0" y="194" text-anchor="middle" fill="var(--text)">30</text>
+  <circle cx="220.0" cy="170" r="6" fill="var(--accent)" stroke="var(--bg)" stroke-width="1.8"/>
+  <circle cx="304.0" cy="170" r="6" fill="var(--accent)" stroke="var(--bg)" stroke-width="1.8"/>
+  <circle cx="416.0" cy="170" r="6" fill="var(--accent)" stroke="var(--bg)" stroke-width="1.8"/>
+  <circle cx="500.0" cy="170" r="6" fill="var(--accent)" stroke="var(--bg)" stroke-width="1.8"/>
+  <line x1="360.0" y1="118" x2="360.0" y2="180" stroke="var(--accent)" stroke-width="1.8"/>
+  <polygon points="360.0,108 352,122 368,122" fill="var(--accent)"/>
+  <text x="360.0" y="98" text-anchor="middle" fill="var(--text)">x̄ = 20</text>
+  <text x="360" y="36" text-anchor="middle" fill="var(--text)">1-VAR example: 15, 18, 22, 25</text>
+  <text x="360" y="292" text-anchor="middle" fill="var(--accent-soft)">Sum = 80, n = 4, mean = 80 ÷ 4 = 20</text>
+
+</svg>

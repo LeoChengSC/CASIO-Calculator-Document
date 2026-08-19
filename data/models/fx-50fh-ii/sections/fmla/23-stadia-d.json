@@ -1,0 +1,94 @@
+{
+  "id": "fmla/23-stadia-d",
+  "title": "[FMLA 23] StadiaDist — Stadia Calculations (Distance)",
+  "shortTitle": "[FMLA 23] StadiaDist",
+  "parent": "fmla",
+  "order": 23,
+  "aliases": [
+    "Stadia Calculations (Distance)",
+    "StadiaDist",
+    "FMLA 23",
+    "formula 23",
+    "23",
+    "[FMLA 23] StadiaDist"
+  ],
+  "keywords": [
+    "s",
+    "θ",
+    "stadia",
+    "StadiaDist",
+    "built-in"
+  ],
+  "formulas": [
+    "D = K · s · cos² θ + C · cos θ"
+  ],
+  "keySequence": [
+    "FMLA",
+    "2",
+    "3"
+  ],
+  "summary": "Surveying stadia horizontal distance.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Calculator scroll name: StadiaDist. Surveying stadia horizontal distance."
+    },
+    {
+      "type": "formula",
+      "plain": "D = K \\cdot s \\cdot \\cos^{2}\\theta + C \\cdot \\cos \\theta"
+    },
+    {
+      "type": "p",
+      "mark": "fmla-graph",
+      "text": "Same reading s and θ, different combination of sin/cos, so you get distance along the ground instead of height."
+    },
+    {
+      "type": "figure",
+      "mark": "fmla-graph",
+      "svg": "img/fmla/23-stadia-d.svg",
+      "caption": "Same sight as the height formula, but the result is the horizontal distance D to the staff."
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "FMLA",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Primary inputs: K, s, C, θ."
+    },
+    {
+      "type": "steps",
+      "title": "How to run",
+      "items": [
+        "Press FMLA, then 2, then 3 (or scroll to the name and EXE)",
+        "Enter each prompted value",
+        "Read the result"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "FMLA → 2 → 3",
+        "100 EXE 0.865 EXE 0 EXE 4 EXE (K = 100, s = 0.865 m, C = 0, θ = 4°)",
+        "ROM prints S = 86.07909397 m"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Angle unit",
+      "text": "Run in Deg. Typical internal-focus instruments use K = 100 and C = 0. The calculator labels the result S. Companion height formula is FMLA 22: H = Ks sinθ cosθ + C sinθ."
+    }
+  ],
+  "related": [
+    "fmla/22-stadia-h",
+    "fmla"
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "fmla/08-magnetic",
+  "title": "[FMLA 08] MagneticForce — Magnetic Force",
+  "shortTitle": "[FMLA 08] MagneticForce",
+  "parent": "fmla",
+  "order": 8,
+  "aliases": [
+    "Magnetic Force",
+    "MagneticForce",
+    "FMLA 08",
+    "formula 08",
+    "08",
+    "[FMLA 08] MagneticForce"
+  ],
+  "keywords": [
+    "I",
+    "B",
+    "ℓ",
+    "θ",
+    "magnetic",
+    "MagneticForce",
+    "built-in"
+  ],
+  "formulas": [
+    "F = I ℓ B sin θ"
+  ],
+  "keySequence": [
+    "FMLA",
+    "0",
+    "8"
+  ],
+  "summary": "Force on a current-carrying conductor in a magnetic field.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Calculator scroll name: MagneticForce. Force on a current-carrying conductor in a magnetic field."
+    },
+    {
+      "type": "formula",
+      "plain": "F = I \\ell B \\sin \\theta"
+    },
+    {
+      "type": "p",
+      "mark": "fmla-graph",
+      "text": "A current in a magnetic field feels a sideways shove. The sin θ factor is 1 when the wire is perpendicular to B, and 0 when it runs parallel to B (no shove)."
+    },
+    {
+      "type": "figure",
+      "mark": "fmla-graph",
+      "svg": "img/fmla/08-magnetic.svg",
+      "caption": "Crosses are B into the page. Current I runs along the wire. Force F is at right angles to both. F is largest when sin θ = 1."
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "FMLA",
+        "0",
+        "8"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Primary inputs: I, B, ℓ, θ (that prompt order)."
+    },
+    {
+      "type": "steps",
+      "title": "How to run",
+      "items": [
+        "Press FMLA, then 0, then 8 (or scroll to the name and EXE)",
+        "Enter each prompted value",
+        "Read the result"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "FMLA → 0 → 8",
+        "3 EXE  0.7 EXE  1 EXE  30 EXE",
+        "F = 1.05 N"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Angle unit",
+      "text": "θ is in degrees (0° ≤ |θ| ≤ 90°). Run in Deg. SI units: I in A, B in T, ℓ in m, F in N."
+    }
+  ],
+  "related": [
+    "fmla"
+  ]
+}

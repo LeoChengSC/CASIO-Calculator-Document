@@ -1,0 +1,123 @@
+{
+  "id": "modes/prgm/example/simpson",
+  "title": "Simpson’s Rule",
+  "shortTitle": "Simpson",
+  "parent": "modes/prgm/example",
+  "order": 14,
+  "aliases": [
+    "辛卜生",
+    "森遜",
+    "definite integral",
+    "numerical integration"
+  ],
+  "keywords": [
+    "even n",
+    "For Next",
+    "ln X"
+  ],
+  "formulas": [
+    "∫ₐᵇ f(x) dx ≈ (h/3)(y₀ + 4y₁ + 2y₂ + … + yₙ)"
+  ],
+  "keySequence": [
+    "MODE",
+    "6",
+    "2"
+  ],
+  "summary": "Definite integral. No ∫ key. Edit ln(X). Even number of strips.",
+  "body": [
+    {
+      "type": "p",
+      "text": "The fx-50FH II has no definite-integral button. This WebCal Simpson listing asks for lower X, upper Y, then even strip count A. The green ln(X) is f(X); change only that (variable must stay X). πr forces cosine into radians so the 4–2–4 Simpson weights work even if SET UP is Deg. For 0→B To A and Next come from SHIFT 3 (P-CMD)."
+    },
+    {
+      "type": "note",
+      "label": "Memory / run mode",
+      "text": "61 bytes plus the integrand of the shared 680-byte pool. Create the slot in COMP, Rad if the integrand uses sin/cos/tan. Type ? → : ◢ Goto Lbl If Then from SHIFT 3 (P-CMD)."
+    },
+    {
+      "type": "formula",
+      "plain": "∫ₐᵇ f(x) dx ≈ (h/3)(y₀ + 4y₁ + 2y₂ + … + yₙ)"
+    },
+    {
+      "type": "figure",
+      "svg": "img/prgm/simpson.svg",
+      "caption": "Simpson strips under y = ln x from 1 to 2. n = 10 gives ≈ 0.386293."
+    },
+    {
+      "type": "h2",
+      "text": "Program (one line)"
+    },
+    {
+      "type": "program",
+      "code": "ClrMemory:?→X:?→Y:?→A:A⁻¹(Y−X→Y:For 0→B To A:ln(X:Ans(3−cos(πrB)−(B²=BA)M+:X+Y→X:Next:YM÷3"
+    },
+    {
+      "type": "h2",
+      "text": "Example 1: ∫₁² ln x dx, 10 strips"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: ∫₁² ln x dx, 10 strips."
+    },
+    {
+      "type": "p",
+      "text": "Given: Exact value is 2 ln 2 − 1 ≈ 0.386294361."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "1 【EXE】  2 【EXE】  10 【EXE】",
+        "Display ≈ 0.386293403"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 2: Same integral, 2 strips (coarse)"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: Same integral, 2 strips (coarse)."
+    },
+    {
+      "type": "p",
+      "text": "Given: Even n is required. Two strips is the coarsest legal run."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "1 【EXE】  2 【EXE】  2 【EXE】",
+        "A rougher approximation — use this only to check the listing, not for marks"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 3 (edge): Change f — here ∫₀¹ e^X dX"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: Change f — here ∫₀¹ e^X dX."
+    },
+    {
+      "type": "p",
+      "text": "Given: Replace ln(X) with e^(X. Lower 0, upper 1, n = 10. Exact e − 1 ≈ 1.718281828."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "Edit only the green integrand. Variable stays X",
+        "0 【EXE】  1 【EXE】  10 【EXE】",
+        "Odd n is illegal for Simpson: the weights 4-2-4 break"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Pitfalls",
+      "text": "πr is π (SHIFT EXP) then the r suffix (SHIFT Ans 2). A⁻¹ is the x⁻¹ key after A. Trigonometric integrands: SET UP Rad. Source: WebCal simpson.htm (61-byte For/Next version)."
+    }
+  ],
+  "related": [
+    "modes/prgm/example",
+    "modes/prgm/commands",
+    "modes/prgm/edit"
+  ]
+}

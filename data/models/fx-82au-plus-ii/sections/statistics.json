@@ -1,0 +1,116 @@
+{
+  "id": "statistics",
+  "title": "Statistics Editor and Menus",
+  "shortTitle": "Statistics Editor",
+  "parent": "index",
+  "order": 5,
+  "aliases": [
+    "STAT editor",
+    "FREQ",
+    "MinMax",
+    "Reg",
+    "data rows"
+  ],
+  "keywords": [
+    "40 rows",
+    "Ins",
+    "Del-A",
+    "Sum",
+    "Var"
+  ],
+  "formulas": [
+    "ŷ",
+    "x̂"
+  ],
+  "keySequence": [
+    "SHIFT",
+    "1"
+  ],
+  "summary": "Editor capacity, edit commands, and SHIFT 1 (STAT) Sum / Var / Reg / MinMax menus.",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Capacity"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "40 rows: 1-VAR without FREQ, or paired regression without FREQ",
+        "20 rows: 1-VAR with FREQ ON",
+        "26 rows: paired data with FREQ ON"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Editor commands"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Edit cell: type new value, =",
+        "Delete row: DEL",
+        "Insert row: SHIFT 1 → Edit → Ins",
+        "Clear all: SHIFT 1 → Edit → Del-A"
+      ]
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Menu",
+        "Role"
+      ],
+      "rows": [
+        [
+          "1 Type",
+          "Return to STAT model picker"
+        ],
+        [
+          "2 Data",
+          "Re-open editor"
+        ],
+        [
+          "3 Sum",
+          "∑x², ∑x, ∑y… power sums"
+        ],
+        [
+          "4 Var",
+          "n, means, σ / s"
+        ],
+        [
+          "5 Reg",
+          "A, B, r, x̂, ŷ (model-dependent)"
+        ],
+        [
+          "6 MinMax",
+          "min/max, Q1, med, Q3"
+        ]
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Linear fit + estimate ŷ at x=15"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "SETUP → STAT FREQ OFF",
+        "MODE 2 2 (A+BX)",
+        "(10, 25)",
+        "(20, 45)",
+        "(30, 68)",
+        "AC → SHIFT 1 → Reg → r",
+        "x = 15 → ŷ"
+      ]
+    },
+    {
+      "type": "figure",
+      "svg": "img/reg/lin.svg",
+      "caption": "A+BX is a straight-line fit. After you have A and B, type an x then recall ŷ from STAT → Reg."
+    }
+  ],
+  "related": [
+    "modes/stat",
+    "modes/stat/a-bx",
+    "setup"
+  ]
+}

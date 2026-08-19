@@ -1,0 +1,120 @@
+{
+  "id": "modes/prgm/example/cubic",
+  "title": "Cubic Equation",
+  "shortTitle": "Cubic",
+  "parent": "modes/prgm/example",
+  "order": 6,
+  "aliases": [
+    "一元三次方程",
+    "Newton deflation"
+  ],
+  "keywords": [
+    "cubic",
+    "Newton",
+    "synthetic division"
+  ],
+  "formulas": [
+    "Ax³ + Bx² + Cx + D = 0"
+  ],
+  "keySequence": [
+    "MODE",
+    "6",
+    "2"
+  ],
+  "summary": "Newton for one real root, then the quadratic factor. ~70 bytes.",
+  "body": [
+    {
+      "type": "p",
+      "text": "HK listings of a full Cardano cubic are ~126 bytes and need CMPLX. This compact exam version asks for A, B, C, D and an initial guess M, Newton-iterates to a real root, then deflates to a quadratic and prints the other two roots. Stop Newton when |f| drops below 10⁻⁷."
+    },
+    {
+      "type": "note",
+      "label": "Memory / run mode",
+      "text": "~70 bytes of the shared 680-byte pool. Create the slot in COMP; CMPLX if the quadratic factor has complex roots. Type ? → : ◢ Goto Lbl If Then from SHIFT 3 (P-CMD)."
+    },
+    {
+      "type": "formula",
+      "plain": "Ax³ + Bx² + Cx + D = 0"
+    },
+    {
+      "type": "figure",
+      "svg": "img/prgm/cubic.svg",
+      "caption": "x³ − 6x² + 11x − 6 = (x−1)(x−2)(x−3). Guess M = 0 walks to the root 1, then 2 and 3."
+    },
+    {
+      "type": "h2",
+      "text": "Program (one line)"
+    },
+    {
+      "type": "program",
+      "code": "?→A:?→B:?→C:?→D:?→M:Lbl 0:((AM+B)M+C)M+D→Y:(3AM+2B)M+C:M−Y÷Ans→M:Abs(Y)≥10^(−7)⇒Goto 0:M◢B+AM→Y:AM²+BM+C→X:(√(Y²−4AX)−Y)÷(2A◢(−Y−√(Y²−4AX))÷(2A"
+    },
+    {
+      "type": "h2",
+      "text": "Example 1: x³ − 6x² + 11x − 6 = 0"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: x³ − 6x² + 11x − 6 = 0."
+    },
+    {
+      "type": "p",
+      "text": "Given: A,B,C,D = 1, −6, 11, −6. Guess M = 0."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "1 【EXE】  −6 【EXE】  11 【EXE】  −6 【EXE】  0 【EXE】",
+        "First pause: 1 (Newton root). 【EXE】 → 2. 【EXE】 → 3"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 2: Guess near a different root"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: Guess near a different root."
+    },
+    {
+      "type": "p",
+      "text": "Given: Same polynomial, guess M = 5 walks to 3 first."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "1 【EXE】  −6 【EXE】  11 【EXE】  −6 【EXE】  5 【EXE】",
+        "Pauses 3, then 1 and 2 (order of the last two follows the quadratic formula)"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 3 (edge): x³ + x = 0 → 0, ±i"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: x³ + x = 0 → 0, ±i."
+    },
+    {
+      "type": "p",
+      "text": "Given: A,B,C,D = 1, 0, 1, 0. Guess 0. The quadratic is x² + 1. Run the slot in CMPLX to print ±i."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "CMPLX slot. 1 【EXE】  0 【EXE】  1 【EXE】  0 【EXE】  0 【EXE】",
+        "First root 0. Next pauses: i and −i (R<=>I). In COMP you get Math ERROR on √(−1)"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Pitfalls",
+      "text": "10^(−7) is the Newton stop. If f′(M) = 0 Newton hits Math ERROR — try another guess. A published Cardano listing (~126 bytes, CMPLX) prints all three roots without a guess."
+    }
+  ],
+  "related": [
+    "modes/prgm/example",
+    "modes/prgm/commands",
+    "modes/prgm/edit"
+  ]
+}

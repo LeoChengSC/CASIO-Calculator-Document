@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{PAGE_TITLE}}</title>
+  <link rel="stylesheet" href="{{ASSET_ROOT}}assets/css/site.css">
+  <link rel="stylesheet" href="{{ASSET_ROOT}}assets/vendor/katex/katex.min.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("casio-theme");
+        if (t === "light" || t === "dark" || t === "reading") {
+          document.documentElement.setAttribute("data-theme", t);
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body class="{{BODY_CLASS}}">
+  <header class="site-header">
+    <a class="site-brand" href="{{HUB_HREF}}">
+      <span class="site-brand__name">CASIO Docs</span>
+      <span class="site-brand__tag">Calculator Reference</span>
+    </a>
+    <div class="header-search" role="search">
+      <label class="sr-only" for="site-search">Search documentation</label>
+      <input id="site-search" type="search" placeholder="Search names, keys, formulas… (/)" autocomplete="off" spellcheck="false">
+      <div id="search-results" class="search-results" hidden></div>
+    </div>
+    <div class="header-controls">
+      <label class="theme-label" for="theme-select">Theme</label>
+      <select id="theme-select" class="theme-select" aria-label="Color theme">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+        <option value="reading">Reading</option>
+      </select>
+    </div>
+  </header>
+
+  <div class="site-body">
+    <aside class="site-sidebar" aria-label="Table of contents">
+      {{SIDEBAR}}
+    </aside>
+    <main class="site-main">
+      <div class="page-sections-host" id="page-sections-host" aria-hidden="true">
+        <button type="button" class="page-sections-host__backdrop" id="page-sections-backdrop" tabindex="-1" aria-label="Close on this page"></button>
+        <div class="page-sections-host__panel">
+          {{PAGE_SECTIONS}}
+        </div>
+      </div>
+      <div class="mobile-nav-bar">
+        <button type="button" id="mobile-nav-back" class="mobile-nav-back" aria-label="Back to contents">← Contents</button>
+        <button type="button" id="mobile-nav-sections" class="mobile-nav-sections" aria-label="On this page" aria-expanded="false" aria-controls="page-sections-host" hidden>
+          <span class="mobile-nav-sections__icon" aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="site-content">
+        <div class="page-intro">
+          {{BREADCRUMB}}
+          <h1>{{H1}}</h1>
+          {{SUMMARY}}
+        </div>
+        {{CONTENT}}
+        {{PAGER}}
+        <footer class="site-footer">
+          <p>Offline Casio calculator documentation. Content is structured for multiple models; rebuild with <code>node tools/build.js</code>.</p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script src="{{ASSET_ROOT}}search-index.js"></script>
+  <script src="{{ASSET_ROOT}}assets/js/theme.js"></script>
+  <script src="{{ASSET_ROOT}}assets/js/nav.js"></script>
+  <script src="{{ASSET_ROOT}}assets/js/search.js"></script>
+</body>
+</html>

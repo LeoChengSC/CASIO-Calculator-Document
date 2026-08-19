@@ -1,0 +1,94 @@
+{
+  "id": "fmla/19-centrifugal",
+  "title": "[FMLA 19] Centrifugal — Centrifugal Force",
+  "shortTitle": "[FMLA 19] Centrifugal",
+  "parent": "fmla",
+  "order": 19,
+  "aliases": [
+    "Centrifugal Force",
+    "Centrifugal",
+    "FMLA 19",
+    "formula 19",
+    "19",
+    "[FMLA 19] Centrifugal"
+  ],
+  "keywords": [
+    "m",
+    "v",
+    "r",
+    "centrifugal",
+    "Centrifugal",
+    "built-in"
+  ],
+  "formulas": [
+    "F = m v² / r"
+  ],
+  "keySequence": [
+    "FMLA",
+    "1",
+    "9"
+  ],
+  "summary": "Centripetal/centrifugal magnitude for circular motion.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Calculator scroll name: Centrifugal. Centripetal/centrifugal magnitude for circular motion."
+    },
+    {
+      "type": "formula",
+      "plain": "F = \\frac{m v^{2}}{r}"
+    },
+    {
+      "type": "p",
+      "mark": "fmla-graph",
+      "text": "To stay on a circle the mass must be pulled toward the centre. Double the speed and that pull becomes four times as large."
+    },
+    {
+      "type": "figure",
+      "mark": "fmla-graph",
+      "svg": "img/fmla/19-centrifugal.svg",
+      "caption": "Mass m on a circle of radius r at speed v. The inward force is m v² / r — faster or tighter means a harder pull."
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "FMLA",
+        "1",
+        "9"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Primary inputs: m, v, r."
+    },
+    {
+      "type": "steps",
+      "title": "How to run",
+      "items": [
+        "Press FMLA, then 1, then 9 (or scroll to the name and EXE)",
+        "Enter each prompted value",
+        "Read the result"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "FMLA → 1 → 9",
+        "Enter m, v, r",
+        "F = mv²/r"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Units",
+      "text": "SI: m in kg, v in m/s, r in m (all > 0); F in N."
+    }
+  ],
+  "related": [
+    "fmla"
+  ]
+}

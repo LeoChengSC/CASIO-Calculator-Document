@@ -1,0 +1,16 @@
+[
+  {
+    "id": "fx-50fh-ii",
+    "name": "CASIO fx-50FH II",
+    "shortName": "fx-50FH II",
+    "description": "HKEAA-approved programmable scientific calculator (SUPER-FX PLUS). Modes, SETUP, 23 formulas, constants, and programming reference.",
+    "status": "live"
+  },
+  {
+    "id": "fx-82au-plus-ii",
+    "name": "CASIO fx-82AU PLUS II",
+    "shortName": "fx-82AU PLUS II",
+    "description": "Natural-V.P.A.M. non-programmable calculator for AU/NZ exams. COMP, STAT, VERIF, and exact surds.",
+    "status": "live"
+  }
+]

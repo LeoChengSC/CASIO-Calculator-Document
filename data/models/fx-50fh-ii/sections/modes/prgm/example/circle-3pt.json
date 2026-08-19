@@ -1,0 +1,125 @@
+{
+  "id": "modes/prgm/example/circle-3pt",
+  "title": "Circle from Three Points",
+  "shortTitle": "Circle 3 Points",
+  "parent": "modes/prgm/example",
+  "order": 5,
+  "aliases": [
+    "三點求圓",
+    "circumcircle"
+  ],
+  "keywords": [
+    "three points",
+    "D",
+    "E",
+    "F"
+  ],
+  "formulas": [
+    "x² + y² + Dx + Ey + F = 0"
+  ],
+  "keySequence": [
+    "MODE",
+    "6",
+    "2"
+  ],
+  "summary": "Circumcircle of three points: centre, radius, then D, E, F. 131 bytes.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Enter (x1,y1), (x2,y2), (x3,y3). Pauses: h, k, r, then D, E, F for x² + y² + Dx + Ey + F = 0. Uses Pol so the first radius pause is r on the display; skip it if you only need the equation coefficients from the later pauses."
+    },
+    {
+      "type": "note",
+      "label": "Memory / run mode",
+      "text": "131 bytes of the shared 680-byte pool. Create the slot in COMP; d/c fractions recommended. Type ? → : ◢ Goto Lbl If Then from SHIFT 3 (P-CMD)."
+    },
+    {
+      "type": "formula",
+      "plain": "x² + y² + Dx + Ey + F = 0"
+    },
+    {
+      "type": "figure",
+      "svg": "img/prgm/circle-3pt.svg",
+      "caption": "Points (2,0), (0,1), (0,4) lie on x² + y² − 4x − 5y + 4 = 0. Centre (2, 5/2), radius 5/2."
+    },
+    {
+      "type": "h2",
+      "text": "Program (one line)"
+    },
+    {
+      "type": "program",
+      "code": "?→A:?→B:?→C:?→D:(C−A)÷(B−D→Y:B+D−YA−YC→X:?→C:?→D:(C−A)÷(B−D→M:B+D−MA−MC→B:(B−X)÷(2Y−2M→A◢M Ans+B÷2→B◢√((A−C)²+(B−D)²→X◢−2A◢−2B◢A²+B²−X²"
+    },
+    {
+      "type": "h2",
+      "text": "Example 1: Points (2, 0), (0, 1), (0, 4)"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: Points (2, 0), (0, 1), (0, 4)."
+    },
+    {
+      "type": "p",
+      "text": "Given: Standard IceCreamTutor check."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "SHIFT MODE ▶ ▶ 2 (d/c), then Run",
+        "2 【EXE】  0 【EXE】  0 【EXE】  1 【EXE】  0 【EXE】  4 【EXE】",
+        "h = 2. 【EXE】 → k = 5/2. 【EXE】 → r = 5/2",
+        "【EXE】 → D = −4. 【EXE】 → E = −5. 【EXE】 → F = 4",
+        "Equation x² + y² − 4x − 5y + 4 = 0"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 2: Right triangle (0, 0), (6, 0), (0, 8)"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: Right triangle (0, 0), (6, 0), (0, 8)."
+    },
+    {
+      "type": "p",
+      "text": "Given: Hypotenuse from (6, 0) to (0, 8); centre is the midpoint (3, 4), radius 5."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "0 【EXE】  0 【EXE】  6 【EXE】  0 【EXE】  0 【EXE】  8 【EXE】",
+        "If Math ERROR, swap so two points do not share a y-value as the first pair — enter (0, 8) first: 0 【EXE】 8 【EXE】 0 【EXE】 0 【EXE】 6 【EXE】 0 【EXE】",
+        "Centre (3, 4), radius 5. x² + y² − 6x − 8y = 0"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example 3 (edge): Collinear points"
+    },
+    {
+      "type": "p",
+      "text": "Question: Use this program to solve the case: Collinear points."
+    },
+    {
+      "type": "p",
+      "text": "Given: (0, 0), (1, 1), (2, 2) have no finite circumcircle."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "0 【EXE】  0 【EXE】  1 【EXE】  1 【EXE】  2 【EXE】  2 【EXE】",
+        "Math ERROR — the three points are collinear"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "Pitfalls",
+      "text": "If two points share the same y, the first slope is undefined. Put a point with a different y in the first pair. After the run, RCL A and RCL B are the centre."
+    }
+  ],
+  "related": [
+    "modes/prgm/example",
+    "modes/prgm/commands",
+    "modes/prgm/edit"
+  ]
+}

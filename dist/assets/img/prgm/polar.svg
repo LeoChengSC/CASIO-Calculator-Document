@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-labelledby="prgm-polar-title prgm-polar-desc">
+  <title id="prgm-polar-title">Pol(3,4) to r=5</title>
+  <desc id="prgm-polar-desc">Rectangular (3,4) and its polar pair r=5, θ≈53.13°.</desc>
+  
+  <line x1="64" y1="263.73333333333335" x2="680" y2="263.73333333333335" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <line x1="105.06666666666666" y1="280" x2="105.06666666666666" y2="36" stroke="var(--text-muted)" stroke-width="1.2"/>
+  <line x1="105.06666666666666" y1="263.73333333333335" x2="413.06666666666666" y2="101.06666666666666" stroke="var(--accent)" stroke-width="2.2"/>
+  <circle cx="413.06666666666666" cy="101.06666666666666" r="5" fill="var(--accent)" stroke="var(--bg)" stroke-width="1.5"/>
+  <text x="413.06666666666666" y="89.06666666666666" text-anchor="middle" fill="var(--text)">(3, 4)</text>
+  <path d="M223.1,263.7 L223.0,261.6 L222.6,259.4 L222.0,257.2 L221.1,255.1 L220.0,253.0 L218.6,250.9 L217.0,248.8 L215.1,246.8 L213.0,244.8 L210.7,242.8 L208.1,240.9 L205.3,239.0 L202.3,237.2 L199.1,235.5 L195.7,233.8 L192.1,232.1 L188.3,230.6 L184.3,229.1 L180.2,227.7 L175.9,226.3" fill="none" stroke="var(--accent-soft)" stroke-width="1.6"/>
+  <text x="248.79999999999998" y="241.36666666666667" fill="var(--text)">θ</text>
+  <text x="269.3333333333333" y="166.13333333333333" fill="var(--text)">r = 5</text>
+
+</svg>

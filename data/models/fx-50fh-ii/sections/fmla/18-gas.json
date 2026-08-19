@@ -1,0 +1,94 @@
+{
+  "id": "fmla/18-gas",
+  "title": "[FMLA 18] IdealGas — Ideal Gas Law",
+  "shortTitle": "[FMLA 18] IdealGas",
+  "parent": "fmla",
+  "order": 18,
+  "aliases": [
+    "Ideal Gas Law",
+    "IdealGas",
+    "FMLA 18",
+    "formula 18",
+    "18",
+    "[FMLA 18] IdealGas"
+  ],
+  "keywords": [
+    "n",
+    "T",
+    "V",
+    "ideal",
+    "IdealGas",
+    "built-in"
+  ],
+  "formulas": [
+    "PV = nRT"
+  ],
+  "keySequence": [
+    "FMLA",
+    "1",
+    "8"
+  ],
+  "summary": "State equation; uses gas constant R from ROM.",
+  "body": [
+    {
+      "type": "p",
+      "text": "Calculator scroll name: IdealGas. State equation; uses gas constant R from ROM."
+    },
+    {
+      "type": "formula",
+      "plain": "PV = nRT"
+    },
+    {
+      "type": "p",
+      "mark": "fmla-graph",
+      "text": "Four numbers describe the trapped gas: pressure, volume, amount, temperature. Fix three and the fourth is determined. R is the gas constant from CONST."
+    },
+    {
+      "type": "figure",
+      "mark": "fmla-graph",
+      "svg": "img/fmla/18-gas.svg",
+      "caption": "Gas trapped under a piston. Push the piston (smaller V), heat it (larger T), or add moles n, and P changes so that PV = nRT."
+    },
+    {
+      "type": "keys",
+      "keys": [
+        "FMLA",
+        "1",
+        "8"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Primary inputs: n, T, V."
+    },
+    {
+      "type": "steps",
+      "title": "How to run",
+      "items": [
+        "Press FMLA, then 1, then 8 (or scroll to the name and EXE)",
+        "Enter each prompted value",
+        "Read the result"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Example"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "FMLA → 1 → 8",
+        "Enter n, T, V",
+        "Uses R from constants"
+      ]
+    },
+    {
+      "type": "note",
+      "label": "CONST / R",
+      "text": "Uses the molar gas constant R from ROM (CONST 7-3). Enter n in mol, T in K, V in m³ (all > 0); the result P is in Pa (N/m²)."
+    }
+  ],
+  "related": [
+    "fmla"
+  ]
+}
